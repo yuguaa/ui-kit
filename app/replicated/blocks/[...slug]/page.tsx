@@ -113,6 +113,9 @@ async function CategoryPage({ group, category }: { group: string; category: stri
     <div className="flex items-start">
       <SnapshotSidebar groups={groups} current={`/replicated/blocks/${group}/${category}`} />
 
+      {/* 固定侧栏的占位 */}
+      <div className="hidden w-60 shrink-0 min-[992px]:block" aria-hidden="true" />
+
       <div className="mx-auto min-w-0 w-full max-w-6xl">
         <section>
           <div className="w-full px-6 pt-8 pb-6 sm:px-8 xl:px-10">

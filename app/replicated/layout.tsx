@@ -4,17 +4,15 @@ import { SiteFooter } from "@/components/site-footer"
 
 /**
  * 资源库布局
- * 头部固定，中间区域独立滚动，侧栏在该滚动容器内保持可见
+ * 与线上 reui.io 组件页一致：整页滚动，header sticky 固定，侧栏在页面内 sticky
  */
 export default function ReplicatedLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="site-theme-container bg-site-background font-site-sans flex h-svh flex-col overflow-hidden">
+    <div className="site-theme-container bg-site-background font-site-sans relative flex min-h-svh flex-col">
       <PageGridBackdrop />
       <SiteChrome />
-      <div className="min-h-0 flex-1 overflow-y-auto">
-        <main className="relative flex min-h-full flex-col">{children}</main>
-        <SiteFooter />
-      </div>
+      <main className="relative flex min-h-0 flex-1 flex-col">{children}</main>
+      <SiteFooter />
     </div>
   )
 }
