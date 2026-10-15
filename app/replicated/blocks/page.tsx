@@ -8,7 +8,7 @@ import { CategoryCard } from "@/components/replicated/category-card"
 
 export const metadata: Metadata = {
   title: "Blocks",
-  description: "从 neui.io 复刻到本地的全部区块渲染快照。",
+  description: "NeUI 区块库，按分类浏览全部区块，可直接预览。",
 }
 
 type CatalogBlock = { slug: string; name: string; category: string; group: string }
@@ -38,7 +38,7 @@ export default async function ReplicatedBlocksPage() {
         badge="Blocks"
         title="Blocks"
         count={total}
-        description={`从 neui.io 复刻到本地的 ${total} 个区块渲染快照，覆盖 ${groups.size} 个分组。点击分类查看该分类下的全部区块。`}
+        description={`共 ${total} 个区块，覆盖 ${groups.size} 个分组。选择分类查看其中的全部区块。`}
         titleId="blocks-page-title"
       />
 

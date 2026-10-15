@@ -65,7 +65,7 @@ brand-new category, also run `pnpm install` once so pnpm links the new
 
 ## Reporting issues
 
-Open an issue on [GitHub](https://github.com/keenthemes/neui/issues) with clear
+Open an issue on [GitHub](https://github.com/newcapec/neui/issues) with clear
 reproduction steps. For questions, reach us at
 [@neui_io](https://x.com/neui_io) or [hello@neui.io](mailto:hello@neui.io).
 

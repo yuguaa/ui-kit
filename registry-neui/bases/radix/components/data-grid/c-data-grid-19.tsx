@@ -134,7 +134,7 @@ const demoData: IData[] = [
     status: "active",
     flag: "my",
     email: "lisa@example.com",
-    company: "Keenthemes",
+    company: "Newcapec",
     role: "Director",
     joined: "Feb, 2022",
     location: "Malaysia",

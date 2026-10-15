@@ -142,14 +142,14 @@ const demoData: IData[] = [
       "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=96&h=96&dpr=2&q=80",
     status: "active",
     flag: "my",
-    email: "aron@keenthemes.com",
-    company: "Keenthemes",
+    email: "aron@newcapec.com",
+    company: "Newcapec",
     role: "Director",
     joined: "Feb, 2022",
     location: "Malaysia",
     balance: 6214.22,
     details:
-      "Aron oversees product development and team leadership at Keenthemes.",
+      "Aron oversees product development and team leadership at Newcapec.",
   },
   {
     id: "7",

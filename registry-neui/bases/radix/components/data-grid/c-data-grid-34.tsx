@@ -83,7 +83,7 @@ const companies = [
   "Meta",
   "Tesla",
   "SAP",
-  "Keenthemes",
+  "Newcapec",
   "BBVA",
   "Sony",
   "LVMH",

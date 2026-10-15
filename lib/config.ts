@@ -13,7 +13,7 @@ export const siteConfig = {
   },
   links: {
     twitter: "https://x.com/neui_io",
-    github: "https://github.com/keenthemes/neui",
+    github: "https://github.com/newcapec/neui",
   },
   /**
    * GitHub star count shown in the header + footer. Maintained by hand (no

@@ -16,7 +16,7 @@ export interface CategoryCardProps {
 }
 
 /**
- * 复刻分类卡片
+ * 分类卡片
  * 展示形式与 /components 的分类卡片一致：截图预览 + 标题 + 计数
  */
 export function CategoryCard({ href, label, count, imageBase, unit = "blocks" }: CategoryCardProps) {

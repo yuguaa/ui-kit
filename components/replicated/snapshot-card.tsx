@@ -20,7 +20,7 @@ export interface SnapshotCardProps {
 }
 
 /**
- * 复刻快照卡片
+ * 快照预览卡片
  * 展示形式与 /components 的组件卡片一致：卡片内实时预览 + 底部说明
  * 预览用 iframe 隔离加载（浏览器原生懒加载），并按容器宽度等比缩放
  */

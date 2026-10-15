@@ -10,7 +10,7 @@ type PageProps = {
 }
 
 /**
- * 复刻模板路由
+ * 模板路由
  * 一段路径（模板）渲染页面列表，两段路径（模板/页面）渲染单个页面快照
  */
 export default async function ReplicatedTemplateRoute({ params }: PageProps) {
@@ -27,7 +27,7 @@ export default async function ReplicatedTemplateRoute({ params }: PageProps) {
   try {
     await access(path.join(dir, `${page}.html`))
   } catch {
-    return <p className="p-8">未找到复刻资产：{parts.join("/")}</p>
+    return <p className="p-8">未找到内容：{parts.join("/")}</p>
   }
 
   const siblings = (await readdir(dir))
@@ -61,7 +61,7 @@ async function TemplatePage({ slug, root }: { slug: string; root: string }) {
       .map((f) => f.replace(/\.html$/, ""))
       .sort()
   } catch {
-    return <p className="p-8">未找到复刻模板：{slug}</p>
+    return <p className="p-8">未找到模板：{slug}</p>
   }
 
   return (
@@ -70,7 +70,7 @@ async function TemplatePage({ slug, root }: { slug: string; root: string }) {
         badge="Template"
         title={slug}
         count={pages.length}
-        description={`${slug} 的全部页面快照，共 ${pages.length} 个页面。`}
+        description={`${slug} 的全部页面，共 ${pages.length} 个。`}
         titleId="template-pages-title"
       />
 

@@ -75,7 +75,7 @@ export function SiteFooter({ className }: { className?: string }) {
         <div className="container-wrapper">
           <div className="container flex flex-col items-center justify-between gap-3 py-3 md:flex-row md:py-3.5">
             <p className="text-site-muted-foreground text-sm">
-              &copy; {currentYear} NeUI. Released under the MIT License.
+              &copy; {currentYear} NeUI.
             </p>
             <div className="flex items-center gap-3">
               <Link

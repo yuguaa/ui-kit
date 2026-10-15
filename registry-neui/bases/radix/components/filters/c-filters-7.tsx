@@ -242,7 +242,7 @@ const STAFF: Staff[] = [
   {
     id: "6",
     name: "Aron Thompson",
-    email: "aron@keenthemes.com",
+    email: "aron@newcapec.com",
     avatar:
       "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=96&h=96&dpr=2&q=80",
     role: "Designer",

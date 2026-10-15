@@ -11,7 +11,7 @@ type PageProps = {
 }
 
 /**
- * 复刻 block 路由
+ * 区块路由
  * 两段路径（分组/分类）渲染分类页，三段路径（分组/分类/名称）渲染单个快照
  */
 export default async function ReplicatedBlockRoute({ params, searchParams }: PageProps) {
@@ -30,7 +30,7 @@ export default async function ReplicatedBlockRoute({ params, searchParams }: Pag
   try {
     html = await readFile(file, "utf8")
   } catch {
-    return <p className="p-8">未找到复刻资产：{parts.join("/")}</p>
+    return <p className="p-8">未找到内容：{parts.join("/")}</p>
   }
 
   if (embed) {
@@ -77,7 +77,7 @@ async function CategoryPage({ group, category }: { group: string; category: stri
         badge={group}
         title={category}
         count={slugs.length}
-        description={`${group} / ${category} 分类下的全部区块快照。`}
+        description={`${group} / ${category} 分类下的全部区块。`}
         titleId="block-category-title"
       />
 

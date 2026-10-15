@@ -3,7 +3,7 @@ import { SiteChrome } from "@/components/site-chrome"
 import { SiteFooter } from "@/components/site-footer"
 
 /**
- * 复刻资产布局
+ * 资源库布局
  * 与 components 页面使用相同的站点外壳（顶部导航 + 网格背景 + 页脚）
  */
 export default function ReplicatedLayout({ children }: { children: React.ReactNode }) {

@@ -129,7 +129,7 @@ const demoData: IData[] = users.map((user, index) => ({
       "Meta",
       "Tesla",
       "SAP",
-      "Keenthemes",
+      "Newcapec",
       "BBVA",
       "Sony",
       "LVMH",
