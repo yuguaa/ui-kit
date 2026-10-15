@@ -159,9 +159,20 @@ reui-clone/
 └── scripts/             # 构建与复刻脚本
 ```
 
-## 复刻资产索引
+## 本地入口
 
-本地访问 `http://localhost:3000/replicated` 可浏览全部复刻资产（645 个 blocks + 123 个模板页面）。
+站点主导航提供三个入口，与上游站点结构一致：
+
+| 导航项 | 地址 | 内容 |
+| --- | --- | --- |
+| Components | /components | 上游组件文档（开源部分） |
+| Blocks | /replicated/blocks | 645 个 block 快照列表 |
+| Templates | /replicated/templates | 17 个模板、123 个页面快照列表 |
+| Docs | /docs | 上游文档 |
+
+复刻总览页：`/replicated`。
+
+复刻预览页顶部都有导航条，可返回索引并切换到同级页面。
 
 ## 后续 MCP 服务器开发提示
 

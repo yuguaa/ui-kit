@@ -138,9 +138,9 @@ export const FIGMA_URL =
  */
 export const navEntries: NavEntry[] = [
   { kind: "link", label: "Components", href: "/components" },
+  { kind: "link", label: "Blocks", href: "/replicated/blocks" },
+  { kind: "link", label: "Templates", href: "/replicated/templates" },
   { kind: "link", label: "Docs", href: "/docs", exact: true },
-  // 本地复刻资产入口（blocks 与 templates 渲染快照）
-  { kind: "link", label: "Replicated", href: "/replicated" },
 ]
 
 /**
