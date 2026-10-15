@@ -13,10 +13,44 @@ import {
 import { PreviewBar } from "@/components/replicated/preview-bar"
 import { SnapshotCard } from "@/components/replicated/snapshot-card"
 import { SnapshotPager, type PagerEntry } from "@/components/replicated/snapshot-pager"
+import { SnapshotSidebar, type SidebarNavGroup } from "@/components/replicated/snapshot-sidebar"
 
 type PageProps = {
   params: Promise<{ slug: string[] }>
   searchParams: Promise<{ embed?: string }>
+}
+
+const BLOCKS_ROOT = path.join(process.cwd(), "replicated/blocks")
+
+/** 扫描全部区块分类，按分组汇总，供侧栏与翻页复用 */
+async function scanCategories() {
+  const groups: SidebarNavGroup[] = []
+  const counts = new Map<string, number>()
+  const all: { group: string; category: string }[] = []
+
+  const groupDirs = (await readdir(BLOCKS_ROOT, { withFileTypes: true }))
+    .filter((e) => e.isDirectory())
+    .map((e) => e.name)
+    .sort()
+
+  for (const group of groupDirs) {
+    const items = []
+    const categoryDirs = (await readdir(path.join(BLOCKS_ROOT, group), { withFileTypes: true }))
+      .filter((e) => e.isDirectory())
+      .map((e) => e.name)
+      .sort()
+    for (const category of categoryDirs) {
+      const count = (await readdir(path.join(BLOCKS_ROOT, group, category))).filter((f) =>
+        f.endsWith(".html"),
+      ).length
+      const href = `/replicated/blocks/${group}/${category}`
+      counts.set(href, count)
+      all.push({ group, category })
+      items.push({ href, label: category, count })
+    }
+    groups.push({ label: group, items })
+  }
+  return { groups, counts, all }
 }
 
 /**
@@ -32,7 +66,7 @@ export default async function ReplicatedBlockRoute({ params, searchParams }: Pag
   }
 
   const [group, category, slug] = parts
-  const dir = path.join(process.cwd(), "replicated/blocks", group ?? "", category ?? "")
+  const dir = path.join(BLOCKS_ROOT, group ?? "", category ?? "")
   const file = path.join(dir, `${slug ?? ""}.html`)
 
   let html = ""
@@ -72,81 +106,80 @@ export default async function ReplicatedBlockRoute({ params, searchParams }: Pag
   )
 }
 
-/** 分类页：该分类下全部区块的全宽卡片列表 */
+/** 分类页：左侧分类导航 + 该分类下的全宽卡片列表 */
 async function CategoryPage({ group, category }: { group: string; category: string }) {
-  const root = path.join(process.cwd(), "replicated/blocks", group)
-  const dir = path.join(root, category)
+  const { groups, counts, all } = await scanCategories()
+  const dir = path.join(BLOCKS_ROOT, group, category)
   const slugs = (await readdir(dir))
     .filter((f) => f.endsWith(".html"))
     .map((f) => f.replace(/\.html$/, ""))
     .sort((a, b) => a.localeCompare(b, "en", { numeric: true }))
 
-  // 同分组内的相邻分类，用于上下页导航
-  const categories = (await readdir(root, { withFileTypes: true }))
-    .filter((e) => e.isDirectory())
-    .map((e) => e.name)
-    .sort()
-  const index = categories.indexOf(category)
-  const toEntry = async (name: string | undefined): Promise<PagerEntry | null> => {
-    if (!name) return null
-    const count = (await readdir(path.join(root, name))).filter((f) => f.endsWith(".html")).length
+  const index = all.findIndex((entry) => entry.group === group && entry.category === category)
+  const toEntry = (entry: { group: string; category: string } | undefined): PagerEntry | null => {
+    if (!entry) return null
+    const href = `/replicated/blocks/${entry.group}/${entry.category}`
     return {
-      href: `/replicated/blocks/${group}/${name}`,
-      label: name,
-      description: `${count} 个区块`,
+      href,
+      label: entry.category,
+      description: `${entry.group} · ${counts.get(href) ?? 0} 个区块`,
     }
   }
-  const [prev, next] = await Promise.all([
-    toEntry(index > 0 ? categories[index - 1] : undefined),
-    toEntry(index < categories.length - 1 ? categories[index + 1] : undefined),
-  ])
 
   return (
-    <>
-      <section>
-        <div className="w-full px-6 pt-8 pb-6 sm:px-8 xl:px-10">
-          <Breadcrumb className="mb-1">
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link href="/replicated/blocks" prefetch={false}>
-                    Blocks
-                  </Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>
-                  {group} / {category}
-                </BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-          <div className="flex w-full flex-wrap items-end justify-between gap-3">
-            <h1 className="mt-3 min-w-0 flex-1 text-xl font-bold text-balance sm:text-3xl">
-              {category}
-            </h1>
-            <span className="text-site-muted-foreground text-sm">{slugs.length} 个区块</span>
+    <div className="flex min-h-0 flex-1">
+      <SnapshotSidebar groups={groups} current={`/replicated/blocks/${group}/${category}`} />
+
+      <div className="min-w-0 flex-1">
+        <section>
+          <div className="w-full px-6 pt-8 pb-6 sm:px-8 xl:px-10">
+            <Breadcrumb className="mb-1">
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link href="/replicated/blocks" prefetch={false}>
+                      Blocks
+                    </Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage>
+                    {group} / {category}
+                  </BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+            <div className="flex w-full flex-wrap items-end justify-between gap-3">
+              <h1 className="mt-3 min-w-0 flex-1 text-xl font-bold text-balance sm:text-3xl">
+                {category}
+              </h1>
+              <span className="text-site-muted-foreground text-sm">{slugs.length} 个区块</span>
+            </div>
+          </div>
+        </section>
+
+        <div className="w-full px-6 pt-2 pb-4 sm:px-8 xl:px-10">
+          <div className="grid grid-cols-1 items-stretch gap-6">
+            {slugs.map((slug) => (
+              <SnapshotCard
+                key={slug}
+                href={`/replicated/blocks/${group}/${category}/${slug}`}
+                src={`/replicated/blocks/${group}/${category}/${slug}?embed=1`}
+                title={slug}
+                description={`${group} / ${category}`}
+                height={420}
+              />
+            ))}
           </div>
         </div>
-      </section>
 
-      <div className="w-full px-6 pt-2 pb-4 sm:px-8 xl:px-10">
-        <div className="grid grid-cols-1 items-stretch gap-6">
-          {slugs.map((slug) => (
-            <SnapshotCard
-              key={slug}
-              href={`/replicated/blocks/${group}/${category}/${slug}`}
-              src={`/replicated/blocks/${group}/${category}/${slug}?embed=1`}
-              title={slug}
-              description={`${group} / ${category}`}
-              height={420}
-            />
-          ))}
-        </div>
+        <SnapshotPager
+          prev={toEntry(index > 0 ? all[index - 1] : undefined)}
+          next={toEntry(index < all.length - 1 ? all[index + 1] : undefined)}
+          label="相邻区块分类"
+        />
       </div>
-
-      <SnapshotPager prev={prev} next={next} label="相邻区块分类" />
-    </>
+    </div>
   )
 }
