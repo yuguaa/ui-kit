@@ -1,9 +1,10 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { readdir, readFile } from "node:fs/promises"
 import path from "node:path"
 
 import { CatalogPageHero } from "@/components/catalog-page-hero"
-import { SnapshotCard } from "@/components/replicated/snapshot-card"
+import { SnapshotList, type SnapshotListItem } from "@/components/replicated/snapshot-list"
 
 export const metadata: Metadata = {
   title: "Templates",
@@ -23,7 +24,9 @@ export default async function ReplicatedTemplatesPage() {
   ) as { templates: CatalogTemplate[] }
 
   const root = path.join(process.cwd(), "replicated/templates")
-  const entries: { template: CatalogTemplate; pages: string[]; cover: string }[] = []
+  const items: SnapshotListItem[] = []
+  const categories: string[] = []
+  let totalPages = 0
 
   for (const template of catalog.templates) {
     let pages: string[] = []
@@ -36,49 +39,52 @@ export default async function ReplicatedTemplatesPage() {
       continue
     }
     if (pages.length === 0) continue
-    entries.push({ template, pages, cover: pickCover(pages) })
-  }
+    if (!categories.includes(template.category)) categories.push(template.category)
+    totalPages += pages.length
 
-  const groups = new Map<string, typeof entries>()
-  for (const entry of entries) {
-    const list = groups.get(entry.template.category) ?? []
-    list.push(entry)
-    groups.set(entry.template.category, list)
+    const cover = pickCover(pages)
+    items.push({
+      id: template.slug,
+      href: `/replicated/templates/${template.slug}`,
+      src: `/api/replicated-template/${template.slug}/${cover}`,
+      codeSrc: `/api/replicated-source/template/${template.slug}/${cover}`,
+      title: template.name,
+      description: `${template.slug} · ${pages.length} 个页面`,
+      group: template.category,
+    })
   }
-
-  const totalPages = entries.reduce((sum, e) => sum + e.pages.length, 0)
 
   return (
     <>
       <CatalogPageHero
         badge="Templates"
         title="Templates"
-        count={entries.length}
-        description={`共 ${entries.length} 个完整模板、${totalPages} 个页面。选择模板查看其全部页面。`}
+        count={items.length}
+        description={`共 ${items.length} 个完整模板、${totalPages} 个页面。选择模板查看其全部页面。`}
         titleId="templates-page-title"
-      />
+      >
+        <div className="flex flex-wrap items-center gap-2">
+          {categories.map((category) => (
+            <span
+              key={category}
+              className="border-site-border bg-site-background site-rounded-full border px-3 py-1.5 text-sm"
+            >
+              {category}
+            </span>
+          ))}
+        </div>
+      </CatalogPageHero>
 
       <div className="container-wrapper pb-16">
         <div className="container">
-          {[...groups.entries()].map(([category, list]) => (
-            <section key={category} className="mt-10 first:mt-2">
-              <h2 className="text-site-foreground mb-4 text-xl font-semibold tracking-tight">
-                {category}
-              </h2>
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-                {list.map(({ template, pages, cover }) => (
-                  <SnapshotCard
-                    key={template.slug}
-                    href={`/replicated/templates/${template.slug}`}
-                    src={`/api/replicated-template/${template.slug}/${cover}`}
-                    title={template.name}
-                    description={`${template.slug} · ${pages.length} 个页面`}
-                    height={300}
-                  />
-                ))}
-              </div>
-            </section>
-          ))}
+          <SnapshotList
+            items={items}
+            height={300}
+            columns={2}
+            searchPlaceholder="搜索模板..."
+            emptyLabel="没有匹配的模板"
+            unitLabel="个模板"
+          />
         </div>
       </div>
     </>

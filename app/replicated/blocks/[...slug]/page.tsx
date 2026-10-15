@@ -13,6 +13,7 @@ import {
 import { PreviewBar } from "@/components/replicated/preview-bar"
 import { SnapshotCard } from "@/components/replicated/snapshot-card"
 import { SnapshotPager, type PagerEntry } from "@/components/replicated/snapshot-pager"
+import { SnapshotList } from "@/components/replicated/snapshot-list"
 import { SnapshotSidebar, type SidebarNavGroup } from "@/components/replicated/snapshot-sidebar"
 
 type PageProps = {
@@ -160,19 +161,20 @@ async function CategoryPage({ group, category }: { group: string; category: stri
         </section>
 
         <div className="w-full px-6 pt-2 pb-4 sm:px-8 xl:px-10">
-          <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2">
-            {slugs.map((slug) => (
-              <SnapshotCard
-                key={slug}
-                href={`/replicated/blocks/${group}/${category}/${slug}`}
-                src={`/replicated/blocks/${group}/${category}/${slug}?embed=1`}
-                codeSrc={`/api/replicated-source/block/${group}/${category}/${slug}`}
-                title={slug}
-                description={`${group} / ${category}`}
-                height={280}
-              />
-            ))}
-          </div>
+          <SnapshotList
+            items={slugs.map((slug) => ({
+              id: slug,
+              href: `/replicated/blocks/${group}/${category}/${slug}`,
+              src: `/replicated/blocks/${group}/${category}/${slug}?embed=1`,
+              codeSrc: `/api/replicated-source/block/${group}/${category}/${slug}`,
+              title: slug,
+              description: `${group} / ${category}`,
+            }))}
+            height={280}
+            columns={2}
+            searchPlaceholder="搜索区块..."
+            emptyLabel="没有匹配的区块"
+          />
         </div>
 
         <SnapshotPager

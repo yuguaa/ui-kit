@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import { CheckIcon, CopyIcon } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
@@ -89,5 +90,39 @@ export function SnapshotViewCode({ src, title }: { src: string; title: string })
       </SheetTrigger>
       {open ? <SnapshotCodeSheetContent src={src} title={title} /> : null}
     </Sheet>
+  )
+}
+
+/** 卡片的复制源码按钮 */
+export function SnapshotCopyCode({ src }: { src: string }) {
+  const [copied, setCopied] = React.useState(false)
+
+  React.useEffect(() => {
+    if (!copied) return
+    const timer = setTimeout(() => setCopied(false), 2000)
+    return () => clearTimeout(timer)
+  }, [copied])
+
+  return (
+    <Button
+      className="h-7 text-xs"
+      size="sm"
+      variant="outline"
+      onClick={() => {
+        fetch(src)
+          .then((response) => response.text())
+          .then((text) => {
+            navigator.clipboard.writeText(text)
+            setCopied(true)
+          })
+      }}
+    >
+      {copied ? (
+        <CheckIcon className="mr-1.5 size-3" />
+      ) : (
+        <CopyIcon className="mr-1.5 size-3" />
+      )}
+      {copied ? "Copied" : "Copy"}
+    </Button>
   )
 }

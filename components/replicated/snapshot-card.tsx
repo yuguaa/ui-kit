@@ -5,7 +5,7 @@ import Link from "next/link"
 
 import { cn } from "cn"
 import { Spinner } from "@/components/ui/spinner"
-import { SnapshotViewCode } from "@/components/replicated/snapshot-code-sheet"
+import { SnapshotViewCode, SnapshotCopyCode } from "@/components/replicated/snapshot-code-sheet"
 
 export interface SnapshotCardProps {
   href: string
@@ -98,6 +98,7 @@ export function SnapshotCard({
           ) : null}
         </div>
         <div className="flex shrink-0 items-center gap-1.5">
+          <SnapshotCopyCode src={codeSrc} />
           <SnapshotViewCode src={codeSrc} title={`${title}.html`} />
         </div>
       </div>

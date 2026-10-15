@@ -13,6 +13,7 @@ import {
 import { PreviewBar } from "@/components/replicated/preview-bar"
 import { SnapshotCard } from "@/components/replicated/snapshot-card"
 import { SnapshotPager, type PagerEntry } from "@/components/replicated/snapshot-pager"
+import { SnapshotList } from "@/components/replicated/snapshot-list"
 import { SnapshotSidebar, type SidebarNavGroup } from "@/components/replicated/snapshot-sidebar"
 
 type PageProps = {
@@ -138,19 +139,20 @@ async function TemplatePage({ slug, root }: { slug: string; root: string }) {
         </section>
 
         <div className="w-full px-6 pt-2 pb-4 sm:px-8 xl:px-10">
-          <div className="grid grid-cols-1 items-stretch gap-6">
-            {pages.map((page) => (
-              <SnapshotCard
-                key={page}
-                href={`/replicated/templates/${slug}/${page}`}
-                src={`/api/replicated-template/${slug}/${page}`}
-                codeSrc={`/api/replicated-source/template/${slug}/${page}`}
-                title={page}
-                description={slug}
-                height={420}
-              />
-            ))}
-          </div>
+          <SnapshotList
+            items={pages.map((page) => ({
+              id: page,
+              href: `/replicated/templates/${slug}/${page}`,
+              src: `/api/replicated-template/${slug}/${page}`,
+              codeSrc: `/api/replicated-source/template/${slug}/${page}`,
+              title: page,
+              description: slug,
+            }))}
+            height={420}
+            columns={1}
+            searchPlaceholder="搜索页面..."
+            emptyLabel="没有匹配的页面"
+          />
         </div>
 
         <SnapshotPager
