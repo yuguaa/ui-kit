@@ -10,15 +10,12 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
-import { PreviewBar } from "@/components/replicated/preview-bar"
-import { SnapshotCard } from "@/components/replicated/snapshot-card"
-import { SnapshotPager, type PagerEntry } from "@/components/replicated/snapshot-pager"
 import { SnapshotList } from "@/components/replicated/snapshot-list"
+import { SnapshotPager, type PagerEntry } from "@/components/replicated/snapshot-pager"
 import { SnapshotSidebar, type SidebarNavGroup } from "@/components/replicated/snapshot-sidebar"
 
 type PageProps = {
   params: Promise<{ slug: string[] }>
-  searchParams: Promise<{ embed?: string }>
 }
 
 const BLOCKS_ROOT = path.join(process.cwd(), "replicated/blocks")
@@ -63,19 +60,17 @@ async function scanCategories() {
 
 /**
  * 区块路由
- * 两段路径（分组/分类）渲染分类页，三段路径（分组/分类/名称）渲染单个快照
+ * 两段路径（分组/分类）渲染分类页，三段路径只作为卡片预览的渲染源
  */
-export default async function ReplicatedBlockRoute({ params, searchParams }: PageProps) {
+export default async function ReplicatedBlockRoute({ params }: PageProps) {
   const parts = (await params).slug
-  const embed = (await searchParams).embed === "1"
 
   if (parts.length === 2) {
     return <CategoryPage group={parts[0]} category={parts[1]} />
   }
 
   const [group, category, slug] = parts
-  const dir = path.join(BLOCKS_ROOT, group ?? "", category ?? "")
-  const file = path.join(dir, `${slug ?? ""}.html`)
+  const file = path.join(BLOCKS_ROOT, group ?? "", category ?? "", `${slug ?? ""}.html`)
 
   let html = ""
   try {
@@ -84,37 +79,16 @@ export default async function ReplicatedBlockRoute({ params, searchParams }: Pag
     return <p className="p-8">未找到内容：{parts.join("/")}</p>
   }
 
-  if (embed) {
-    return (
-      <>
-        {/* 卡片预览：去掉站点外壳，只保留快照本身 */}
-        <style>{`[data-slot="site-chrome"],[data-slot="site-footer"]{display:none!important}`}</style>
-        <div className="bg-background" dangerouslySetInnerHTML={{ __html: html }} />
-      </>
-    )
-  }
-
-  const siblings = (await readdir(dir))
-    .filter((f) => f.endsWith(".html"))
-    .map((f) => f.replace(/\.html$/, ""))
-    .sort((a, b) => a.localeCompare(b, "en", { numeric: true }))
-
   return (
     <>
-      <PreviewBar
-        label={`${group} / ${category} / ${slug}`}
-        siblings={siblings}
-        hrefFor={(name) => `/replicated/blocks/${group}/${category}/${name}`}
-      />
-      <div
-        className="bg-background text-foreground w-full antialiased"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+      {/* 卡片预览：去掉站点外壳，只保留快照本身 */}
+      <style>{`[data-slot="site-chrome"],[data-slot="site-footer"]{display:none!important}`}</style>
+      <div className="bg-background" dangerouslySetInnerHTML={{ __html: html }} />
     </>
   )
 }
 
-/** 分类页：左侧分类导航 + 该分类下的全宽卡片列表 */
+/** 分类页：左侧分类导航 + 该分类下的卡片列表 */
 async function CategoryPage({ group, category }: { group: string; category: string }) {
   const { groups, counts, all } = await scanCategories()
   const names = await loadBlockNames()
@@ -172,7 +146,7 @@ async function CategoryPage({ group, category }: { group: string; category: stri
           <SnapshotList
             items={slugs.map((slug) => ({
               id: slug,
-              src: `/replicated/blocks/${group}/${category}/${slug}?embed=1`,
+              src: `/replicated/blocks/${group}/${category}/${slug}`,
               codeSrc: `/api/replicated-source/block/${group}/${category}/${slug}`,
               registryName: `@neui/${slug}`,
               title: names.get(slug) ?? slug,

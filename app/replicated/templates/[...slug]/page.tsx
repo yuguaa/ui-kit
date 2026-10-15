@@ -1,4 +1,4 @@
-import { access, readdir, readFile } from "node:fs/promises"
+import { readdir, readFile } from "node:fs/promises"
 import path from "node:path"
 import Link from "next/link"
 
@@ -10,8 +10,6 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
-import { PreviewBar } from "@/components/replicated/preview-bar"
-import { SnapshotCard } from "@/components/replicated/snapshot-card"
 import { SnapshotPager, type PagerEntry } from "@/components/replicated/snapshot-pager"
 import { SnapshotList } from "@/components/replicated/snapshot-list"
 import { SnapshotSidebar, type SidebarNavGroup } from "@/components/replicated/snapshot-sidebar"
@@ -63,31 +61,19 @@ export default async function ReplicatedTemplateRoute({ params }: PageProps) {
   }
 
   const [slug, page] = parts
-  const dir = path.join(root, slug ?? "")
+  const file = path.join(root, slug ?? "", `${page ?? ""}.html`)
 
+  let html = ""
   try {
-    await access(path.join(dir, `${page}.html`))
+    html = await readFile(file, "utf8")
   } catch {
     return <p className="p-8">未找到内容：{parts.join("/")}</p>
   }
 
-  const siblings = (await readdir(dir))
-    .filter((f) => f.endsWith(".html"))
-    .map((f) => f.replace(/\.html$/, ""))
-    .sort()
-
   return (
     <>
-      <PreviewBar
-        label={`${slug} / ${page}`}
-        siblings={siblings}
-        hrefFor={(name) => `/replicated/templates/${slug}/${name}`}
-      />
-      <iframe
-        src={`/api/replicated-template/${slug}/${page}`}
-        title={`${slug}/${page}`}
-        className="h-[calc(100svh-var(--header-height))] w-full border-0"
-      />
+      <style>{`[data-slot="site-chrome"],[data-slot="site-footer"]{display:none!important}`}</style>
+      <div className="bg-background" dangerouslySetInnerHTML={{ __html: html }} />
     </>
   )
 }
