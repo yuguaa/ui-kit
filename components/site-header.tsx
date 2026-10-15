@@ -8,11 +8,9 @@ import { navFlatItems } from "@/lib/nav-config"
 import { Separator } from "@/components/ui/separator"
 import { CommandMenuLazy } from "@/components/command-menu-lazy"
 import { DesktopNav } from "@/components/desktop-nav"
-import { FigmaLink } from "@/components/figma-link"
 import { Logo } from "@/components/logo"
 import { MobileNav } from "@/components/mobile-nav"
 import { ThemeModeToggleButton } from "@/components/theme-mode-toggle-button"
-import { XLink } from "@/components/x-link"
 
 export async function SiteHeader() {
   const componentCategories = getComponentCategories()
@@ -67,18 +65,16 @@ export async function SiteHeader() {
           />
 
           {/*
-            RIGHT rail: secondary nav cluster - search + theme/X/Figma toolbar.
+            RIGHT rail: secondary nav cluster - search + theme toolbar.
 
             `min-w-0` lets the rail shrink-wrap so the toolbar absorbs
             slack instead of forcing overflow.
           */}
           <div className="flex min-w-0 items-center justify-end gap-1.5 xl:gap-3">
             {/*
-              Utility toolbar (left -> right): search, theme, X, Figma,
-              Figma. All ghost icon buttons on a shared `h-8` baseline so
-              they read as one quiet group next to the louder primary CTA.
-              The Figma link sources its URL + glyph from `@/lib/nav-config`
-              (same single source as the "Free Figma" dropdown item).
+              Utility toolbar (left -> right): search, theme. All ghost icon
+              buttons on a shared `h-8` baseline so they read as one quiet
+              group next to the louder primary CTA.
             */}
             <div className="hidden items-center gap-0.5 md:flex">
               <CommandMenuLazy
@@ -88,8 +84,6 @@ export async function SiteHeader() {
               {/* Divider between search and the theme/social icon cluster. */}
               <Separator orientation="vertical" className="mx-1" />
               <ThemeModeToggleButton variant="ghost" className="size-8" />
-              <XLink />
-              <FigmaLink />
             </div>
           </div>
         </div>

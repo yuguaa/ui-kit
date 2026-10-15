@@ -1,35 +1,12 @@
 import * as React from "react"
-import { FigmaIcon as FigmaIconData } from "@hugeicons/core-free-icons"
-import { HugeiconsIcon } from "@hugeicons/react"
 import type { VariantProps } from "class-variance-authority"
 
 import type { badgeVariants } from "@/components/ui/badge"
 
 type BadgeVariant = NonNullable<VariantProps<typeof badgeVariants>["variant"]>
 
-/**
- * Any icon component that accepts `className` + standard SVG props. Covers
- * lucide icons and the `FigmaIcon` wrapper below.
- */
+/** Any icon component that accepts `className` + standard SVG props. */
 export type NavIcon = React.ComponentType<React.SVGProps<SVGSVGElement>>
-
-/**
- * Figma brand glyph from hugeicons (lucide dropped its brand icons). Wrapped
- * as a plain SVG-props component so it slots into `NavIcon` everywhere a
- * lucide icon does (dropdown rows, the header toolbar link, the footer). It
- * uses `currentColor` strokes, so it inherits color from its container.
- */
-export function FigmaIcon(props: React.SVGProps<SVGSVGElement>) {
-  // `strokeWidth` is omitted from the spread: SVG props type it as
-  // `string | number` while hugeicons narrows it to `number`, which would
-  // clash. Call sites only pass `className` / `aria-hidden`.
-  return (
-    <HugeiconsIcon
-      icon={FigmaIconData}
-      {...(props as Omit<React.SVGProps<SVGSVGElement>, "strokeWidth">)}
-    />
-  )
-}
 
 /**
  * Preset badge labels for the dropdown inner items. The Title-case key
@@ -127,10 +104,6 @@ export type NavEntry =
       footer?: NavPanelFooter
     }
 
-/** Single place to override the external Figma destination. */
-export const FIGMA_URL =
-  "https://www.figma.com/community/file/1649373313065184861/shadcn-ui-design-system-by-neui"
-
 /**
  * The menu, top to bottom. This is the single source of truth: the desktop
  * dropdown nav, the mobile drawer, and (via `navFlatItems`) the command
@@ -166,8 +139,8 @@ export function filterNavEntriesByStats(
 
 /**
  * Flat list for the command palette and mobile drawer search. Derived so the
- * config stays the single source of truth. External links (the Figma URL) are
- * skipped because those surfaces only `router.push` internal routes.
+ * config stays the single source of truth. External links are skipped because
+ * those surfaces only `router.push` internal routes.
  */
 export function toFlatNavItems(
   entries: NavEntry[] = navEntries
