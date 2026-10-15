@@ -14,13 +14,13 @@ base: radix
 ## Installation
 
 ```bash component
-npx shadcn@latest add @reui/file-type
+npx shadcn@latest add @neui/file-type
 ```
 
 ## Usage
 
 ```tsx
-import { FileType, getFileType } from "@/components/reui/file-type"
+import { FileType, getFileType } from "@/components/neui/file-type"
 ```
 
 ```tsx
@@ -391,7 +391,7 @@ MP3, WAV, M4A, FLAC and AIFF; and plain text, Markdown, Python, C, CSV, TSV,
 HTML and CSS.
 
 ```tsx
-import { FileType, getFileType } from "@/components/reui/file-type"
+import { FileType, getFileType } from "@/components/neui/file-type"
 
 function AttachmentRow({ file }: { file: File }) {
   return (
@@ -454,7 +454,7 @@ replaces any of them.
 | `--file-type-foreground` | `white`, the page color in `mono`                                       | Label text, and the glyph in `solid`.                            |
 | `--file-type-radius`     | Unset, which means the style's label radius                             | Label band corners.                                              |
 
-The label band's corners follow the installed style in the ReUI Badge's
+The label band's corners follow the installed style in the NeUI Badge's
 proportions: `10cqw` (4px at 40px) in Vega, Nova and Mira, a pill in Maia,
 Luma and Rhea, and square in Lyra and Sera. `--file-type-radius` sets them for
 every style. In Lyra and Sera the page, its folded corner and the solid flap are

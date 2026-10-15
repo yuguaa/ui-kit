@@ -2,12 +2,12 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-message-scroller-1": () => import("@/registry-reui/bases/base/components/message-scroller/c-message-scroller-1.tsx"),
-  "c-message-scroller-2": () => import("@/registry-reui/bases/base/components/message-scroller/c-message-scroller-2.tsx"),
-  "c-message-scroller-3": () => import("@/registry-reui/bases/base/components/message-scroller/c-message-scroller-3.tsx"),
-  "c-message-scroller-4": () => import("@/registry-reui/bases/base/components/message-scroller/c-message-scroller-4.tsx"),
-  "c-message-scroller-5": () => import("@/registry-reui/bases/base/components/message-scroller/c-message-scroller-5.tsx"),
-  "c-message-scroller-6": () => import("@/registry-reui/bases/base/components/message-scroller/c-message-scroller-6.tsx"),
+  "c-message-scroller-1": () => import("@/registry-neui/bases/base/components/message-scroller/c-message-scroller-1.tsx"),
+  "c-message-scroller-2": () => import("@/registry-neui/bases/base/components/message-scroller/c-message-scroller-2.tsx"),
+  "c-message-scroller-3": () => import("@/registry-neui/bases/base/components/message-scroller/c-message-scroller-3.tsx"),
+  "c-message-scroller-4": () => import("@/registry-neui/bases/base/components/message-scroller/c-message-scroller-4.tsx"),
+  "c-message-scroller-5": () => import("@/registry-neui/bases/base/components/message-scroller/c-message-scroller-5.tsx"),
+  "c-message-scroller-6": () => import("@/registry-neui/bases/base/components/message-scroller/c-message-scroller-6.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

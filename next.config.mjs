@@ -49,7 +49,7 @@ const optimizePackageImports = [
 // Trace only the component registry metadata + generated component source that
 // runtime code actually reads (listing, search, docs source rendering).
 const componentMetadataTracingGlobs = [
-  "./registry-reui/_meta/components/**/*.json",
+  "./registry-neui/_meta/components/**/*.json",
 ]
 const docsTracingGlobs = [
   "./content/docs/**/*",

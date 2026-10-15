@@ -86,7 +86,7 @@ export function DocsSidebar({
                     {getPagesFromFolder(item, currentBase)
                       .filter(
                         (page) =>
-                          !page.url.startsWith("https://v1.reui.io") &&
+                          !page.url.startsWith("https://v1.neui.io") &&
                           page.url !== "/llms.txt"
                       )
                       .map((page) => {

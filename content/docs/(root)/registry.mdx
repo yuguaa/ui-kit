@@ -1,32 +1,32 @@
 ---
 title: Registry
-description: Learn how to use the ReUI Registry with shadcn/ui.
+description: Learn how to use the NeUI Registry with shadcn/ui.
 ---
 
-The ReUI Registry uses a single `@reui` namespace. The shadcn CLI resolves the full alias suffix into the registry URL, so you can install everything from one namespace.
+The NeUI Registry uses a single `@neui` namespace. The shadcn CLI resolves the full alias suffix into the registry URL, so you can install everything from one namespace.
 
-<Callout title="@reui is a registry namespace, not an npm scope" variant="warning">
-  There is no ReUI npm package to install. Running `npm i @reui/button` pulls
-  an unrelated publisher's package from npm's own `@reui` scope, which is not
-  ours. ReUI items are installed only with the shadcn CLI, which resolves
-  `@reui/<name>` against the registry URL in your `components.json`.
+<Callout title="@neui is a registry namespace, not an npm scope" variant="warning">
+  There is no NeUI npm package to install. Running `npm i @neui/button` pulls
+  an unrelated publisher's package from npm's own `@neui` scope, which is not
+  ours. NeUI items are installed only with the shadcn CLI, which resolves
+  `@neui/<name>` against the registry URL in your `components.json`.
 </Callout>
 
-## Setup ReUI Registry
+## Setup NeUI Registry
 
-Add the ReUI registry namespace to your `components.json`. Learn more about registry config from [shadcn registry docs](https://ui.shadcn.com/docs/registry).
+Add the NeUI registry namespace to your `components.json`. Learn more about registry config from [shadcn registry docs](https://ui.shadcn.com/docs/registry).
 
 ```json
 {
   "registries": {
-    "@reui": "https://reui.io/r/{style}/{name}.json"
+    "@neui": "https://neui.io/r/{style}/{name}.json"
   }
 }
 ```
 
 ### Style Values
 
-`{style}` is not free-form. The shadcn CLI substitutes it with the `style` value from your `components.json`, which ReUI reads as `<base>-<variant>`: the base picks the primitive library the code is built on, the variant picks the visual style. Every pairing of the two lists below is served, so `base-nova` (the default), `radix-lyra` and `base-sera` are all valid. A `{style}` outside these lists is not served and the install fails as not found.
+`{style}` is not free-form. The shadcn CLI substitutes it with the `style` value from your `components.json`, which NeUI reads as `<base>-<variant>`: the base picks the primitive library the code is built on, the variant picks the visual style. Every pairing of the two lists below is served, so `base-nova` (the default), `radix-lyra` and `base-sera` are all valid. A `{style}` outside these lists is not served and the install fails as not found.
 
 | `<base>` | Primitive library                    |
 | :------- | :----------------------------------- |
@@ -46,7 +46,7 @@ Add the ReUI registry namespace to your `components.json`. Learn more about regi
 
 ### Class Merging
 
-ReUI items that merge classes use [`cn`](https://www.npmjs.com/package/cn), a compiled drop-in for `clsx` plus `tailwind-merge`, imported as a package:
+NeUI items that merge classes use [`cn`](https://www.npmjs.com/package/cn), a compiled drop-in for `clsx` plus `tailwind-merge`, imported as a package:
 
 ```tsx
 import { cn } from "cn"
@@ -56,7 +56,7 @@ The CLI installs it for you: any item that imports it lists `cn` in its `depende
 
 This follows shadcn, which moved every component onto the package in its [September 2026 `cn` release](https://ui.shadcn.com/docs/changelog/2026-09-cn): one dependency instead of two, and no local helper to maintain.
 
-Earlier ReUI releases imported `cn` from your own `@/lib/utils`. Items already in your project keep working, and your `@/lib/utils` is untouched.
+Earlier NeUI releases imported `cn` from your own `@/lib/utils`. Items already in your project keep working, and your `@/lib/utils` is untouched.
 
 To drop `clsx` and `tailwind-merge` from your own project, run the upstream migration:
 
@@ -64,17 +64,17 @@ To drop `clsx` and `tailwind-merge` from your own project, run the upstream migr
 pnpm dlx shadcn@latest migrate cn
 ```
 
-If you had customized `cn` in `@/lib/utils`, rebuild it with `createCn` from `cn/config`. Newly installed ReUI items import the package directly, so they no longer route through that file.
+If you had customized `cn` in `@/lib/utils`, rebuild it with `createCn` from `cn/config`. Newly installed NeUI items import the package directly, so they no longer route through that file.
 
 ## Installing Components
 
 Component examples use the `c-*` naming pattern and install with no license key or account:
 
 ```bash
-npx shadcn@latest add @reui/c-alert-1
+npx shadcn@latest add @neui/c-alert-1
 ```
 
-Some `c-*` items pull shared `@reui/*` primitives such as `@reui/alert` or `@reui/data-grid` as registry dependencies. Those supporting files are resolved automatically, so installs keep working out of the box.
+Some `c-*` items pull shared `@neui/*` primitives such as `@neui/alert` or `@neui/data-grid` as registry dependencies. Those supporting files are resolved automatically, so installs keep working out of the box.
 
 ## Styles
 

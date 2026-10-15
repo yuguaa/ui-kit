@@ -54,7 +54,7 @@ export const ComponentCard = React.memo(function ComponentCard({
             {process.env.NODE_ENV === "development" && (
               <ComponentName name={component.name} />
             )}
-            <CopyRegistry value={`@reui/${component.name}`} />
+            <CopyRegistry value={`@neui/${component.name}`} />
             <Sheet open={isSourceOpen} onOpenChange={setIsSourceOpen}>
               <SheetTrigger asChild>
                 <Button className="h-7 text-xs" size="sm" variant="outline">

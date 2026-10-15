@@ -38,7 +38,7 @@ import { BLOCK_PREVIEW_DESIGN_PARAM_KEYS } from "@/lib/block-preview-url"
  * that branch's container is `fixed inset-y-0 h-svh`, which escapes the card
  * and paints down the left edge of the page. Framed, the example's viewport is
  * its own box and the branch it takes matches the space it has. Neither has a
- * docs page (content/docs/(components) documents ReUI primitives only), so
+ * docs page (content/docs/(components) documents NeUI primitives only), so
  * both are catalog-only.
  *
  * KILL SWITCH: empty both arrays. Every surface falls back to the inline

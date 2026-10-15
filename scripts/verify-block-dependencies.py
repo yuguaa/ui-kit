@@ -20,29 +20,29 @@ catalog = json.loads(Path("components/components-catalog.json").read_text())
 local_names = {e["name"] for e in catalog["bases"]["base"]}
 local_radix = {e["name"] for e in catalog["bases"]["radix"]}
 
-# 复杂组件实现与 hooks 位于 registry-reui/bases/{base}/reui/ 与 hooks/ 目录
+# 复杂组件实现与 hooks 位于 registry-neui/bases/{base}/neui/ 与 hooks/ 目录
 for base, target in [("base", local_names), ("radix", local_radix)]:
-    reui_dir = Path(f"registry-reui/bases/{base}/reui")
-    for p in reui_dir.glob("*.tsx"):
+    neui_dir = Path(f"registry-neui/bases/{base}/neui")
+    for p in neui_dir.glob("*.tsx"):
         target.add(p.stem)
-    for d in reui_dir.iterdir():
+    for d in neui_dir.iterdir():
         if d.is_dir():
             target.add(d.name)
-    for p in Path(f"registry-reui/bases/{base}/hooks").glob("*.ts"):
+    for p in Path(f"registry-neui/bases/{base}/hooks").glob("*.ts"):
         if p.stem != "_registry":
             target.add(p.stem)
 
-# 本地组件名映射：registry 依赖使用 "@reui/xxx" 前缀与裸名
+# 本地组件名映射：registry 依赖使用 "@neui/xxx" 前缀与裸名
 def resolves(name: str) -> tuple:
-    if name.startswith("@reui/"):
-        bare = name[len("@reui/"):]
+    if name.startswith("@neui/"):
+        bare = name[len("@neui/"):]
     else:
         bare = name
     return bare in local_names, bare in local_radix
 
 missing_total = 0
 for sample in SAMPLES:
-    url = f"https://reui.io/blocks/{sample}"
+    url = f"https://neui.io/blocks/{sample}"
     html = subprocess.run(
         ["curl", "-s", url], capture_output=True, text=True, timeout=60
     ).stdout

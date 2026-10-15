@@ -67,14 +67,14 @@ export function MobileNav({
         <DrawerHeader className="sr-only">
           <DrawerTitle>Navigation Menu</DrawerTitle>
           <DrawerDescription>
-            Access the main sections of ReUI.
+            Access the main sections of NeUI.
           </DrawerDescription>
         </DrawerHeader>
         <div className="flex flex-col gap-8 overflow-auto px-6 py-6">
           <div className="mb-2">
             <Link
               href="/"
-              aria-label="ReUI home"
+              aria-label="NeUI home"
               onClick={() => setOpen(false)}
             >
               <Logo width={85} />

@@ -5,7 +5,7 @@ import { cn } from "cn"
 import { Button } from "@/components/ui/button"
 import { Heading } from "@/components/custom/heading"
 import { PageGridBackdrop } from "@/components/page-grid-backdrop"
-import { Frame, FramePanel } from "@/components/reui/frame"
+import { Frame, FramePanel } from "@/components/neui/frame"
 
 interface CompareCard {
   variant: "without" | "with"
@@ -18,7 +18,7 @@ interface CompareCard {
 
 const WITHOUT: CompareCard = {
   variant: "without",
-  badge: "Without ReUI",
+  badge: "Without NeUI",
   tagline: "AI generated slop, endlessly revised",
   title: "Sloppy, brittle, generic.",
   stat: { value: "70+ hrs", context: "lost to prompts, reviews, and fixes" },
@@ -35,7 +35,7 @@ const WITHOUT: CompareCard = {
 export function ProofBlock() {
   const WITH: CompareCard = {
     variant: "with",
-    badge: "With ReUI",
+    badge: "With NeUI",
     tagline: "Handcrafted by senior design engineers",
     title: "Production grade, every aspect.",
     stat: { value: "MIT", context: "open-source, source yours forever" },
@@ -67,11 +67,11 @@ export function ProofBlock() {
         <div className="container">
           <Heading
             badge="Crafted, not generated"
-            title="ReUI or the Grind"
-            description="Skip the AI grind. ReUI is crafted by senior design engineers and proven in real production apps."
+            title="NeUI or the Grind"
+            description="Skip the AI grind. NeUI is crafted by senior design engineers and proven in real production apps."
           />
 
-          {/* Two separate ReUI frames with the VS marker spaced between them. */}
+          {/* Two separate NeUI frames with the VS marker spaced between them. */}
           <div className="mx-auto grid max-w-5xl grid-cols-1 items-stretch gap-6 lg:grid-cols-[1fr_auto_1fr] lg:gap-x-10">
             <CompareCard card={withoutCard} />
 

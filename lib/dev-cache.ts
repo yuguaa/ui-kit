@@ -14,14 +14,14 @@
  */
 
 const g = globalThis as unknown as {
-  __reui_dev_cache?: Map<string, unknown>
+  __neui_dev_cache?: Map<string, unknown>
 }
 
 function getStore(): Map<string, unknown> {
-  if (!g.__reui_dev_cache) {
-    g.__reui_dev_cache = new Map()
+  if (!g.__neui_dev_cache) {
+    g.__neui_dev_cache = new Map()
   }
-  return g.__reui_dev_cache
+  return g.__neui_dev_cache
 }
 
 /**

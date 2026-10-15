@@ -1,7 +1,7 @@
-# Contributing to ReUI
+# Contributing to NeUI
 
-Thanks for your interest in improving ReUI! This repository hosts the public,
-open-source ReUI site and the free component catalog.
+Thanks for your interest in improving NeUI! This repository hosts the public,
+open-source NeUI site and the free component catalog.
 
 ## Getting started
 
@@ -16,13 +16,13 @@ are no external services or private packages to fetch.
 
 ## How the registry is built
 
-The free ReUI surface is a shadcn-compatible registry generated entirely from
+The free NeUI surface is a shadcn-compatible registry generated entirely from
 sources in this repo by four scripts in [`scripts/`](./scripts):
 
 | Source you edit | Script | Generates |
 | --- | --- | --- |
-| `registry/bases/<base>/{ui,hooks,lib}`, `registry-reui/bases/<base>/reui` — **reui primitives** | `build-registry.mts` | `public/r/styles/**` (style-aware) |
-| `registry-reui/bases/<base>/components/<category>/c-*.tsx` + `meta.json` — **examples** | `build-components.mts` → `build-component-packages.mts` | `registry-reui/_meta/**`, `lib/generated/component-preview-loaders/**`, `packages/registry/**`, `public/r/styles/**` |
+| `registry/bases/<base>/{ui,hooks,lib}`, `registry-neui/bases/<base>/neui` — **neui primitives** | `build-registry.mts` | `public/r/styles/**` (style-aware) |
+| `registry-neui/bases/<base>/components/<category>/c-*.tsx` + `meta.json` — **examples** | `build-components.mts` → `build-component-packages.mts` | `registry-neui/_meta/**`, `lib/generated/component-preview-loaders/**`, `packages/registry/**`, `public/r/styles/**` |
 
 `base` and `radix` are the two design bases; styles come from
 `registry/styles.tsx`. Scripts only ever read/write paths inside this repo.
@@ -33,15 +33,15 @@ Useful commands:
   by Next directly, so changes show up instantly (no rebuild step).
 - `pnpm dev:packages` — dev with the workspace component packages rebuilt on
   change via esbuild (`--watch`), matching the production bundling path.
-- `pnpm lint:ds` — design-system lint over `registry-reui/` with
+- `pnpm lint:ds` — design-system lint over `registry-neui/` with
   [`@shadcn/lint`](https://www.npmjs.com/package/@shadcn/lint): catches classes
   Tailwind cannot generate, dynamically built `className`s, and consumer
   restyling of a primitive. `pnpm lint:ds:errors` shows errors only. The rule
-  vocabulary lives in `reui-lint.shared.mjs`; this repo's scope and local
-  exceptions live in `reui-lint.config.mjs`.
+  vocabulary lives in `neui-lint.shared.mjs`; this repo's scope and local
+  exceptions live in `neui-lint.config.mjs`.
 - `pnpm registry:build` — regenerate `public/r/styles/**`.
 - `pnpm registry:all` — full regenerate + `registry:verify` production gate.
-- `pnpm components:packages` — (re)build the `@reui/components-*` workspace
+- `pnpm components:packages` — (re)build the `@neui/components-*` workspace
   packages the live previews import (`dist/` is git-ignored and rebuilt).
 - `pnpm build` — production build. `prebuild` runs `registry:prod`
   (`components:build` → `components:packages` → `registry:build`) first, so a
@@ -49,25 +49,25 @@ Useful commands:
 
 ### Adding a new example or component category
 
-Add your `c-*.tsx` under `registry-reui/bases/<base>/components/<category>/`
+Add your `c-*.tsx` under `registry-neui/bases/<base>/components/<category>/`
 (and a `meta.json` entry), then run `pnpm registry:all`. If you introduce a
 brand-new category, also run `pnpm install` once so pnpm links the new
-`@reui/components-<base>-<category>` workspace package.
+`@neui/components-<base>-<category>` workspace package.
 
 ## Before you open a pull request
 
 - Run `pnpm lint` and `pnpm typecheck`.
-- If you touched `registry-reui/`, run `pnpm lint:ds` and do not add new errors.
+- If you touched `registry-neui/`, run `pnpm lint:ds` and do not add new errors.
 - Run `pnpm build` to confirm the production build passes.
 - If you changed the registry, run `pnpm registry:all` and commit the
-  regenerated `public/r/styles/**` and `registry-reui/_meta/**`.
+  regenerated `public/r/styles/**` and `registry-neui/_meta/**`.
 - Keep changes focused and describe the motivation in your PR.
 
 ## Reporting issues
 
-Open an issue on [GitHub](https://github.com/keenthemes/reui/issues) with clear
+Open an issue on [GitHub](https://github.com/keenthemes/neui/issues) with clear
 reproduction steps. For questions, reach us at
-[@reui_io](https://x.com/reui_io) or [hello@reui.io](mailto:hello@reui.io).
+[@neui_io](https://x.com/neui_io) or [hello@neui.io](mailto:hello@neui.io).
 
 ## License
 

@@ -176,7 +176,7 @@ function readPreviewParamsFromLocation(): PreviewDesignSystemParams {
  *
  * Two hooks, because there are two producers. The shadcn parts under
  * `registry/bases/{base,radix}/ui` mark themselves with the `cn-menu-target`
- * class from the theme sheets. The ReUI primitives under `registry-reui` carry
+ * class from the theme sheets. The NeUI primitives under `registry-neui` carry
  * no `cn-*` class at all - their look is plain Tailwind, so an installed copy
  * needs no theme CSS - and mark themselves with `data-menu-target` instead. An
  * attribute is the more reliable hook of the two: it survives a `cn()` merge

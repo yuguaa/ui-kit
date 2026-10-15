@@ -14,7 +14,7 @@
       "runs": 3,
       "url": "http://localhost:4173/ag-grid.html?rows=100000"
     },
-    "tanstack (ReUI Data Grid engine)": {
+    "tanstack (NeUI Data Grid engine)": {
       "firstPaint": 288,
       "ready": 291,
       "scrollP50": 8.3,
@@ -25,7 +25,7 @@
       "runs": 3,
       "url": "http://localhost:4173/tanstack.html?rows=100000"
     },
-    "reui (live block)": {
+    "neui (live block)": {
       "firstPaint": 1340,
       "ready": 2170,
       "scrollP50": 8.3,
@@ -34,7 +34,7 @@
       "filterMs": 32.6,
       "jsBytes": 959176,
       "runs": 3,
-      "url": "https://reui.io/preview/base/data-grid-virtualization-1?embed=1"
+      "url": "https://neui.io/preview/base/data-grid-virtualization-1?embed=1"
     }
   }
 }

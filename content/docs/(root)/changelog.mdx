@@ -106,8 +106,8 @@ Two new in-house primitives, Signature Pad and Time Picker, with 25 examples per
 - `DataGrid`: column drag and drop leaves pinned columns alone - a pinned column renders without a grip and is neither a drag source nor a drop target, and keeps its sticky position while the rest of the row is dragged - [Docs](/docs/components/base/data-grid#datagridtablednd).
 - `DataGrid`: `Move Left` and `Move Right` in the column header menu step over the columns the grid actually renders in that column's pin group, so they no longer swap with a hidden column and do nothing - [Preview](/components/data-grid).
 - `DataGrid`: the column visibility checkboxes only title-case a column whose label is its raw `id`, so a column with an authored header label keeps its own casing, and the empty message is centred on the visible part of a grid wider than its scroll area - [Preview](/components/data-grid).
-- The Data Grid docs import from `@/components/reui/data-grid/data-grid` and its siblings instead of the bare directory, which the installer never creates, and they now note that an RTL grid also needs `columnResizeDirection: "rtl"` on `useTable` - [Docs](/docs/components/base/data-grid).
-- The Radix docs for Badge, Date Selector, Sortable, Timeline and Tree told you to install `@reui/r-badge` and import from `@/components/reui/r-badge`, an `r-` prefixed item the registry has never published; both bases ship the same `@reui/<name>` - [Docs](/docs/components/radix/badge).
+- The Data Grid docs import from `@/components/neui/data-grid/data-grid` and its siblings instead of the bare directory, which the installer never creates, and they now note that an RTL grid also needs `columnResizeDirection: "rtl"` on `useTable` - [Docs](/docs/components/base/data-grid).
+- The Radix docs for Badge, Date Selector, Sortable, Timeline and Tree told you to install `@neui/r-badge` and import from `@/components/neui/r-badge`, an `r-` prefixed item the registry has never published; both bases ship the same `@neui/<name>` - [Docs](/docs/components/radix/badge).
 - The integration notes on 12 component pages carried 15 links to pages that do not exist, such as `/components/form` and `/components/data-table`; each is now plain text or points at the real page - [Preview](/components).
 - Sidebar cards in the catalog laid their example out at a minimum of 800px and painted it scaled to fit, so on a phone the shell landed at roughly 0.4 scale; below 48rem the card now drops that minimum and lets the example take its own mobile branch - [Preview](/components/sidebar).
 - With an opaque menu color, the Base UI dropdown menu, menubar, context menu, select and combobox previews painted one fully opaque frame before their open animation restarted from zero; that frame is now held invisible - [Preview](/components/dropdown-menu).
@@ -133,11 +133,11 @@ Two new in-house primitives, Signature Pad and Time Picker, with 25 examples per
 
 ## v2.5.5 - 16 September, 2026.
 
-ReUI follows shadcn onto the `cn` package, and the Event Calendar and Data Grid each get back an interaction that was unreachable before.
+NeUI follows shadcn onto the `cn` package, and the Event Calendar and Data Grid each get back an interaction that was unreachable before.
 
 **Breaking changes:**
 
-- ReUI items that merge classes now import `cn` from the [`cn` package](https://www.npmjs.com/package/cn) instead of your `@/lib/utils`, following shadcn upstream - [Docs](/docs/registry#class-merging).
+- NeUI items that merge classes now import `cn` from the [`cn` package](https://www.npmjs.com/package/cn) instead of your `@/lib/utils`, following shadcn upstream - [Docs](/docs/registry#class-merging).
 - Any item that imports it lists `cn` in its `dependencies`, so `shadcn add` installs the package on the first such install - [Docs](/docs/registry#class-merging).
 - Items already installed keep working and your `@/lib/utils` is untouched - [Docs](/docs/registry#class-merging).
 - To drop `clsx` and `tailwind-merge` from your own project, run `pnpm dlx shadcn@latest migrate cn` - [Changelog](https://ui.shadcn.com/docs/changelog/2026-09-cn).
@@ -363,4 +363,4 @@ ReUI follows shadcn onto the `cn` package, and the Event Calendar and Data Grid 
 
 ## v1 - Legacy
 
-- Full ReUI v1 changelog - [Preview](https://v1.reui.io/docs/changelog).
+- Full NeUI v1 changelog - [Preview](https://v1.neui.io/docs/changelog).

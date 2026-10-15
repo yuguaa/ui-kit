@@ -2,11 +2,11 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-sidebar-1": () => import("@/registry-reui/bases/base/components/sidebar/c-sidebar-1.tsx"),
-  "c-sidebar-2": () => import("@/registry-reui/bases/base/components/sidebar/c-sidebar-2.tsx"),
-  "c-sidebar-3": () => import("@/registry-reui/bases/base/components/sidebar/c-sidebar-3.tsx"),
-  "c-sidebar-4": () => import("@/registry-reui/bases/base/components/sidebar/c-sidebar-4.tsx"),
-  "c-sidebar-5": () => import("@/registry-reui/bases/base/components/sidebar/c-sidebar-5.tsx"),
+  "c-sidebar-1": () => import("@/registry-neui/bases/base/components/sidebar/c-sidebar-1.tsx"),
+  "c-sidebar-2": () => import("@/registry-neui/bases/base/components/sidebar/c-sidebar-2.tsx"),
+  "c-sidebar-3": () => import("@/registry-neui/bases/base/components/sidebar/c-sidebar-3.tsx"),
+  "c-sidebar-4": () => import("@/registry-neui/bases/base/components/sidebar/c-sidebar-4.tsx"),
+  "c-sidebar-5": () => import("@/registry-neui/bases/base/components/sidebar/c-sidebar-5.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

@@ -42,7 +42,7 @@ export interface BrowseComponentItem {
 function loadComponentCategoryShard(category: string): RegistryComponentItem[] {
   const normalizedCategory = normalizeSlug(category)
   const shardPath = projectPath(
-    "registry-reui",
+    "registry-neui",
     "_meta",
     "components",
     "bases",
@@ -106,7 +106,7 @@ export function getCategoryComponentItems(category: string) {
 function loadComponentNameIndex(base: string = "base") {
   return devCached(`component-name-index:${base}`, () => {
     const indexPath = projectPath(
-      "registry-reui",
+      "registry-neui",
       "_meta",
       "components",
       "bases",
@@ -126,7 +126,7 @@ function loadComponentNameIndex(base: string = "base") {
       // `name-index.json`. We derive the lookup from the category shards and
       // cache it once so docs/category preview lookups stay fast in dev.
       const shardsDir = projectPath(
-        "registry-reui",
+        "registry-neui",
         "_meta",
         "components",
         "bases",
@@ -145,7 +145,7 @@ function loadComponentNameIndex(base: string = "base") {
 
         const category = entry.replace(/\.json$/, "")
         const shardPath = projectPath(
-          "registry-reui",
+          "registry-neui",
           "_meta",
           "components",
           "bases",

@@ -5,12 +5,12 @@
  * workspace packages, each containing all the component previews for one
  * category pre-bundled via esbuild.
  *
- * Source of truth stays in `registry-reui/bases/<base>/components/`.
+ * Source of truth stays in `registry-neui/bases/<base>/components/`.
  * Packages are derived artifacts.
  *
  * Per-package shape:
  *   packages/registry/bases/<base>/components/<category>/
- *     package.json  (name="@reui/components-<base>-<category>")
+ *     package.json  (name="@neui/components-<base>-<category>")
  *     tsconfig.json
  *     src/index.ts  (export const componentPreviewLoaders = { name: () => import(...) })
  *     dist/index.js (esbuild output: react family externalized)
@@ -48,7 +48,7 @@ const REGISTRY_PACKAGES_ROOT = path.join(
   "bases"
 )
 const APP_TSCONFIG = path.join(PROJECT_ROOT, "tsconfig.json")
-const REGISTRY_DIR = path.join(PROJECT_ROOT, "registry-reui")
+const REGISTRY_DIR = path.join(PROJECT_ROOT, "registry-neui")
 const COMPONENT_SHARDS_DIR = path.join(
   REGISTRY_DIR,
   "_meta",
@@ -64,7 +64,7 @@ const GENERATED_COMPONENT_PREVIEW_LOADERS_DIR = path.join(
   "component-preview-loaders"
 )
 
-const SCOPE = "@reui"
+const SCOPE = "@neui"
 const PACKAGE_NAME_PREFIX = "components-"
 
 // Externalize every library the app depends on. Anything that holds
@@ -82,7 +82,7 @@ const APP_DEPS_MAP: Record<string, string> = (() => {
     }
     const out: Record<string, string> = {}
     for (const [k, v] of Object.entries(deps)) {
-      if (k.startsWith("@reui/")) continue
+      if (k.startsWith("@neui/")) continue
       out[k] = v as string
     }
     return out
@@ -122,7 +122,7 @@ interface ComponentEntry {
   base: string
   category: string
   name: string
-  importPath: string // @/registry-reui/bases/<base>/components/<category>/<name>.tsx
+  importPath: string // @/registry-neui/bases/<base>/components/<category>/<name>.tsx
   fileAbs: string
 }
 
@@ -160,7 +160,7 @@ async function collectComponents(): Promise<ComponentEntry[]> {
       }
       for (const item of items) {
         // Component source file lives at a fixed convention:
-        //   registry-reui/bases/<base>/components/<category>/<name>.tsx
+        //   registry-neui/bases/<base>/components/<category>/<name>.tsx
         const fileAbs = path.join(
           REGISTRY_DIR,
           "bases",
@@ -170,7 +170,7 @@ async function collectComponents(): Promise<ComponentEntry[]> {
           `${item.name}.tsx`
         )
         if (!fsSync.existsSync(fileAbs)) continue
-        const importPath = `@/registry-reui/bases/${base}/components/${category}/${item.name}.tsx`
+        const importPath = `@/registry-neui/bases/${base}/components/${category}/${item.name}.tsx`
         entries.push({ base, category, name: item.name, importPath, fileAbs })
       }
     }
@@ -334,7 +334,7 @@ async function writePackageScaffold(
   return dir
 }
 
-// Anything inside the app that isn't registry-reui source is treated as
+// Anything inside the app that isn't registry-neui source is treated as
 // host infrastructure: shadcn UI kit, lib helpers, icon placeholder,
 // hooks, etc. These get marked external so the bundled dist references
 // them by their @/ alias; the app's webpack/turbopack resolves them
@@ -669,7 +669,7 @@ async function main() {
   if (watchMode) {
     await Promise.all(watchContexts.map(({ ctx }) => ctx.watch()))
     console.log(
-      `\n👀 watching registry-reui/bases/**/components/** (Ctrl-C to stop)`
+      `\n👀 watching registry-neui/bases/**/components/** (Ctrl-C to stop)`
     )
     const shutdown = async () => {
       console.log("\nstopping watchers…")

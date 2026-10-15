@@ -5,13 +5,13 @@
  * This eliminates serverless function invocations for registry serving —
  * files are served directly from the CDN edge.
  *
- * ReUI primitives are style-aware and generated for every base/style pair.
+ * NeUI primitives are style-aware and generated for every base/style pair.
  * Components are style-agnostic and generated only for Nova per base.
  *
  * Output structure:
  *   public/r/styles/index.json             - list of available styles
  *   public/r/styles/{style}/registry.json  - per-style catalog manifest (items, no file content)
- *   public/r/styles/{style}/{name}.json    - style-aware ReUI primitives
+ *   public/r/styles/{style}/{name}.json    - style-aware NeUI primitives
  *   public/r/styles/{base}-nova/*.json     - all components for that base
  *   public/r/styles/default/               - alias for base-nova (the default)
  *
@@ -91,12 +91,12 @@ interface MetadataData {
 // Constants
 const DEFAULT_STYLE = "base-nova"
 const DEFAULT_VARIANT = "nova"
-const REUI_REGISTRY_NAMESPACE = "@reui"
+const NEUI_REGISTRY_NAMESPACE = "@neui"
 // Per-style registry.json catalog manifest header. Mirrors shadcn's public
 // registry.json shape ({ name, homepage, items }); a single name/homepage is
 // shared across every style, exactly like shadcn ships "shadcn/ui" for each.
-const REGISTRY_MANIFEST_NAME = "reui"
-const REGISTRY_MANIFEST_HOMEPAGE = "https://reui.io"
+const REGISTRY_MANIFEST_NAME = "neui"
+const REGISTRY_MANIFEST_HOMEPAGE = "https://neui.io"
 const REQUIRED_REGISTRY_ITEMS = [
   "cascader",
   "data-grid",
@@ -135,10 +135,10 @@ function getSvgImportPaths(code: string): string[] {
   return Array.from(svgImports)
 }
 
-function getResolvedReuiRegistryDeps(code: string): string[] {
+function getResolvedNeuiRegistryDeps(code: string): string[] {
   const deps = new Set<string>()
   const registryImportPatterns = [
-    /from\s+["']@\/components\/reui\/([^"']+)["']/g,
+    /from\s+["']@\/components\/neui\/([^"']+)["']/g,
     /from\s+["']@\/components\/ui\/([^"']+)["']/g,
   ]
 
@@ -219,16 +219,16 @@ async function getMetadata(base: string): Promise<MetadataData> {
 
   const metadata: Record<string, RegistryItem> = {}
 
-  // Load reui components
+  // Load neui components
   try {
-    const mod = await import(`../registry-reui/bases/${base}/reui/_registry.ts`)
-    for (const item of mod.reui || []) metadata[item.name] = item
+    const mod = await import(`../registry-neui/bases/${base}/neui/_registry.ts`)
+    for (const item of mod.neui || []) metadata[item.name] = item
   } catch {}
 
   // Load hooks
   try {
     const mod = await import(
-      `../registry-reui/bases/${base}/hooks/_registry.ts`
+      `../registry-neui/bases/${base}/hooks/_registry.ts`
     )
     for (const item of mod.hooks || []) metadata[item.name] = item
   } catch {}
@@ -236,7 +236,7 @@ async function getMetadata(base: string): Promise<MetadataData> {
   for (const item of await readRegistryShardItems(
     path.join(
       PROJECT_ROOT,
-      "registry-reui",
+      "registry-neui",
       "_meta",
       "components",
       "bases",
@@ -279,77 +279,77 @@ function transformImportPaths(code: string, base: string): string {
   return code
     .replace(
       new RegExp(
-        `@/registry-reui/bases/__generated/(?:base|radix)-${generatedStylePattern}/reui/`,
+        `@/registry-neui/bases/__generated/(?:base|radix)-${generatedStylePattern}/neui/`,
         "g"
       ),
-      "@/components/reui/"
+      "@/components/neui/"
     )
     .replace(
       new RegExp(
-        `@/registry-reui/bases/__generated/(?:base|radix)-${generatedStylePattern}/ui/`,
+        `@/registry-neui/bases/__generated/(?:base|radix)-${generatedStylePattern}/ui/`,
         "g"
       ),
       "@/components/ui/"
     )
     .replace(
       new RegExp(
-        `@/registry-reui/bases/__generated/(?:base|radix)-${generatedStylePattern}/hooks/`,
+        `@/registry-neui/bases/__generated/(?:base|radix)-${generatedStylePattern}/hooks/`,
         "g"
       ),
       "@/hooks/"
     )
     .replace(
       new RegExp(
-        `@/registry-reui/bases/__generated/(?:base|radix)-${generatedStylePattern}/lib/`,
+        `@/registry-neui/bases/__generated/(?:base|radix)-${generatedStylePattern}/lib/`,
         "g"
       ),
       "@/lib/"
     )
     .replace(
       new RegExp(
-        `@/registry-reui/bases/__generated/(?:base|radix)-${generatedStylePattern}/components/`,
+        `@/registry-neui/bases/__generated/(?:base|radix)-${generatedStylePattern}/components/`,
         "g"
       ),
       "@/components/examples/"
     )
     .replace(
-      new RegExp(`@/registry-reui/bases/${base}/reui/`, "g"),
-      "@/components/reui/"
+      new RegExp(`@/registry-neui/bases/${base}/neui/`, "g"),
+      "@/components/neui/"
     )
     .replace(
-      new RegExp(`@/registry-reui/bases/${base}/ui/`, "g"),
+      new RegExp(`@/registry-neui/bases/${base}/ui/`, "g"),
       "@/components/ui/"
     )
     .replace(
-      new RegExp(`@/registry-reui/bases/${base}/hooks/`, "g"),
+      new RegExp(`@/registry-neui/bases/${base}/hooks/`, "g"),
       "@/hooks/"
     )
-    .replace(new RegExp(`@/registry-reui/bases/${base}/lib/`, "g"), "@/lib/")
+    .replace(new RegExp(`@/registry-neui/bases/${base}/lib/`, "g"), "@/lib/")
     .replace(
-      new RegExp(`@/registry-reui/bases/${base}/components/`, "g"),
+      new RegExp(`@/registry-neui/bases/${base}/components/`, "g"),
       "@/components/examples/"
     )
     .replace(
-      /@\/registry(?:-reui)?\/bases\/(?:base|radix)\/reui\//g,
-      "@/components/reui/"
+      /@\/registry(?:-neui)?\/bases\/(?:base|radix)\/neui\//g,
+      "@/components/neui/"
     )
     .replace(
-      /@\/registry(?:-reui)?\/bases\/(?:base|radix)\/ui\//g,
+      /@\/registry(?:-neui)?\/bases\/(?:base|radix)\/ui\//g,
       "@/components/ui/"
     )
     .replace(
-      /@\/registry(?:-reui)?\/bases\/(?:base|radix)\/hooks\//g,
+      /@\/registry(?:-neui)?\/bases\/(?:base|radix)\/hooks\//g,
       "@/hooks/"
     )
-    .replace(/@\/registry(?:-reui)?\/bases\/(?:base|radix)\/lib\//g, "@/lib/")
+    .replace(/@\/registry(?:-neui)?\/bases\/(?:base|radix)\/lib\//g, "@/lib/")
     .replace(
-      /@\/registry(?:-reui)?\/bases\/(?:base|radix)\/components\//g,
+      /@\/registry(?:-neui)?\/bases\/(?:base|radix)\/components\//g,
       "@/components/examples/"
     )
     .replace(/@\/registry\/bases\/(?:base|radix)\/ui\//g, "@/components/ui/")
     .replace(
-      /@\/registry\/bases\/(?:base|radix)\/reui\//g,
-      "@/components/reui/"
+      /@\/registry\/bases\/(?:base|radix)\/neui\//g,
+      "@/components/neui/"
     )
     .replace(/@\/registry\/bases\/(?:base|radix)\/hooks\//g, "@/hooks/")
     .replace(/@\/registry\/bases\/(?:base|radix)\/lib\//g, "@/lib/")
@@ -381,18 +381,18 @@ function transformStyleVariants(code: string, style: string): string {
 function getRegistrySource(
   name: string,
   itemType: string
-): { type: "components" | "reui" } {
+): { type: "components" | "neui" } {
   if (name.startsWith("c-")) {
     return { type: "components" }
   }
 
-  return { type: "reui" }
+  return { type: "neui" }
 }
 
 function isStyleAwareRegistryItem(item: RegistryItem): boolean {
   return (item.files || []).some((file) => {
     const filePath = typeof file === "string" ? file : file.path
-    return filePath === "reui" || filePath.startsWith("reui/")
+    return filePath === "neui" || filePath.startsWith("neui/")
   })
 }
 
@@ -432,7 +432,7 @@ async function buildRegistryItem(
 
     const fullPath = path.join(
       PROJECT_ROOT,
-      "registry-reui",
+      "registry-neui",
       "bases",
       base,
       filePath
@@ -454,7 +454,7 @@ async function buildRegistryItem(
     // Transform source-level style variants into the concrete generated style.
     content = transformStyleVariants(content, style)
 
-    for (const dep of getResolvedReuiRegistryDeps(content)) {
+    for (const dep of getResolvedNeuiRegistryDeps(content)) {
       if (dep !== name) {
         registryDependencies.add(dep)
       }
@@ -474,7 +474,7 @@ async function buildRegistryItem(
       if (sourceType === "components") {
         target = `components/examples/${fileName}`
       } else if (fileType === "registry:ui") {
-        target = `components/reui/${fileName}`
+        target = `components/neui/${fileName}`
       } else if (fileType === "registry:hook") {
         target = `hooks/${fileName}`
       } else if (fileType === "registry:lib") {
@@ -562,7 +562,7 @@ async function getAllItemNames(): Promise<string[]> {
 }
 
 // ---------------------------------------------------------------------------
-// Resolve internal registryDependencies -> @reui namespace
+// Resolve internal registryDependencies -> @neui namespace
 // ---------------------------------------------------------------------------
 
 function resolveRegistryDeps(
@@ -573,7 +573,7 @@ function resolveRegistryDeps(
 
   item.registryDependencies = item.registryDependencies.map((dep: string) => {
     if (allNames.has(dep)) {
-      return `${REUI_REGISTRY_NAMESPACE}/${dep}`
+      return `${NEUI_REGISTRY_NAMESPACE}/${dep}`
     }
     return dep
   })
@@ -612,9 +612,9 @@ function toManifestItem(item: Record<string, any>): Record<string, any> {
 async function main() {
   const startTime = Date.now()
   console.log("Building static registry...")
-  console.log(`  Internal registry namespace: ${REUI_REGISTRY_NAMESPACE}`)
+  console.log(`  Internal registry namespace: ${NEUI_REGISTRY_NAMESPACE}`)
 
-  // Collect all style names. Non-Nova styles only receive style-aware ReUI
+  // Collect all style names. Non-Nova styles only receive style-aware NeUI
   // primitives; components are generated once per base under Nova.
   const styleNames: string[] = []
   for (const base of BASES) {
@@ -855,7 +855,7 @@ async function main() {
 
           // 6. Check for unresolved internal import paths
           if (
-            /@\/registry-reui\//.test(file.content) ||
+            /@\/registry-neui\//.test(file.content) ||
             /@\/registry\/bases\//.test(file.content)
           ) {
             verifyErrors++

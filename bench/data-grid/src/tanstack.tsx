@@ -1,8 +1,8 @@
 /**
- * The ReUI Data Grid engine: TanStack Table for the model, TanStack Virtual
- * for rows, a sticky header and fixed column widths, the same shape the ReUI
+ * The NeUI Data Grid engine: TanStack Table for the model, TanStack Virtual
+ * for rows, a sticky header and fixed column widths, the same shape the NeUI
  * `DataGridTableVirtual` layout renders. Unstyled on purpose: the bench
- * measures the engine, and the live ReUI block is measured by URL for the
+ * measures the engine, and the live NeUI block is measured by URL for the
  * styled component.
  */
 import {

@@ -62,11 +62,11 @@ export const COMPONENTS_STATE_STORAGE_KEY = "components-layout"
 export const PATTERNS_STATE_STORAGE_KEY = "patterns-state"
 export const BLOCKS_STATE_STORAGE_KEY = "blocks-state"
 
-export const CONFIG_COOKIE_NAME = "reui-config"
-export const COMPONENTS_STATE_COOKIE_NAME = "reui-components-state"
+export const CONFIG_COOKIE_NAME = "neui-config"
+export const COMPONENTS_STATE_COOKIE_NAME = "neui-components-state"
 /** @deprecated Prefer COMPONENTS_STATE_COOKIE_NAME */
-export const PATTERNS_STATE_COOKIE_NAME = "reui-patterns-state"
-export const BLOCKS_STATE_COOKIE_NAME = "reui-blocks-state"
+export const PATTERNS_STATE_COOKIE_NAME = "neui-patterns-state"
+export const BLOCKS_STATE_COOKIE_NAME = "neui-blocks-state"
 export const PREFERENCE_COOKIE_MAX_AGE = 60 * 60 * 24 * 365
 
 export const DEFAULT_CONFIG: Config = {
@@ -118,7 +118,7 @@ export function getPreferenceCookieName(storageKey: string) {
     case BLOCKS_STATE_STORAGE_KEY:
       return BLOCKS_STATE_COOKIE_NAME
     default:
-      return `reui-${storageKey}`
+      return `neui-${storageKey}`
   }
 }
 

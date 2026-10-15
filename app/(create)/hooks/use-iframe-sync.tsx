@@ -38,11 +38,11 @@ export const isInIframe = () => {
 
 /**
  * True ONLY when this page is embedded in a SAME-ORIGIN parent - i.e. one of
- * reui's own preview iframes, not an arbitrary cross-origin embedder (e.g.
+ * neui's own preview iframes, not an arbitrary cross-origin embedder (e.g.
  * shoogle.dev). Reading the parent's origin throws a SecurityError for a
  * cross-origin ancestor, which we treat as "not a same-origin embed".
  *
- * Use this (not `isInIframe`) to gate behavior that must affect ONLY reui's own
+ * Use this (not `isInIframe`) to gate behavior that must affect ONLY neui's own
  * previews - notably the document scroll lock. `isInIframe` (`self !== top`) is
  * true for ANY embed, so gating a scroll lock on it left external embedders'
  * pages completely unscrollable.

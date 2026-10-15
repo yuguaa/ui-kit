@@ -15,7 +15,7 @@ base: base
 ## Installation
 
 ```bash
-npx shadcn@latest add @reui/code-block
+npx shadcn@latest add @neui/code-block
 ```
 
 The only npm dependency is `shiki`. Grammars and themes load lazily, one chunk
@@ -31,7 +31,7 @@ import {
   CodeBlockHeader,
   CodeBlockLanguage,
   CodeBlockTitle,
-} from "@/components/reui/code-block/code-block"
+} from "@/components/neui/code-block/code-block"
 ```
 
 ```tsx
@@ -160,8 +160,8 @@ server component can call it. The result is plain JSON, so it crosses the
 boundary as data and the browser never downloads a grammar.
 
 ```tsx
-import { CodeBlock } from "@/components/reui/code-block/code-block"
-import { highlightCode } from "@/components/reui/code-block/code-block-highlight"
+import { CodeBlock } from "@/components/neui/code-block/code-block"
+import { highlightCode } from "@/components/neui/code-block/code-block-highlight"
 
 export default async function Page() {
   const lines = await highlightCode(source, { language: "tsx" })

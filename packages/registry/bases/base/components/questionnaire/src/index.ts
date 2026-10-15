@@ -2,13 +2,13 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-questionnaire-1": () => import("@/registry-reui/bases/base/components/questionnaire/c-questionnaire-1.tsx"),
-  "c-questionnaire-2": () => import("@/registry-reui/bases/base/components/questionnaire/c-questionnaire-2.tsx"),
-  "c-questionnaire-3": () => import("@/registry-reui/bases/base/components/questionnaire/c-questionnaire-3.tsx"),
-  "c-questionnaire-4": () => import("@/registry-reui/bases/base/components/questionnaire/c-questionnaire-4.tsx"),
-  "c-questionnaire-5": () => import("@/registry-reui/bases/base/components/questionnaire/c-questionnaire-5.tsx"),
-  "c-questionnaire-6": () => import("@/registry-reui/bases/base/components/questionnaire/c-questionnaire-6.tsx"),
-  "c-questionnaire-7": () => import("@/registry-reui/bases/base/components/questionnaire/c-questionnaire-7.tsx"),
+  "c-questionnaire-1": () => import("@/registry-neui/bases/base/components/questionnaire/c-questionnaire-1.tsx"),
+  "c-questionnaire-2": () => import("@/registry-neui/bases/base/components/questionnaire/c-questionnaire-2.tsx"),
+  "c-questionnaire-3": () => import("@/registry-neui/bases/base/components/questionnaire/c-questionnaire-3.tsx"),
+  "c-questionnaire-4": () => import("@/registry-neui/bases/base/components/questionnaire/c-questionnaire-4.tsx"),
+  "c-questionnaire-5": () => import("@/registry-neui/bases/base/components/questionnaire/c-questionnaire-5.tsx"),
+  "c-questionnaire-6": () => import("@/registry-neui/bases/base/components/questionnaire/c-questionnaire-6.tsx"),
+  "c-questionnaire-7": () => import("@/registry-neui/bases/base/components/questionnaire/c-questionnaire-7.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

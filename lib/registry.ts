@@ -4,14 +4,14 @@
  * This module provides client-safe access to the component registry data.
  *
  * Data source (single source of truth):
- * - registry-reui/_meta/components/bases/{base} — per-category component metadata with files
+ * - registry-neui/_meta/components/bases/{base} — per-category component metadata with files
  *
  * Components are lazy-loaded on-demand.
  */
 
 import * as React from "react"
-import baseComponentNameIndex from "@/registry-reui/_meta/components/bases/base/name-index.json"
-import radixComponentNameIndex from "@/registry-reui/_meta/components/bases/radix/name-index.json"
+import baseComponentNameIndex from "@/registry-neui/_meta/components/bases/base/name-index.json"
+import radixComponentNameIndex from "@/registry-neui/_meta/components/bases/radix/name-index.json"
 import { LRUCache } from "lru-cache"
 import { registryItemSchema } from "shadcn/schema"
 
@@ -30,7 +30,7 @@ import { STYLES } from "@/registry/styles"
  * build-components.mts, ~30KB per base, JSON-imported so Turbopack can
  * inline it. This replaces a dynamic template import() that previously
  * forced the bundler to discover and chunk every block/component source
- * file under registry-reui, making production builds OOM at ~10k blocks.
+ * file under registry-neui, making production builds OOM at ~10k blocks.
  */
 const componentNameToCategory: Record<string, Record<string, string>> = {
   base: baseComponentNameIndex as Record<string, string>,
@@ -289,7 +289,7 @@ function getFlatCategories(): CategoryInfo[] {
 }
 
 // ============================================================================
-// Metadata loading (per-base metadata shards plus shared reui/hooks registries)
+// Metadata loading (per-base metadata shards plus shared neui/hooks registries)
 // ============================================================================
 
 function readRegistryShardItemsSync(
@@ -302,7 +302,7 @@ function readRegistryShardItemsSync(
 
   const dirPath = pathNode.join(
     process.cwd(),
-    "registry-reui",
+    "registry-neui",
     "_meta",
     entity,
     "bases",
@@ -355,7 +355,7 @@ function getMetadata(base: string = "base"): MetadataData {
       try {
         // eslint-disable-next-line @typescript-eslint/no-require-imports
         const hooksMod = require(
-          `../registry-reui/bases/${base}/hooks/_registry`
+          `../registry-neui/bases/${base}/hooks/_registry`
         )
         const hookItems = hooksMod.hooks || []
         for (const item of hookItems) metadata[item.name] = item
@@ -372,11 +372,11 @@ function getMetadata(base: string = "base"): MetadataData {
 
       try {
         // eslint-disable-next-line @typescript-eslint/no-require-imports
-        const reuiMod = require(`../registry-reui/bases/${base}/reui/_registry`)
-        const reuiItems = reuiMod.reui || []
-        for (const item of reuiItems) metadata[item.name] = item
+        const neuiMod = require(`../registry-neui/bases/${base}/neui/_registry`)
+        const neuiItems = neuiMod.neui || []
+        for (const item of neuiItems) metadata[item.name] = item
       } catch (e) {
-        console.warn(`Could not load reui registry for ${base}`, e)
+        console.warn(`Could not load neui registry for ${base}`, e)
       }
 
       try {
@@ -465,7 +465,7 @@ export function getComponent(
     : componentNameToCategory[base]?.[name]
 
   if (!normalizedCategory) {
-    // Hooks / reui shared modules don't have a category — they aren't
+    // Hooks / neui shared modules don't have a category — they aren't
     // browsable previews. The catalog never asks for these via this path
     // (server code handles them directly), so returning null here is safe.
     return null
@@ -626,7 +626,7 @@ function readSlimManifestEntries(): SlimManifestEntry[] {
   try {
     const indexPath = pathNode.join(
       process.cwd(),
-      "registry-reui",
+      "registry-neui",
       "_meta",
       "blocks",
       "manifest-index.json"
@@ -849,13 +849,13 @@ function getRegistryKey(styleName: string): string {
   return styleName
 }
 
-function transformReuiPath(filePath: string, _styleName: string): string {
+function transformNeuiPath(filePath: string, _styleName: string): string {
   if (filePath.includes("/__generated/")) {
     return filePath.replace(
-      /registry-reui\/bases\/__generated\/[^/]+\//,
+      /registry-neui\/bases\/__generated\/[^/]+\//,
       (match) => {
-        if (match.includes("base-")) return "registry-reui/bases/base/"
-        if (match.includes("radix-")) return "registry-reui/bases/radix/"
+        if (match.includes("base-")) return "registry-neui/bases/base/"
+        if (match.includes("radix-")) return "registry-neui/bases/radix/"
         return match
       }
     )
@@ -978,7 +978,7 @@ export async function getRegistryItem(
           typeof file === "string"
             ? { path: file, type: "registry:file" }
             : { ...file }
-        fileObj.path = transformReuiPath(fileObj.path, styleName)
+        fileObj.path = transformNeuiPath(fileObj.path, styleName)
         return fileObj
       })
 

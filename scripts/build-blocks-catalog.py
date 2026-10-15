@@ -27,7 +27,7 @@ for cat in CATEGORIES:
         seen[slug] = name
     entries = [
         {"slug": slug, "name": name, "category": cat, "group": group,
-         "url": f"https://reui.io/blocks/{cat}/{slug}"}
+         "url": f"https://neui.io/blocks/{cat}/{slug}"}
         for slug, name in sorted(seen.items())
     ]
     catalog["blocks"].extend(entries)

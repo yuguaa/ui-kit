@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-# 从 registry-reui/_meta 提取组件目录（名称、分类、类型、文件数），生成 components-catalog.json
+# 从 registry-neui/_meta 提取组件目录（名称、分类、类型、文件数），生成 components-catalog.json
 import json
 from pathlib import Path
 
-META = Path("registry-reui/_meta/components/bases")
+META = Path("registry-neui/_meta/components/bases")
 
 catalog = {"bases": {}, "summary": {}}
 

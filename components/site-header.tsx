@@ -50,7 +50,7 @@ export async function SiteHeader() {
           {/* LEFT rail: mobile menu trigger (below lg) + logo. */}
           <div className="flex min-w-0 items-center justify-start gap-2.5">
             <MobileNav stats={navStats} className="flex lg:hidden" />
-            <Link href="/" aria-label="ReUI home">
+            <Link href="/" aria-label="NeUI home">
               <Logo />
             </Link>
           </div>

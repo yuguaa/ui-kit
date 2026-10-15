@@ -11,7 +11,7 @@ export function GitHubLink() {
         href={siteConfig.links.github}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="ReUI on GitHub (opens in new tab)"
+        aria-label="NeUI on GitHub (opens in new tab)"
       >
         <Icons.gitHub aria-hidden="true" />
         {/* Hardcoded star count from siteConfig (updated by hand). `min-w-[2ch]`

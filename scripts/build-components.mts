@@ -8,8 +8,8 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 const PROJECT_ROOT = path.resolve(__dirname, "..")
-const BASES_DIR = path.join(PROJECT_ROOT, "registry-reui", "bases")
-const REGISTRY_META_DIR = path.join(PROJECT_ROOT, "registry-reui", "_meta")
+const BASES_DIR = path.join(PROJECT_ROOT, "registry-neui", "bases")
+const REGISTRY_META_DIR = path.join(PROJECT_ROOT, "registry-neui", "_meta")
 const COMPONENTS_METADATA_DIR = path.join(REGISTRY_META_DIR, "components")
 const COMPONENT_SHARDS_DIR = path.join(COMPONENTS_METADATA_DIR, "bases")
 const GENERATED_COMPONENT_PREVIEW_LOADERS_DIR = path.join(
@@ -226,8 +226,8 @@ async function parseComponentFile(
     }
   }
 
-  const importReuiRegex = /from\s+["']@\/registry-reui\/([^"']+)["']/g
-  while ((match = importReuiRegex.exec(content)) !== null) {
+  const importNeuiRegex = /from\s+["']@\/registry-neui\/([^"']+)["']/g
+  while ((match = importNeuiRegex.exec(content)) !== null) {
     const importPath = match[1]
     const componentName = getRegistryDependencyName(importPath)
     registryDependencies.add(componentName)
@@ -309,7 +309,7 @@ function buildDescriptionLong(
     .join(" ")
 
   const primitives = registryDependencies
-    .map((dependency) => dependency.replace(/^@reui\//, ""))
+    .map((dependency) => dependency.replace(/^@neui\//, ""))
     .map((slug) =>
       slug
         .split("-")
@@ -337,7 +337,7 @@ function buildDescriptionLong(
   }
 
   sentences.push(
-    `A free, open source shadcn ${label.toLowerCase()} example you can install with npx shadcn@latest add @reui/${name} and edit as your own code.`
+    `A free, open source shadcn ${label.toLowerCase()} example you can install with npx shadcn@latest add @neui/${name} and edit as your own code.`
   )
 
   return sentences.join(" ")
@@ -479,7 +479,7 @@ async function generate() {
           componentItems.push(item)
           categoryItems.push(item)
           previewLoaderEntries.push(
-            `  "${name}": () => import("@/registry-reui/bases/${base}/components/${category}/${file}"),`
+            `  "${name}": () => import("@/registry-neui/bases/${base}/components/${category}/${file}"),`
           )
         }
 

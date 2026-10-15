@@ -67,10 +67,10 @@ export function ComponentSourceSheetContent({
       <div className="flex min-h-0 flex-1 flex-col overflow-hidden px-6 py-6">
         <div className="border-site-border site-rounded-lg relative overflow-hidden border">
           <CodeBlockCommand
-            __bun__={`bunx --bun shadcn@latest add @reui/${name}`}
-            __npm__={`npx shadcn@latest add @reui/${name}`}
-            __pnpm__={`pnpm dlx shadcn@latest add @reui/${name}`}
-            __yarn__={`yarn dlx shadcn@latest add @reui/${name}`}
+            __bun__={`bunx --bun shadcn@latest add @neui/${name}`}
+            __npm__={`npx shadcn@latest add @neui/${name}`}
+            __pnpm__={`pnpm dlx shadcn@latest add @neui/${name}`}
+            __yarn__={`yarn dlx shadcn@latest add @neui/${name}`}
           />
         </div>
         <div className="mt-6 flex min-h-0 flex-1 flex-col">

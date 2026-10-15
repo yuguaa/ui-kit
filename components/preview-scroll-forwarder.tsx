@@ -50,7 +50,7 @@ import { isSameOriginEmbed } from "@/app/(create)/hooks/use-iframe-sync"
  * 300px preview move the host page 300px instead of a full screen.
  */
 
-export const PREVIEW_SCROLL_FORWARD_TYPE = "reui:preview-scroll"
+export const PREVIEW_SCROLL_FORWARD_TYPE = "neui:preview-scroll"
 
 export type PreviewScrollForwardMessage = {
   type: typeof PREVIEW_SCROLL_FORWARD_TYPE
@@ -120,7 +120,7 @@ function refusesChaining(element: Element): boolean {
 
 export function PreviewScrollForwarder() {
   useEffect(() => {
-    // Only inside reui's own previews. A cross-origin embedder keeps stock
+    // Only inside neui's own previews. A cross-origin embedder keeps stock
     // behaviour, and a standalone visit to /preview/... is a normal page.
     if (!isSameOriginEmbed()) return
 

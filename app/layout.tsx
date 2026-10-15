@@ -41,17 +41,17 @@ export const metadata: Metadata = {
     "Base UI",
     "Radix UI",
     "TypeScript",
-    "ReUI",
+    "NeUI",
     "registry",
     "shadcn",
   ],
   authors: [
     {
-      name: "ReUI",
-      url: "https://reui.io",
+      name: "NeUI",
+      url: "https://neui.io",
     },
   ],
-  creator: "reui_io",
+  creator: "neui_io",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [defaultOgImage],
-    creator: "@reui_io",
+    creator: "@neui_io",
   },
   icons: {
     icon: [

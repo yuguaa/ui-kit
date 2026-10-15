@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# 从 reui.io 抓取全部 block 分类下的 block 名称清单与模板清单
+# 从 neui.io 抓取全部 block 分类下的 block 名称清单与模板清单
 set -u
 
-OUT=".reui-catalog"
+OUT=".neui-catalog"
 mkdir -p "$OUT/blocks"
 
 # 76 个 block 分类 URL（从 /blocks 总览页提取）
@@ -87,7 +87,7 @@ EOF
 
 while IFS= read -r cat; do
   safe=$(echo "$cat" | tr '/' '_')
-  curl -s "https://reui.io/blocks/$cat" -o "$OUT/blocks/$safe.html"
+  curl -s "https://neui.io/blocks/$cat" -o "$OUT/blocks/$safe.html"
   count=$(grep -oE "\"/blocks/$cat/[a-z0-9-]+\"" "$OUT/blocks/$safe.html" | sort -u | wc -l | tr -d ' ')
   echo "$cat: $count blocks"
 done < "$OUT/categories.txt"

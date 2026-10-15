@@ -2,12 +2,12 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-attachment-1": () => import("@/registry-reui/bases/base/components/attachment/c-attachment-1.tsx"),
-  "c-attachment-2": () => import("@/registry-reui/bases/base/components/attachment/c-attachment-2.tsx"),
-  "c-attachment-3": () => import("@/registry-reui/bases/base/components/attachment/c-attachment-3.tsx"),
-  "c-attachment-4": () => import("@/registry-reui/bases/base/components/attachment/c-attachment-4.tsx"),
-  "c-attachment-5": () => import("@/registry-reui/bases/base/components/attachment/c-attachment-5.tsx"),
-  "c-attachment-6": () => import("@/registry-reui/bases/base/components/attachment/c-attachment-6.tsx"),
+  "c-attachment-1": () => import("@/registry-neui/bases/base/components/attachment/c-attachment-1.tsx"),
+  "c-attachment-2": () => import("@/registry-neui/bases/base/components/attachment/c-attachment-2.tsx"),
+  "c-attachment-3": () => import("@/registry-neui/bases/base/components/attachment/c-attachment-3.tsx"),
+  "c-attachment-4": () => import("@/registry-neui/bases/base/components/attachment/c-attachment-4.tsx"),
+  "c-attachment-5": () => import("@/registry-neui/bases/base/components/attachment/c-attachment-5.tsx"),
+  "c-attachment-6": () => import("@/registry-neui/bases/base/components/attachment/c-attachment-6.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

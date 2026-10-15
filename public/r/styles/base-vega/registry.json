@@ -1,6 +1,6 @@
 {
-  "name": "reui",
-  "homepage": "https://reui.io",
+  "name": "neui",
+  "homepage": "https://neui.io",
   "items": [
     {
       "name": "alert",
@@ -16,7 +16,7 @@
         {
           "path": "alert.tsx",
           "type": "registry:ui",
-          "target": "components/reui/alert.tsx"
+          "target": "components/neui/alert.tsx"
         }
       ],
       "cssVars": {
@@ -61,7 +61,7 @@
         {
           "path": "autocomplete.tsx",
           "type": "registry:ui",
-          "target": "components/reui/autocomplete.tsx"
+          "target": "components/neui/autocomplete.tsx"
         }
       ]
     },
@@ -80,7 +80,7 @@
         {
           "path": "badge.tsx",
           "type": "registry:ui",
-          "target": "components/reui/badge.tsx"
+          "target": "components/neui/badge.tsx"
         }
       ],
       "cssVars": {
@@ -119,13 +119,13 @@
         "cn"
       ],
       "registryDependencies": [
-        "@reui/cascader-async",
-        "@reui/cascader-columns",
-        "@reui/cascader-context",
-        "@reui/cascader-i18n",
-        "@reui/cascader-item",
-        "@reui/cascader-lib",
-        "@reui/cascader-types",
+        "@neui/cascader-async",
+        "@neui/cascader-columns",
+        "@neui/cascader-context",
+        "@neui/cascader-i18n",
+        "@neui/cascader-item",
+        "@neui/cascader-lib",
+        "@neui/cascader-types",
         "scroll-area",
         "spinner"
       ],
@@ -133,57 +133,57 @@
         {
           "path": "cascader-async.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-async.tsx"
+          "target": "components/neui/cascader/cascader-async.tsx"
         },
         {
           "path": "cascader-columns.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-columns.tsx"
+          "target": "components/neui/cascader/cascader-columns.tsx"
         },
         {
           "path": "cascader-context.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-context.tsx"
+          "target": "components/neui/cascader/cascader-context.tsx"
         },
         {
           "path": "cascader-footer.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-footer.tsx"
+          "target": "components/neui/cascader/cascader-footer.tsx"
         },
         {
           "path": "cascader-i18n.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-i18n.tsx"
+          "target": "components/neui/cascader/cascader-i18n.tsx"
         },
         {
           "path": "cascader-item.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-item.tsx"
+          "target": "components/neui/cascader/cascader-item.tsx"
         },
         {
           "path": "cascader-lib.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-lib.tsx"
+          "target": "components/neui/cascader/cascader-lib.tsx"
         },
         {
           "path": "cascader-nav.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-nav.tsx"
+          "target": "components/neui/cascader/cascader-nav.tsx"
         },
         {
           "path": "cascader-types.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-types.tsx"
+          "target": "components/neui/cascader/cascader-types.tsx"
         },
         {
           "path": "cascader-virtual.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-virtual.tsx"
+          "target": "components/neui/cascader/cascader-virtual.tsx"
         },
         {
           "path": "cascader.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader.tsx"
+          "target": "components/neui/cascader/cascader.tsx"
         }
       ]
     },
@@ -194,15 +194,15 @@
       "description": "",
       "dependencies": [],
       "registryDependencies": [
-        "@reui/cascader-context",
-        "@reui/cascader-lib",
-        "@reui/cascader-types"
+        "@neui/cascader-context",
+        "@neui/cascader-lib",
+        "@neui/cascader-types"
       ],
       "files": [
         {
           "path": "cascader-async.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-async.tsx"
+          "target": "components/neui/cascader/cascader-async.tsx"
         }
       ]
     },
@@ -216,16 +216,16 @@
         "cn"
       ],
       "registryDependencies": [
-        "@reui/cascader-context",
-        "@reui/cascader-item",
-        "@reui/cascader-lib",
+        "@neui/cascader-context",
+        "@neui/cascader-item",
+        "@neui/cascader-lib",
         "scroll-area"
       ],
       "files": [
         {
           "path": "cascader-columns.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-columns.tsx"
+          "target": "components/neui/cascader/cascader-columns.tsx"
         }
       ]
     },
@@ -236,13 +236,13 @@
       "description": "",
       "dependencies": [],
       "registryDependencies": [
-        "@reui/cascader-types"
+        "@neui/cascader-types"
       ],
       "files": [
         {
           "path": "cascader-context.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-context.tsx"
+          "target": "components/neui/cascader/cascader-context.tsx"
         }
       ]
     },
@@ -256,16 +256,16 @@
         "cn"
       ],
       "registryDependencies": [
-        "@reui/cascader-context",
-        "@reui/cascader-item",
-        "@reui/cascader-lib",
-        "@reui/cascader-types"
+        "@neui/cascader-context",
+        "@neui/cascader-item",
+        "@neui/cascader-lib",
+        "@neui/cascader-types"
       ],
       "files": [
         {
           "path": "cascader-footer.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-footer.tsx"
+          "target": "components/neui/cascader/cascader-footer.tsx"
         }
       ]
     },
@@ -276,13 +276,13 @@
       "description": "",
       "dependencies": [],
       "registryDependencies": [
-        "@reui/cascader-types"
+        "@neui/cascader-types"
       ],
       "files": [
         {
           "path": "cascader-i18n.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-i18n.tsx"
+          "target": "components/neui/cascader/cascader-i18n.tsx"
         }
       ]
     },
@@ -296,16 +296,16 @@
         "cn"
       ],
       "registryDependencies": [
-        "@reui/cascader-context",
-        "@reui/cascader-lib",
-        "@reui/cascader-types",
+        "@neui/cascader-context",
+        "@neui/cascader-lib",
+        "@neui/cascader-types",
         "spinner"
       ],
       "files": [
         {
           "path": "cascader-item.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-item.tsx"
+          "target": "components/neui/cascader/cascader-item.tsx"
         }
       ]
     },
@@ -316,13 +316,13 @@
       "description": "",
       "dependencies": [],
       "registryDependencies": [
-        "@reui/cascader-types"
+        "@neui/cascader-types"
       ],
       "files": [
         {
           "path": "cascader-lib.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-lib.tsx"
+          "target": "components/neui/cascader/cascader-lib.tsx"
         }
       ]
     },
@@ -336,16 +336,16 @@
         "cn"
       ],
       "registryDependencies": [
-        "@reui/cascader-context",
-        "@reui/cascader-i18n",
-        "@reui/cascader-lib",
-        "@reui/cascader-types"
+        "@neui/cascader-context",
+        "@neui/cascader-i18n",
+        "@neui/cascader-lib",
+        "@neui/cascader-types"
       ],
       "files": [
         {
           "path": "cascader-nav.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-nav.tsx"
+          "target": "components/neui/cascader/cascader-nav.tsx"
         }
       ]
     },
@@ -360,7 +360,7 @@
         {
           "path": "cascader-types.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-types.tsx"
+          "target": "components/neui/cascader/cascader-types.tsx"
         }
       ]
     },
@@ -373,15 +373,15 @@
         "@tanstack/react-virtual"
       ],
       "registryDependencies": [
-        "@reui/cascader-columns",
-        "@reui/cascader-context",
-        "@reui/cascader-item"
+        "@neui/cascader-columns",
+        "@neui/cascader-context",
+        "@neui/cascader-item"
       ],
       "files": [
         {
           "path": "cascader-virtual.tsx",
           "type": "registry:ui",
-          "target": "components/reui/cascader/cascader-virtual.tsx"
+          "target": "components/neui/cascader/cascader-virtual.tsx"
         }
       ]
     },
@@ -396,18 +396,18 @@
       ],
       "registryDependencies": [
         "button",
-        "@reui/code-block-highlight"
+        "@neui/code-block-highlight"
       ],
       "files": [
         {
           "path": "code-block-highlight.tsx",
           "type": "registry:ui",
-          "target": "components/reui/code-block/code-block-highlight.tsx"
+          "target": "components/neui/code-block/code-block-highlight.tsx"
         },
         {
           "path": "code-block.tsx",
           "type": "registry:ui",
-          "target": "components/reui/code-block/code-block.tsx"
+          "target": "components/neui/code-block/code-block.tsx"
         }
       ],
       "cssVars": {
@@ -448,7 +448,7 @@
         {
           "path": "code-block-highlight.tsx",
           "type": "registry:ui",
-          "target": "components/reui/code-block/code-block-highlight.tsx"
+          "target": "components/neui/code-block/code-block-highlight.tsx"
         }
       ]
     },
@@ -471,7 +471,7 @@
         {
           "path": "color-picker.tsx",
           "type": "registry:ui",
-          "target": "components/reui/color-picker.tsx"
+          "target": "components/neui/color-picker.tsx"
         }
       ]
     },
@@ -491,11 +491,11 @@
         "cn"
       ],
       "registryDependencies": [
-        "@reui/badge",
+        "@neui/badge",
         "button",
         "checkbox",
-        "@reui/data-grid-i18n",
-        "@reui/data-grid-table",
+        "@neui/data-grid-i18n",
+        "@neui/data-grid-table",
         "dropdown-menu",
         "input",
         "popover",
@@ -508,62 +508,62 @@
         {
           "path": "data-grid-cell-selection.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-cell-selection.tsx"
+          "target": "components/neui/data-grid/data-grid-cell-selection.tsx"
         },
         {
           "path": "data-grid-column-filter.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-column-filter.tsx"
+          "target": "components/neui/data-grid/data-grid-column-filter.tsx"
         },
         {
           "path": "data-grid-column-header.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-column-header.tsx"
+          "target": "components/neui/data-grid/data-grid-column-header.tsx"
         },
         {
           "path": "data-grid-column-visibility.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-column-visibility.tsx"
+          "target": "components/neui/data-grid/data-grid-column-visibility.tsx"
         },
         {
           "path": "data-grid-i18n.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-i18n.tsx"
+          "target": "components/neui/data-grid/data-grid-i18n.tsx"
         },
         {
           "path": "data-grid-pagination.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-pagination.tsx"
+          "target": "components/neui/data-grid/data-grid-pagination.tsx"
         },
         {
           "path": "data-grid-scroll-area.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-scroll-area.tsx"
+          "target": "components/neui/data-grid/data-grid-scroll-area.tsx"
         },
         {
           "path": "data-grid-table-dnd-rows.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-table-dnd-rows.tsx"
+          "target": "components/neui/data-grid/data-grid-table-dnd-rows.tsx"
         },
         {
           "path": "data-grid-table-dnd.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-table-dnd.tsx"
+          "target": "components/neui/data-grid/data-grid-table-dnd.tsx"
         },
         {
           "path": "data-grid-table-virtual.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-table-virtual.tsx"
+          "target": "components/neui/data-grid/data-grid-table-virtual.tsx"
         },
         {
           "path": "data-grid-table.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-table.tsx"
+          "target": "components/neui/data-grid/data-grid-table.tsx"
         },
         {
           "path": "data-grid.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid.tsx"
+          "target": "components/neui/data-grid/data-grid.tsx"
         }
       ]
     },
@@ -578,13 +578,13 @@
       ],
       "registryDependencies": [
         "button",
-        "@reui/data-grid"
+        "@neui/data-grid"
       ],
       "files": [
         {
           "path": "data-grid-cell-selection.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-cell-selection.tsx"
+          "target": "components/neui/data-grid/data-grid-cell-selection.tsx"
         }
       ]
     },
@@ -598,9 +598,9 @@
         "cn"
       ],
       "registryDependencies": [
-        "@reui/badge",
+        "@neui/badge",
         "button",
-        "@reui/data-grid",
+        "@neui/data-grid",
         "input",
         "popover",
         "separator"
@@ -609,7 +609,7 @@
         {
           "path": "data-grid-column-filter.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-column-filter.tsx"
+          "target": "components/neui/data-grid/data-grid-column-filter.tsx"
         }
       ]
     },
@@ -624,14 +624,14 @@
       ],
       "registryDependencies": [
         "button",
-        "@reui/data-grid",
+        "@neui/data-grid",
         "dropdown-menu"
       ],
       "files": [
         {
           "path": "data-grid-column-header.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-column-header.tsx"
+          "target": "components/neui/data-grid/data-grid-column-header.tsx"
         }
       ]
     },
@@ -644,14 +644,14 @@
         "@tanstack/react-table"
       ],
       "registryDependencies": [
-        "@reui/data-grid",
+        "@neui/data-grid",
         "dropdown-menu"
       ],
       "files": [
         {
           "path": "data-grid-column-visibility.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-column-visibility.tsx"
+          "target": "components/neui/data-grid/data-grid-column-visibility.tsx"
         }
       ]
     },
@@ -666,7 +666,7 @@
         {
           "path": "data-grid-i18n.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-i18n.tsx"
+          "target": "components/neui/data-grid/data-grid-i18n.tsx"
         }
       ]
     },
@@ -680,7 +680,7 @@
       ],
       "registryDependencies": [
         "button",
-        "@reui/data-grid",
+        "@neui/data-grid",
         "select",
         "skeleton"
       ],
@@ -688,7 +688,7 @@
         {
           "path": "data-grid-pagination.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-pagination.tsx"
+          "target": "components/neui/data-grid/data-grid-pagination.tsx"
         }
       ]
     },
@@ -702,13 +702,13 @@
         "cn"
       ],
       "registryDependencies": [
-        "@reui/data-grid"
+        "@neui/data-grid"
       ],
       "files": [
         {
           "path": "data-grid-scroll-area.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-scroll-area.tsx"
+          "target": "components/neui/data-grid/data-grid-scroll-area.tsx"
         }
       ]
     },
@@ -724,14 +724,14 @@
       "registryDependencies": [
         "button",
         "checkbox",
-        "@reui/data-grid",
+        "@neui/data-grid",
         "spinner"
       ],
       "files": [
         {
           "path": "data-grid-table.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-table.tsx"
+          "target": "components/neui/data-grid/data-grid-table.tsx"
         }
       ]
     },
@@ -748,14 +748,14 @@
       ],
       "registryDependencies": [
         "button",
-        "@reui/data-grid",
-        "@reui/data-grid-table"
+        "@neui/data-grid",
+        "@neui/data-grid-table"
       ],
       "files": [
         {
           "path": "data-grid-table-dnd.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-table-dnd.tsx"
+          "target": "components/neui/data-grid/data-grid-table-dnd.tsx"
         }
       ]
     },
@@ -774,14 +774,14 @@
       ],
       "registryDependencies": [
         "button",
-        "@reui/data-grid",
-        "@reui/data-grid-table"
+        "@neui/data-grid",
+        "@neui/data-grid-table"
       ],
       "files": [
         {
           "path": "data-grid-table-dnd-rows.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-table-dnd-rows.tsx"
+          "target": "components/neui/data-grid/data-grid-table-dnd-rows.tsx"
         }
       ]
     },
@@ -796,15 +796,15 @@
         "cn"
       ],
       "registryDependencies": [
-        "@reui/data-grid",
-        "@reui/data-grid-table",
+        "@neui/data-grid",
+        "@neui/data-grid-table",
         "spinner"
       ],
       "files": [
         {
           "path": "data-grid-table-virtual.tsx",
           "type": "registry:ui",
-          "target": "components/reui/data-grid/data-grid-table-virtual.tsx"
+          "target": "components/neui/data-grid/data-grid-table-virtual.tsx"
         }
       ]
     },
@@ -830,7 +830,7 @@
         {
           "path": "date-selector.tsx",
           "type": "registry:ui",
-          "target": "components/reui/date-selector.tsx"
+          "target": "components/neui/date-selector.tsx"
         }
       ]
     },
@@ -855,7 +855,7 @@
         {
           "path": "emoji-picker.tsx",
           "type": "registry:ui",
-          "target": "components/reui/emoji-picker.tsx"
+          "target": "components/neui/emoji-picker.tsx"
         }
       ]
     },
@@ -874,17 +874,17 @@
         "button",
         "calendar",
         "dropdown-menu",
-        "@reui/event-calendar-agenda-view",
-        "@reui/event-calendar-dnd",
-        "@reui/event-calendar-event",
-        "@reui/event-calendar-i18n",
-        "@reui/event-calendar-lib",
-        "@reui/event-calendar-month-view",
-        "@reui/event-calendar-recurrence",
-        "@reui/event-calendar-resource-view",
-        "@reui/event-calendar-time-grid",
-        "@reui/event-calendar-types",
-        "@reui/icon-stack",
+        "@neui/event-calendar-agenda-view",
+        "@neui/event-calendar-dnd",
+        "@neui/event-calendar-event",
+        "@neui/event-calendar-i18n",
+        "@neui/event-calendar-lib",
+        "@neui/event-calendar-month-view",
+        "@neui/event-calendar-recurrence",
+        "@neui/event-calendar-resource-view",
+        "@neui/event-calendar-time-grid",
+        "@neui/event-calendar-types",
+        "@neui/icon-stack",
         "popover",
         "scroll-area",
         "tooltip"
@@ -893,67 +893,67 @@
         {
           "path": "event-calendar-agenda-view.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-agenda-view.tsx"
+          "target": "components/neui/event-calendar/event-calendar-agenda-view.tsx"
         },
         {
           "path": "event-calendar-content.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-content.tsx"
+          "target": "components/neui/event-calendar/event-calendar-content.tsx"
         },
         {
           "path": "event-calendar-dnd.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-dnd.tsx"
+          "target": "components/neui/event-calendar/event-calendar-dnd.tsx"
         },
         {
           "path": "event-calendar-event.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-event.tsx"
+          "target": "components/neui/event-calendar/event-calendar-event.tsx"
         },
         {
           "path": "event-calendar-i18n.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-i18n.tsx"
+          "target": "components/neui/event-calendar/event-calendar-i18n.tsx"
         },
         {
           "path": "event-calendar-lib.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-lib.tsx"
+          "target": "components/neui/event-calendar/event-calendar-lib.tsx"
         },
         {
           "path": "event-calendar-month-view.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-month-view.tsx"
+          "target": "components/neui/event-calendar/event-calendar-month-view.tsx"
         },
         {
           "path": "event-calendar-nav.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-nav.tsx"
+          "target": "components/neui/event-calendar/event-calendar-nav.tsx"
         },
         {
           "path": "event-calendar-recurrence.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-recurrence.tsx"
+          "target": "components/neui/event-calendar/event-calendar-recurrence.tsx"
         },
         {
           "path": "event-calendar-resource-view.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-resource-view.tsx"
+          "target": "components/neui/event-calendar/event-calendar-resource-view.tsx"
         },
         {
           "path": "event-calendar-time-grid.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-time-grid.tsx"
+          "target": "components/neui/event-calendar/event-calendar-time-grid.tsx"
         },
         {
           "path": "event-calendar-types.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-types.tsx"
+          "target": "components/neui/event-calendar/event-calendar-types.tsx"
         },
         {
           "path": "event-calendar.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar.tsx"
+          "target": "components/neui/event-calendar/event-calendar.tsx"
         }
       ]
     },
@@ -968,18 +968,18 @@
         "date-fns"
       ],
       "registryDependencies": [
-        "@reui/event-calendar",
-        "@reui/event-calendar-event",
-        "@reui/event-calendar-lib",
-        "@reui/event-calendar-types",
-        "@reui/icon-stack",
+        "@neui/event-calendar",
+        "@neui/event-calendar-event",
+        "@neui/event-calendar-lib",
+        "@neui/event-calendar-types",
+        "@neui/icon-stack",
         "scroll-area"
       ],
       "files": [
         {
           "path": "event-calendar-agenda-view.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-agenda-view.tsx"
+          "target": "components/neui/event-calendar/event-calendar-agenda-view.tsx"
         }
       ]
     },
@@ -993,18 +993,18 @@
         "cn"
       ],
       "registryDependencies": [
-        "@reui/event-calendar",
-        "@reui/event-calendar-agenda-view",
-        "@reui/event-calendar-month-view",
-        "@reui/event-calendar-resource-view",
-        "@reui/event-calendar-time-grid",
-        "@reui/event-calendar-types"
+        "@neui/event-calendar",
+        "@neui/event-calendar-agenda-view",
+        "@neui/event-calendar-month-view",
+        "@neui/event-calendar-resource-view",
+        "@neui/event-calendar-time-grid",
+        "@neui/event-calendar-types"
       ],
       "files": [
         {
           "path": "event-calendar-content.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-content.tsx"
+          "target": "components/neui/event-calendar/event-calendar-content.tsx"
         }
       ]
     },
@@ -1017,15 +1017,15 @@
         "date-fns"
       ],
       "registryDependencies": [
-        "@reui/event-calendar",
-        "@reui/event-calendar-lib",
-        "@reui/event-calendar-types"
+        "@neui/event-calendar",
+        "@neui/event-calendar-lib",
+        "@neui/event-calendar-types"
       ],
       "files": [
         {
           "path": "event-calendar-dnd.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-dnd.tsx"
+          "target": "components/neui/event-calendar/event-calendar-dnd.tsx"
         }
       ]
     },
@@ -1040,17 +1040,17 @@
         "date-fns"
       ],
       "registryDependencies": [
-        "@reui/event-calendar",
-        "@reui/event-calendar-dnd",
-        "@reui/event-calendar-lib",
-        "@reui/event-calendar-types",
+        "@neui/event-calendar",
+        "@neui/event-calendar-dnd",
+        "@neui/event-calendar-lib",
+        "@neui/event-calendar-types",
         "tooltip"
       ],
       "files": [
         {
           "path": "event-calendar-event.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-event.tsx"
+          "target": "components/neui/event-calendar/event-calendar-event.tsx"
         }
       ]
     },
@@ -1063,13 +1063,13 @@
         "date-fns"
       ],
       "registryDependencies": [
-        "@reui/event-calendar-types"
+        "@neui/event-calendar-types"
       ],
       "files": [
         {
           "path": "event-calendar-i18n.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-i18n.tsx"
+          "target": "components/neui/event-calendar/event-calendar-i18n.tsx"
         }
       ]
     },
@@ -1083,14 +1083,14 @@
         "date-fns"
       ],
       "registryDependencies": [
-        "@reui/event-calendar-recurrence",
-        "@reui/event-calendar-types"
+        "@neui/event-calendar-recurrence",
+        "@neui/event-calendar-types"
       ],
       "files": [
         {
           "path": "event-calendar-lib.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-lib.tsx"
+          "target": "components/neui/event-calendar/event-calendar-lib.tsx"
         }
       ]
     },
@@ -1105,11 +1105,11 @@
         "date-fns"
       ],
       "registryDependencies": [
-        "@reui/event-calendar",
-        "@reui/event-calendar-dnd",
-        "@reui/event-calendar-event",
-        "@reui/event-calendar-lib",
-        "@reui/event-calendar-types",
+        "@neui/event-calendar",
+        "@neui/event-calendar-dnd",
+        "@neui/event-calendar-event",
+        "@neui/event-calendar-lib",
+        "@neui/event-calendar-types",
         "popover",
         "scroll-area"
       ],
@@ -1117,7 +1117,7 @@
         {
           "path": "event-calendar-month-view.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-month-view.tsx"
+          "target": "components/neui/event-calendar/event-calendar-month-view.tsx"
         }
       ]
     },
@@ -1135,9 +1135,9 @@
         "button",
         "calendar",
         "dropdown-menu",
-        "@reui/event-calendar",
-        "@reui/event-calendar-lib",
-        "@reui/event-calendar-types",
+        "@neui/event-calendar",
+        "@neui/event-calendar-lib",
+        "@neui/event-calendar-types",
         "popover",
         "tooltip"
       ],
@@ -1145,7 +1145,7 @@
         {
           "path": "event-calendar-nav.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-nav.tsx"
+          "target": "components/neui/event-calendar/event-calendar-nav.tsx"
         }
       ]
     },
@@ -1159,13 +1159,13 @@
         "date-fns"
       ],
       "registryDependencies": [
-        "@reui/event-calendar-types"
+        "@neui/event-calendar-types"
       ],
       "files": [
         {
           "path": "event-calendar-recurrence.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-recurrence.tsx"
+          "target": "components/neui/event-calendar/event-calendar-recurrence.tsx"
         }
       ]
     },
@@ -1180,19 +1180,19 @@
         "date-fns"
       ],
       "registryDependencies": [
-        "@reui/event-calendar",
-        "@reui/event-calendar-dnd",
-        "@reui/event-calendar-event",
-        "@reui/event-calendar-lib",
-        "@reui/event-calendar-time-grid",
-        "@reui/event-calendar-types",
+        "@neui/event-calendar",
+        "@neui/event-calendar-dnd",
+        "@neui/event-calendar-event",
+        "@neui/event-calendar-lib",
+        "@neui/event-calendar-time-grid",
+        "@neui/event-calendar-types",
         "scroll-area"
       ],
       "files": [
         {
           "path": "event-calendar-resource-view.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-resource-view.tsx"
+          "target": "components/neui/event-calendar/event-calendar-resource-view.tsx"
         }
       ]
     },
@@ -1207,18 +1207,18 @@
         "date-fns"
       ],
       "registryDependencies": [
-        "@reui/event-calendar",
-        "@reui/event-calendar-dnd",
-        "@reui/event-calendar-event",
-        "@reui/event-calendar-lib",
-        "@reui/event-calendar-types",
+        "@neui/event-calendar",
+        "@neui/event-calendar-dnd",
+        "@neui/event-calendar-event",
+        "@neui/event-calendar-lib",
+        "@neui/event-calendar-types",
         "scroll-area"
       ],
       "files": [
         {
           "path": "event-calendar-time-grid.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-time-grid.tsx"
+          "target": "components/neui/event-calendar/event-calendar-time-grid.tsx"
         }
       ]
     },
@@ -1233,7 +1233,7 @@
         {
           "path": "event-calendar-types.tsx",
           "type": "registry:ui",
-          "target": "components/reui/event-calendar/event-calendar-types.tsx"
+          "target": "components/neui/event-calendar/event-calendar-types.tsx"
         }
       ]
     },
@@ -1251,7 +1251,7 @@
         {
           "path": "file-type.tsx",
           "type": "registry:ui",
-          "target": "components/reui/file-type.tsx"
+          "target": "components/neui/file-type.tsx"
         }
       ]
     },
@@ -1268,27 +1268,27 @@
       "registryDependencies": [
         "button",
         "button-group",
-        "@reui/cascader",
-        "@reui/cascader-context",
-        "@reui/cascader-footer",
-        "@reui/cascader-item",
-        "@reui/cascader-lib",
-        "@reui/cascader-nav",
-        "@reui/cascader-types",
-        "@reui/cascader-virtual",
+        "@neui/cascader",
+        "@neui/cascader-context",
+        "@neui/cascader-footer",
+        "@neui/cascader-item",
+        "@neui/cascader-lib",
+        "@neui/cascader-nav",
+        "@neui/cascader-types",
+        "@neui/cascader-virtual",
         "dropdown-menu",
-        "@reui/filters-advanced",
-        "@reui/filters-builder",
-        "@reui/filters-chip",
-        "@reui/filters-context",
-        "@reui/filters-dnd",
-        "@reui/filters-draft",
-        "@reui/filters-editors",
-        "@reui/filters-i18n",
-        "@reui/filters-lib",
-        "@reui/filters-operators",
-        "@reui/filters-query",
-        "@reui/filters-types",
+        "@neui/filters-advanced",
+        "@neui/filters-builder",
+        "@neui/filters-chip",
+        "@neui/filters-context",
+        "@neui/filters-dnd",
+        "@neui/filters-draft",
+        "@neui/filters-editors",
+        "@neui/filters-i18n",
+        "@neui/filters-lib",
+        "@neui/filters-operators",
+        "@neui/filters-query",
+        "@neui/filters-types",
         "input",
         "popover",
         "tooltip"
@@ -1297,72 +1297,72 @@
         {
           "path": "filters-advanced.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-advanced.tsx"
+          "target": "components/neui/filters/filters-advanced.tsx"
         },
         {
           "path": "filters-builder.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-builder.tsx"
+          "target": "components/neui/filters/filters-builder.tsx"
         },
         {
           "path": "filters-chip.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-chip.tsx"
+          "target": "components/neui/filters/filters-chip.tsx"
         },
         {
           "path": "filters-context.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-context.tsx"
+          "target": "components/neui/filters/filters-context.tsx"
         },
         {
           "path": "filters-date.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-date.tsx"
+          "target": "components/neui/filters/filters-date.tsx"
         },
         {
           "path": "filters-dnd.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-dnd.tsx"
+          "target": "components/neui/filters/filters-dnd.tsx"
         },
         {
           "path": "filters-draft.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-draft.tsx"
+          "target": "components/neui/filters/filters-draft.tsx"
         },
         {
           "path": "filters-editors.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-editors.tsx"
+          "target": "components/neui/filters/filters-editors.tsx"
         },
         {
           "path": "filters-i18n.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-i18n.tsx"
+          "target": "components/neui/filters/filters-i18n.tsx"
         },
         {
           "path": "filters-lib.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-lib.tsx"
+          "target": "components/neui/filters/filters-lib.tsx"
         },
         {
           "path": "filters-operators.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-operators.tsx"
+          "target": "components/neui/filters/filters-operators.tsx"
         },
         {
           "path": "filters-query.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-query.tsx"
+          "target": "components/neui/filters/filters-query.tsx"
         },
         {
           "path": "filters-types.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-types.tsx"
+          "target": "components/neui/filters/filters-types.tsx"
         },
         {
           "path": "filters.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters.tsx"
+          "target": "components/neui/filters/filters.tsx"
         }
       ]
     },
@@ -1377,15 +1377,15 @@
       "registryDependencies": [
         "button",
         "dropdown-menu",
-        "@reui/filters-builder",
-        "@reui/filters-chip",
-        "@reui/filters-context",
-        "@reui/filters-dnd",
-        "@reui/filters-i18n",
-        "@reui/filters-lib",
-        "@reui/filters-operators",
-        "@reui/filters-query",
-        "@reui/filters-types",
+        "@neui/filters-builder",
+        "@neui/filters-chip",
+        "@neui/filters-context",
+        "@neui/filters-dnd",
+        "@neui/filters-i18n",
+        "@neui/filters-lib",
+        "@neui/filters-operators",
+        "@neui/filters-query",
+        "@neui/filters-types",
         "input",
         "popover",
         "tooltip"
@@ -1394,7 +1394,7 @@
         {
           "path": "filters-advanced.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-advanced.tsx"
+          "target": "components/neui/filters/filters-advanced.tsx"
         }
       ]
     },
@@ -1408,22 +1408,22 @@
       ],
       "registryDependencies": [
         "button",
-        "@reui/cascader",
-        "@reui/cascader-footer",
-        "@reui/cascader-nav",
-        "@reui/cascader-types",
-        "@reui/cascader-virtual",
-        "@reui/filters-context",
-        "@reui/filters-lib",
-        "@reui/filters-operators",
-        "@reui/filters-types",
+        "@neui/cascader",
+        "@neui/cascader-footer",
+        "@neui/cascader-nav",
+        "@neui/cascader-types",
+        "@neui/cascader-virtual",
+        "@neui/filters-context",
+        "@neui/filters-lib",
+        "@neui/filters-operators",
+        "@neui/filters-types",
         "popover"
       ],
       "files": [
         {
           "path": "filters-builder.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-builder.tsx"
+          "target": "components/neui/filters/filters-builder.tsx"
         }
       ]
     },
@@ -1439,12 +1439,12 @@
         "button",
         "button-group",
         "dropdown-menu",
-        "@reui/filters-context",
-        "@reui/filters-editors",
-        "@reui/filters-lib",
-        "@reui/filters-operators",
-        "@reui/filters-query",
-        "@reui/filters-types",
+        "@neui/filters-context",
+        "@neui/filters-editors",
+        "@neui/filters-lib",
+        "@neui/filters-operators",
+        "@neui/filters-query",
+        "@neui/filters-types",
         "popover",
         "tooltip"
       ],
@@ -1452,7 +1452,7 @@
         {
           "path": "filters-chip.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-chip.tsx"
+          "target": "components/neui/filters/filters-chip.tsx"
         }
       ]
     },
@@ -1463,15 +1463,15 @@
       "description": "",
       "dependencies": [],
       "registryDependencies": [
-        "@reui/filters-draft",
-        "@reui/filters-lib",
-        "@reui/filters-types"
+        "@neui/filters-draft",
+        "@neui/filters-lib",
+        "@neui/filters-types"
       ],
       "files": [
         {
           "path": "filters-context.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-context.tsx"
+          "target": "components/neui/filters/filters-context.tsx"
         }
       ]
     },
@@ -1488,7 +1488,7 @@
         {
           "path": "filters-date.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-date.tsx"
+          "target": "components/neui/filters/filters-date.tsx"
         }
       ]
     },
@@ -1503,7 +1503,7 @@
         {
           "path": "filters-dnd.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-dnd.tsx"
+          "target": "components/neui/filters/filters-dnd.tsx"
         }
       ]
     },
@@ -1514,13 +1514,13 @@
       "description": "",
       "dependencies": [],
       "registryDependencies": [
-        "@reui/filters-types"
+        "@neui/filters-types"
       ],
       "files": [
         {
           "path": "filters-draft.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-draft.tsx"
+          "target": "components/neui/filters/filters-draft.tsx"
         }
       ]
     },
@@ -1535,22 +1535,22 @@
       "registryDependencies": [
         "button",
         "button-group",
-        "@reui/cascader",
-        "@reui/cascader-context",
-        "@reui/cascader-footer",
-        "@reui/cascader-item",
-        "@reui/cascader-nav",
-        "@reui/cascader-types",
-        "@reui/filters-context",
-        "@reui/filters-lib",
-        "@reui/filters-types",
+        "@neui/cascader",
+        "@neui/cascader-context",
+        "@neui/cascader-footer",
+        "@neui/cascader-item",
+        "@neui/cascader-nav",
+        "@neui/cascader-types",
+        "@neui/filters-context",
+        "@neui/filters-lib",
+        "@neui/filters-types",
         "input"
       ],
       "files": [
         {
           "path": "filters-editors.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-editors.tsx"
+          "target": "components/neui/filters/filters-editors.tsx"
         }
       ]
     },
@@ -1561,13 +1561,13 @@
       "description": "",
       "dependencies": [],
       "registryDependencies": [
-        "@reui/filters-types"
+        "@neui/filters-types"
       ],
       "files": [
         {
           "path": "filters-i18n.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-i18n.tsx"
+          "target": "components/neui/filters/filters-i18n.tsx"
         }
       ]
     },
@@ -1578,16 +1578,16 @@
       "description": "",
       "dependencies": [],
       "registryDependencies": [
-        "@reui/cascader",
-        "@reui/cascader-lib",
-        "@reui/cascader-types",
-        "@reui/filters-types"
+        "@neui/cascader",
+        "@neui/cascader-lib",
+        "@neui/cascader-types",
+        "@neui/filters-types"
       ],
       "files": [
         {
           "path": "filters-lib.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-lib.tsx"
+          "target": "components/neui/filters/filters-lib.tsx"
         }
       ]
     },
@@ -1598,13 +1598,13 @@
       "description": "",
       "dependencies": [],
       "registryDependencies": [
-        "@reui/filters-types"
+        "@neui/filters-types"
       ],
       "files": [
         {
           "path": "filters-operators.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-operators.tsx"
+          "target": "components/neui/filters/filters-operators.tsx"
         }
       ]
     },
@@ -1615,13 +1615,13 @@
       "description": "",
       "dependencies": [],
       "registryDependencies": [
-        "@reui/filters-types"
+        "@neui/filters-types"
       ],
       "files": [
         {
           "path": "filters-query.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-query.tsx"
+          "target": "components/neui/filters/filters-query.tsx"
         }
       ]
     },
@@ -1636,7 +1636,7 @@
         {
           "path": "filters-types.tsx",
           "type": "registry:ui",
-          "target": "components/reui/filters/filters-types.tsx"
+          "target": "components/neui/filters/filters-types.tsx"
         }
       ]
     },
@@ -1654,7 +1654,7 @@
         {
           "path": "frame.tsx",
           "type": "registry:ui",
-          "target": "components/reui/frame.tsx"
+          "target": "components/neui/frame.tsx"
         }
       ]
     },
@@ -1675,12 +1675,12 @@
         "checkbox",
         "context-menu",
         "dropdown-menu",
-        "@reui/gantt-bar",
-        "@reui/gantt-dnd",
-        "@reui/gantt-i18n",
-        "@reui/gantt-lib",
-        "@reui/gantt-recurrence",
-        "@reui/gantt-types",
+        "@neui/gantt-bar",
+        "@neui/gantt-dnd",
+        "@neui/gantt-i18n",
+        "@neui/gantt-lib",
+        "@neui/gantt-recurrence",
+        "@neui/gantt-types",
         "popover",
         "scroll-area",
         "tooltip"
@@ -1689,47 +1689,47 @@
         {
           "path": "gantt-bar.tsx",
           "type": "registry:ui",
-          "target": "components/reui/gantt/gantt-bar.tsx"
+          "target": "components/neui/gantt/gantt-bar.tsx"
         },
         {
           "path": "gantt-dnd.tsx",
           "type": "registry:ui",
-          "target": "components/reui/gantt/gantt-dnd.tsx"
+          "target": "components/neui/gantt/gantt-dnd.tsx"
         },
         {
           "path": "gantt-i18n.tsx",
           "type": "registry:ui",
-          "target": "components/reui/gantt/gantt-i18n.tsx"
+          "target": "components/neui/gantt/gantt-i18n.tsx"
         },
         {
           "path": "gantt-lib.tsx",
           "type": "registry:ui",
-          "target": "components/reui/gantt/gantt-lib.tsx"
+          "target": "components/neui/gantt/gantt-lib.tsx"
         },
         {
           "path": "gantt-nav.tsx",
           "type": "registry:ui",
-          "target": "components/reui/gantt/gantt-nav.tsx"
+          "target": "components/neui/gantt/gantt-nav.tsx"
         },
         {
           "path": "gantt-recurrence.tsx",
           "type": "registry:ui",
-          "target": "components/reui/gantt/gantt-recurrence.tsx"
+          "target": "components/neui/gantt/gantt-recurrence.tsx"
         },
         {
           "path": "gantt-types.tsx",
           "type": "registry:ui",
-          "target": "components/reui/gantt/gantt-types.tsx"
+          "target": "components/neui/gantt/gantt-types.tsx"
         },
         {
           "path": "gantt-view.tsx",
           "type": "registry:ui",
-          "target": "components/reui/gantt/gantt-view.tsx"
+          "target": "components/neui/gantt/gantt-view.tsx"
         },
         {
           "path": "gantt.tsx",
           "type": "registry:ui",
-          "target": "components/reui/gantt/gantt.tsx"
+          "target": "components/neui/gantt/gantt.tsx"
         }
       ]
     },
@@ -1744,17 +1744,17 @@
       ],
       "registryDependencies": [
         "context-menu",
-        "@reui/gantt",
-        "@reui/gantt-dnd",
-        "@reui/gantt-lib",
-        "@reui/gantt-types",
+        "@neui/gantt",
+        "@neui/gantt-dnd",
+        "@neui/gantt-lib",
+        "@neui/gantt-types",
         "tooltip"
       ],
       "files": [
         {
           "path": "gantt-bar.tsx",
           "type": "registry:ui",
-          "target": "components/reui/gantt/gantt-bar.tsx"
+          "target": "components/neui/gantt/gantt-bar.tsx"
         }
       ]
     },
@@ -1767,15 +1767,15 @@
         "date-fns"
       ],
       "registryDependencies": [
-        "@reui/gantt",
-        "@reui/gantt-lib",
-        "@reui/gantt-types"
+        "@neui/gantt",
+        "@neui/gantt-lib",
+        "@neui/gantt-types"
       ],
       "files": [
         {
           "path": "gantt-dnd.tsx",
           "type": "registry:ui",
-          "target": "components/reui/gantt/gantt-dnd.tsx"
+          "target": "components/neui/gantt/gantt-dnd.tsx"
         }
       ]
     },
@@ -1788,13 +1788,13 @@
         "date-fns"
       ],
       "registryDependencies": [
-        "@reui/gantt-types"
+        "@neui/gantt-types"
       ],
       "files": [
         {
           "path": "gantt-i18n.tsx",
           "type": "registry:ui",
-          "target": "components/reui/gantt/gantt-i18n.tsx"
+          "target": "components/neui/gantt/gantt-i18n.tsx"
         }
       ]
     },
@@ -1808,14 +1808,14 @@
         "date-fns"
       ],
       "registryDependencies": [
-        "@reui/gantt-recurrence",
-        "@reui/gantt-types"
+        "@neui/gantt-recurrence",
+        "@neui/gantt-types"
       ],
       "files": [
         {
           "path": "gantt-lib.tsx",
           "type": "registry:ui",
-          "target": "components/reui/gantt/gantt-lib.tsx"
+          "target": "components/neui/gantt/gantt-lib.tsx"
         }
       ]
     },
@@ -1833,9 +1833,9 @@
         "button",
         "calendar",
         "dropdown-menu",
-        "@reui/gantt",
-        "@reui/gantt-lib",
-        "@reui/gantt-types",
+        "@neui/gantt",
+        "@neui/gantt-lib",
+        "@neui/gantt-types",
         "popover",
         "tooltip"
       ],
@@ -1843,7 +1843,7 @@
         {
           "path": "gantt-nav.tsx",
           "type": "registry:ui",
-          "target": "components/reui/gantt/gantt-nav.tsx"
+          "target": "components/neui/gantt/gantt-nav.tsx"
         }
       ]
     },
@@ -1857,13 +1857,13 @@
         "date-fns"
       ],
       "registryDependencies": [
-        "@reui/gantt-types"
+        "@neui/gantt-types"
       ],
       "files": [
         {
           "path": "gantt-recurrence.tsx",
           "type": "registry:ui",
-          "target": "components/reui/gantt/gantt-recurrence.tsx"
+          "target": "components/neui/gantt/gantt-recurrence.tsx"
         }
       ]
     },
@@ -1878,7 +1878,7 @@
         {
           "path": "gantt-types.tsx",
           "type": "registry:ui",
-          "target": "components/reui/gantt/gantt-types.tsx"
+          "target": "components/neui/gantt/gantt-types.tsx"
         }
       ]
     },
@@ -1896,11 +1896,11 @@
         "button",
         "checkbox",
         "context-menu",
-        "@reui/gantt",
-        "@reui/gantt-bar",
-        "@reui/gantt-dnd",
-        "@reui/gantt-lib",
-        "@reui/gantt-types",
+        "@neui/gantt",
+        "@neui/gantt-bar",
+        "@neui/gantt-dnd",
+        "@neui/gantt-lib",
+        "@neui/gantt-types",
         "scroll-area",
         "tooltip"
       ],
@@ -1908,7 +1908,7 @@
         {
           "path": "gantt-view.tsx",
           "type": "registry:ui",
-          "target": "components/reui/gantt/gantt-view.tsx"
+          "target": "components/neui/gantt/gantt-view.tsx"
         }
       ]
     },
@@ -1925,7 +1925,7 @@
         {
           "path": "icon-stack.tsx",
           "type": "registry:ui",
-          "target": "components/reui/icon-stack.tsx"
+          "target": "components/neui/icon-stack.tsx"
         }
       ]
     },
@@ -1944,7 +1944,7 @@
         {
           "path": "icon-tile.tsx",
           "type": "registry:ui",
-          "target": "components/reui/icon-tile.tsx"
+          "target": "components/neui/icon-tile.tsx"
         }
       ]
     },
@@ -1965,7 +1965,7 @@
         {
           "path": "kanban.tsx",
           "type": "registry:ui",
-          "target": "components/reui/kanban.tsx"
+          "target": "components/neui/kanban.tsx"
         }
       ]
     },
@@ -1986,7 +1986,7 @@
         {
           "path": "number-field.tsx",
           "type": "registry:ui",
-          "target": "components/reui/number-field.tsx"
+          "target": "components/neui/number-field.tsx"
         }
       ]
     },
@@ -2009,7 +2009,7 @@
         {
           "path": "phone-input.tsx",
           "type": "registry:ui",
-          "target": "components/reui/phone-input.tsx"
+          "target": "components/neui/phone-input.tsx"
         }
       ]
     },
@@ -2027,7 +2027,7 @@
         {
           "path": "rating.tsx",
           "type": "registry:ui",
-          "target": "components/reui/rating.tsx"
+          "target": "components/neui/rating.tsx"
         }
       ]
     },
@@ -2042,7 +2042,7 @@
         {
           "path": "scrollspy.tsx",
           "type": "registry:ui",
-          "target": "components/reui/scrollspy.tsx"
+          "target": "components/neui/scrollspy.tsx"
         }
       ]
     },
@@ -2061,7 +2061,7 @@
         {
           "path": "signature-pad.tsx",
           "type": "registry:ui",
-          "target": "components/reui/signature-pad.tsx"
+          "target": "components/neui/signature-pad.tsx"
         }
       ]
     },
@@ -2082,7 +2082,7 @@
         {
           "path": "sortable.tsx",
           "type": "registry:ui",
-          "target": "components/reui/sortable.tsx"
+          "target": "components/neui/sortable.tsx"
         }
       ]
     },
@@ -2100,7 +2100,7 @@
         {
           "path": "stepper.tsx",
           "type": "registry:ui",
-          "target": "components/reui/stepper.tsx"
+          "target": "components/neui/stepper.tsx"
         }
       ]
     },
@@ -2121,7 +2121,7 @@
         {
           "path": "time-picker.tsx",
           "type": "registry:ui",
-          "target": "components/reui/time-picker.tsx"
+          "target": "components/neui/time-picker.tsx"
         }
       ]
     },
@@ -2139,7 +2139,7 @@
         {
           "path": "timeline.tsx",
           "type": "registry:ui",
-          "target": "components/reui/timeline.tsx"
+          "target": "components/neui/timeline.tsx"
         }
       ]
     },
@@ -2158,7 +2158,7 @@
         {
           "path": "tree.tsx",
           "type": "registry:ui",
-          "target": "components/reui/tree.tsx"
+          "target": "components/neui/tree.tsx"
         }
       ]
     }

@@ -5,7 +5,7 @@ import { META_THEME_COLORS, siteConfig } from "@/lib/config"
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: siteConfig.name,
-    short_name: "ReUI",
+    short_name: "NeUI",
     description: siteConfig.description,
     start_url: "/",
     scope: "/",

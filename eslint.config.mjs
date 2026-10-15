@@ -44,10 +44,10 @@ export default defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
-    // Generated output (never hand-edited; see reui-project standards).
+    // Generated output (never hand-edited; see neui-project standards).
     ".source/**",
     "lib/generated/**",
     "public/**",
-    "registry-reui/_meta/**",
+    "registry-neui/_meta/**",
   ]),
 ])

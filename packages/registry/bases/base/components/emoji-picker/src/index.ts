@@ -2,14 +2,14 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-emoji-picker-1": () => import("@/registry-reui/bases/base/components/emoji-picker/c-emoji-picker-1.tsx"),
-  "c-emoji-picker-2": () => import("@/registry-reui/bases/base/components/emoji-picker/c-emoji-picker-2.tsx"),
-  "c-emoji-picker-3": () => import("@/registry-reui/bases/base/components/emoji-picker/c-emoji-picker-3.tsx"),
-  "c-emoji-picker-4": () => import("@/registry-reui/bases/base/components/emoji-picker/c-emoji-picker-4.tsx"),
-  "c-emoji-picker-5": () => import("@/registry-reui/bases/base/components/emoji-picker/c-emoji-picker-5.tsx"),
-  "c-emoji-picker-6": () => import("@/registry-reui/bases/base/components/emoji-picker/c-emoji-picker-6.tsx"),
-  "c-emoji-picker-7": () => import("@/registry-reui/bases/base/components/emoji-picker/c-emoji-picker-7.tsx"),
-  "c-emoji-picker-8": () => import("@/registry-reui/bases/base/components/emoji-picker/c-emoji-picker-8.tsx"),
+  "c-emoji-picker-1": () => import("@/registry-neui/bases/base/components/emoji-picker/c-emoji-picker-1.tsx"),
+  "c-emoji-picker-2": () => import("@/registry-neui/bases/base/components/emoji-picker/c-emoji-picker-2.tsx"),
+  "c-emoji-picker-3": () => import("@/registry-neui/bases/base/components/emoji-picker/c-emoji-picker-3.tsx"),
+  "c-emoji-picker-4": () => import("@/registry-neui/bases/base/components/emoji-picker/c-emoji-picker-4.tsx"),
+  "c-emoji-picker-5": () => import("@/registry-neui/bases/base/components/emoji-picker/c-emoji-picker-5.tsx"),
+  "c-emoji-picker-6": () => import("@/registry-neui/bases/base/components/emoji-picker/c-emoji-picker-6.tsx"),
+  "c-emoji-picker-7": () => import("@/registry-neui/bases/base/components/emoji-picker/c-emoji-picker-7.tsx"),
+  "c-emoji-picker-8": () => import("@/registry-neui/bases/base/components/emoji-picker/c-emoji-picker-8.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

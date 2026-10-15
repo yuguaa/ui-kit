@@ -17,8 +17,8 @@ import {
 import { Badge } from "@/components/ui/badge"
 
 /**
- * The category copy is synced from reui.io and links the Pro blocks built on
- * each primitive. This repo has no /blocks route, so those paths go to reui.io
+ * The category copy is synced from neui.io and links the Pro blocks built on
+ * each primitive. This repo has no /blocks route, so those paths go to neui.io
  * instead of 404ing here.
  */
 function resolveSeoHref(href: string) {

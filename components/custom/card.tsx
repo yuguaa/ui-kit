@@ -2,7 +2,7 @@ import React from "react"
 import Link from "next/link"
 
 import { cn } from "cn"
-import { Frame, FramePanel } from "@/components/reui/frame"
+import { Frame, FramePanel } from "@/components/neui/frame"
 
 export function Card({
   children,

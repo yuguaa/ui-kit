@@ -2,20 +2,20 @@
 // Lazy-import map of every component preview in this category.
 
 export const componentPreviewLoaders = {
-  "c-file-type-1": () => import("@/registry-reui/bases/radix/components/file-type/c-file-type-1.tsx"),
-  "c-file-type-2": () => import("@/registry-reui/bases/radix/components/file-type/c-file-type-2.tsx"),
-  "c-file-type-3": () => import("@/registry-reui/bases/radix/components/file-type/c-file-type-3.tsx"),
-  "c-file-type-4": () => import("@/registry-reui/bases/radix/components/file-type/c-file-type-4.tsx"),
-  "c-file-type-5": () => import("@/registry-reui/bases/radix/components/file-type/c-file-type-5.tsx"),
-  "c-file-type-6": () => import("@/registry-reui/bases/radix/components/file-type/c-file-type-6.tsx"),
-  "c-file-type-7": () => import("@/registry-reui/bases/radix/components/file-type/c-file-type-7.tsx"),
-  "c-file-type-8": () => import("@/registry-reui/bases/radix/components/file-type/c-file-type-8.tsx"),
-  "c-file-type-9": () => import("@/registry-reui/bases/radix/components/file-type/c-file-type-9.tsx"),
-  "c-file-type-10": () => import("@/registry-reui/bases/radix/components/file-type/c-file-type-10.tsx"),
-  "c-file-type-11": () => import("@/registry-reui/bases/radix/components/file-type/c-file-type-11.tsx"),
-  "c-file-type-12": () => import("@/registry-reui/bases/radix/components/file-type/c-file-type-12.tsx"),
-  "c-file-type-13": () => import("@/registry-reui/bases/radix/components/file-type/c-file-type-13.tsx"),
-  "c-file-type-14": () => import("@/registry-reui/bases/radix/components/file-type/c-file-type-14.tsx"),
+  "c-file-type-1": () => import("@/registry-neui/bases/radix/components/file-type/c-file-type-1.tsx"),
+  "c-file-type-2": () => import("@/registry-neui/bases/radix/components/file-type/c-file-type-2.tsx"),
+  "c-file-type-3": () => import("@/registry-neui/bases/radix/components/file-type/c-file-type-3.tsx"),
+  "c-file-type-4": () => import("@/registry-neui/bases/radix/components/file-type/c-file-type-4.tsx"),
+  "c-file-type-5": () => import("@/registry-neui/bases/radix/components/file-type/c-file-type-5.tsx"),
+  "c-file-type-6": () => import("@/registry-neui/bases/radix/components/file-type/c-file-type-6.tsx"),
+  "c-file-type-7": () => import("@/registry-neui/bases/radix/components/file-type/c-file-type-7.tsx"),
+  "c-file-type-8": () => import("@/registry-neui/bases/radix/components/file-type/c-file-type-8.tsx"),
+  "c-file-type-9": () => import("@/registry-neui/bases/radix/components/file-type/c-file-type-9.tsx"),
+  "c-file-type-10": () => import("@/registry-neui/bases/radix/components/file-type/c-file-type-10.tsx"),
+  "c-file-type-11": () => import("@/registry-neui/bases/radix/components/file-type/c-file-type-11.tsx"),
+  "c-file-type-12": () => import("@/registry-neui/bases/radix/components/file-type/c-file-type-12.tsx"),
+  "c-file-type-13": () => import("@/registry-neui/bases/radix/components/file-type/c-file-type-13.tsx"),
+  "c-file-type-14": () => import("@/registry-neui/bases/radix/components/file-type/c-file-type-14.tsx"),
 } as const
 
 export type ComponentName = keyof typeof componentPreviewLoaders

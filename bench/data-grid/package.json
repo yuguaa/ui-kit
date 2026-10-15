@@ -1,9 +1,9 @@
 {
-  "name": "reui-bench-data-grid",
+  "name": "neui-bench-data-grid",
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "Reproducible data grid benchmark: AG Grid Community against the ReUI Data Grid engine (TanStack Table + TanStack Virtual) on the same 100K rows, plus the live ReUI virtualization block by URL.",
+  "description": "Reproducible data grid benchmark: AG Grid Community against the NeUI Data Grid engine (TanStack Table + TanStack Virtual) on the same 100K rows, plus the live NeUI virtualization block by URL.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

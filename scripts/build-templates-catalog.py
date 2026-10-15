@@ -25,7 +25,7 @@ templates = [
 catalog = {
     "templates": [
         {"slug": s, "name": n, "metaTitle": t, "category": c,
-         "url": f"https://reui.io/templates/{s}", "accessTier": "ultimate"}
+         "url": f"https://neui.io/templates/{s}", "accessTier": "ultimate"}
         for s, n, t, c in templates
     ],
     "counts_by_category": {},

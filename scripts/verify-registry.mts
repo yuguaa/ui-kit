@@ -3,7 +3,7 @@
 /**
  * verify-registry.mts
  *
- * Production gate for the generated ReUI registry. Runs LAST in registry:all,
+ * Production gate for the generated NeUI registry. Runs LAST in registry:all,
  * after registry:build (-> public/r/styles), and fails the build (exit 1) if
  * the shipped output is not valid for consumers.
  *
@@ -245,7 +245,7 @@ async function main() {
 
         // Internals that should have been rewritten before shipping.
         if (
-          /@\/registry-reui\//.test(content) ||
+          /@\/registry-neui\//.test(content) ||
           /@\/registry\/bases\//.test(content)
         ) {
           errors.push(`${id}: file "${file.path}" leaks a registry import path`)

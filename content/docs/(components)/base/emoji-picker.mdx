@@ -14,7 +14,7 @@ base: base
 ## Installation
 
 ```bash component
-npx shadcn@latest add @reui/emoji-picker
+npx shadcn@latest add @neui/emoji-picker
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ import {
   EmojiPickerSearch,
   EmojiPickerSkinTone,
   EmojiPickerTrigger,
-} from "@/components/reui/emoji-picker"
+} from "@/components/neui/emoji-picker"
 ```
 
 ```tsx
@@ -137,7 +137,7 @@ connect-src 'self' https://cdn.jsdelivr.net/npm/emojibase-data@17.0.0/
 ```
 
 ```tsx
-import { normalizeEmojibaseData } from "@/components/reui/emoji-picker"
+import { normalizeEmojibaseData } from "@/components/neui/emoji-picker"
 import raw from "emojibase-data/en/data.json"
 import messages from "emojibase-data/en/messages.json"
 import github from "emojibase-data/en/shortcodes/github.json"
@@ -233,10 +233,10 @@ complete picker.
 | `recentLimit`                          | `number`                                                | 2 rows                          | How many recent emoji show. `0` hides the section.                                 |
 | `recent`, `defaultRecent`              | `EmojiPickerRecentEntry[]`                              | -                               | A controlled or seeded recent list, for syncing it to an account.                  |
 | `onRecentChange`                       | `(recent: EmojiPickerRecentEntry[]) => void`            | -                               | Fires after each pick with the updated list.                                       |
-| `recentStorageKey`                     | `string \| null`                                        | `"reui-emoji-picker-recent"`    | localStorage key for the recent list. `null` keeps it in memory.                   |
+| `recentStorageKey`                     | `string \| null`                                        | `"neui-emoji-picker-recent"`    | localStorage key for the recent list. `null` keeps it in memory.                   |
 | `skinTone`, `defaultSkinTone`          | `EmojiPickerSkinTone`                                   | `0`                             | The tone, 0 (default) to 5 (dark).                                                 |
 | `onSkinToneChange`                     | `(tone: EmojiPickerSkinTone) => void`                   | -                               | Fires when the tone changes.                                                       |
-| `skinToneStorageKey`                   | `string \| null`                                        | `"reui-emoji-picker-skin-tone"` | localStorage key for the tone. `null` keeps it in memory.                          |
+| `skinToneStorageKey`                   | `string \| null`                                        | `"neui-emoji-picker-skin-tone"` | localStorage key for the tone. `null` keeps it in memory.                          |
 | `query`, `onQueryChange`               | `string`, `(query: string) => void`                     | -                               | Controlled search text.                                                            |
 | `size`                                 | `"sm" \| "default" \| "lg"`                             | `"default"`                     | 16, 20 or 26px glyphs in 26, 30 or 38px cells.                                     |
 | `columns`                              | `number \| "auto"`                                      | `8`                             | Cells per row. `"auto"` fills the panel's width.                                   |

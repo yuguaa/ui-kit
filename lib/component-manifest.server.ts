@@ -21,7 +21,7 @@ export interface RawComponentManifestItem {
 }
 
 function getComponentShardDir(base: string) {
-  return projectPath("registry-reui", "_meta", "components", "bases", base)
+  return projectPath("registry-neui", "_meta", "components", "bases", base)
 }
 
 export function getRawComponentManifest(

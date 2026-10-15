@@ -79,10 +79,10 @@ export function ComponentWorkbenchPanel({
             <div className="space-y-4">
               <div className="border-site-border site-rounded-lg border">
                 <CodeBlockCommand
-                  __bun__={`bunx --bun shadcn@latest add @reui/${component.name}`}
-                  __npm__={`npx shadcn@latest add @reui/${component.name}`}
-                  __pnpm__={`pnpm dlx shadcn@latest add @reui/${component.name}`}
-                  __yarn__={`yarn dlx shadcn@latest add @reui/${component.name}`}
+                  __bun__={`bunx --bun shadcn@latest add @neui/${component.name}`}
+                  __npm__={`npx shadcn@latest add @neui/${component.name}`}
+                  __pnpm__={`pnpm dlx shadcn@latest add @neui/${component.name}`}
+                  __yarn__={`yarn dlx shadcn@latest add @neui/${component.name}`}
                 />
               </div>
               <div className="bg-site-code border-site-border site-rounded-lg relative min-h-[28rem] overflow-hidden border">

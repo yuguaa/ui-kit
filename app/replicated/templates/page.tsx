@@ -7,7 +7,7 @@ import { SnapshotCard } from "@/components/replicated/snapshot-card"
 
 export const metadata: Metadata = {
   title: "Templates",
-  description: "从 reui.io 复刻到本地的全部模板页面快照。",
+  description: "从 neui.io 复刻到本地的全部模板页面快照。",
 }
 
 type CatalogTemplate = { slug: string; name: string; category: string }
@@ -54,7 +54,7 @@ export default async function ReplicatedTemplatesPage() {
         badge="Templates"
         title="Templates"
         count={entries.length}
-        description={`从 reui.io 复刻到本地的 ${entries.length} 个完整模板，共 ${totalPages} 个页面快照。点击模板查看其全部页面。`}
+        description={`从 neui.io 复刻到本地的 ${entries.length} 个完整模板，共 ${totalPages} 个页面快照。点击模板查看其全部页面。`}
         titleId="templates-page-title"
       />
 

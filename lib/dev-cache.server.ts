@@ -19,7 +19,7 @@ export function projectPath(...segments: string[]): string {
 }
 
 const g = globalThis as unknown as {
-  __reui_dev_file_cache?: Map<
+  __neui_dev_file_cache?: Map<
     string,
     {
       mtimeMs: number
@@ -30,10 +30,10 @@ const g = globalThis as unknown as {
 }
 
 function getFileStore() {
-  if (!g.__reui_dev_file_cache) {
-    g.__reui_dev_file_cache = new Map()
+  if (!g.__neui_dev_file_cache) {
+    g.__neui_dev_file_cache = new Map()
   }
-  return g.__reui_dev_file_cache
+  return g.__neui_dev_file_cache
 }
 
 /**

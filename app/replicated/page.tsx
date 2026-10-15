@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "复刻资产 · ReUI",
+  title: "复刻资产 · NeUI",
 }
 
 /** 复刻资产总览，指向 blocks 与 templates 两个列表页 */
@@ -11,7 +11,7 @@ export default function ReplicatedIndexPage() {
     <div className="bg-background text-foreground mx-auto w-full max-w-3xl px-4 py-16 sm:px-6">
       <h1 className="text-3xl font-semibold tracking-tight">复刻资产</h1>
       <p className="text-muted-foreground mt-3 text-sm">
-        从 reui.io 复刻到本地的渲染快照，blocks 与 templates 均可在本地预览。
+        从 neui.io 复刻到本地的渲染快照，blocks 与 templates 均可在本地预览。
       </p>
 
       <div className="mt-10 grid gap-4 sm:grid-cols-2">

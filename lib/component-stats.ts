@@ -25,7 +25,7 @@ interface ComponentStatsData {
 function getComponentStats(): ComponentStatsData {
   const baseStats = readJsonCached<ComponentStatsData>(
     "component-registry-json",
-    projectPath("registry-reui", "_meta", "components", "registry.json")
+    projectPath("registry-neui", "_meta", "components", "registry.json")
   )
 
   if (!isComponentSmokeSubsetEnabled()) {

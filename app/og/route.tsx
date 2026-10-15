@@ -61,7 +61,7 @@ function getFonts() {
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
-  const rawTitle = searchParams.get("title")?.trim() || "ReUI"
+  const rawTitle = searchParams.get("title")?.trim() || "NeUI"
   const rawDesc =
     searchParams.get("description")?.trim() ||
     "High-quality React components and in-house primitives for shadcn/ui."

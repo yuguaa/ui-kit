@@ -1,7 +1,7 @@
-# ReUI Templates 完整清单
+# NeUI Templates 完整清单
 
-> 数据来源：https://reui.io/templates（2026-10-15 抓取）
-> 全部 17 个模板的访问级别均为 **Ultimate**，需要 ReUI Ultimate 许可证或登录后下载。
+> 数据来源：https://neui.io/templates（2026-10-15 抓取）
+> 全部 17 个模板的访问级别均为 **Ultimate**，需要 NeUI Ultimate 许可证或登录后下载。
 
 ## 全部模板（17 个）
 
@@ -34,5 +34,5 @@
 
 ## 获取方式
 
-模板源码由 ReUI 的付费 registry 分发，页面显示 "Free templates, no purchase needed. Sign in and download"。
-登录 reui.io 账号后可从模板详情页下载；源码不在 GitHub 开源仓库中。
+模板源码由 NeUI 的付费 registry 分发，页面显示 "Free templates, no purchase needed. Sign in and download"。
+登录 neui.io 账号后可从模板详情页下载；源码不在 GitHub 开源仓库中。

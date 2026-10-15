@@ -42,7 +42,7 @@ export function HomeSeoBlock() {
       stat: `${CUSTOM_PRIMITIVES_TOTAL}`,
       title: "In-House Primitives",
       description:
-        "Custom ReUI primitives not in base shadcn/ui - Data Grid, Kanban, Filters, Tree, and more.",
+        "Custom NeUI primitives not in base shadcn/ui - Data Grid, Kanban, Filters, Tree, and more.",
       cta: "Read the docs",
       href: "/docs",
     },

@@ -1,4 +1,4 @@
-// Free `c-*` examples pull some shared @reui primitives as registry
+// Free `c-*` examples pull some shared @neui primitives as registry
 // dependencies. These "style-aware" primitives ship a per-style source variant,
 // so the registry resolves the correct style when they are served.
 const STYLE_AWARE_REGISTRY_ITEM_NAMES = new Set([

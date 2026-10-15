@@ -3,12 +3,12 @@
  * markdown table to stdout.
  *
  *   pnpm build && (pnpm preview &) && pnpm bench
- *   pnpm bench --reui-url http://localhost:1000/preview/base/data-grid-virtualization-1?embed=1
+ *   pnpm bench --neui-url http://localhost:1000/preview/base/data-grid-virtualization-1?embed=1
  *
  * Targets:
  *   ag-grid    AG Grid Community on 100K generated rows (this package)
- *   tanstack   the ReUI Data Grid engine (TanStack Table + Virtual) on the same rows
- *   reui       the live ReUI virtualization block, by URL (its own fixture rows)
+ *   tanstack   the NeUI Data Grid engine (TanStack Table + Virtual) on the same rows
+ *   neui       the live NeUI virtualization block, by URL (its own fixture rows)
  *
  * Measures, per target, over `--runs` runs (default 3), reporting the median:
  *   first paint (ms)          performance paint entries after navigation
@@ -28,7 +28,7 @@ const arg = (name: string, fallback: string) => {
 }
 const runs = Number(arg("--runs", "3"))
 const base = arg("--base", "http://localhost:4173")
-const reuiUrl = arg("--reui-url", "")
+const neuiUrl = arg("--neui-url", "")
 const rows = arg("--rows", "100000")
 const label = arg("--label", "")
 
@@ -61,7 +61,7 @@ async function measure(url: string, live: boolean): Promise<Sample> {
   // Scroll: 40 wheel steps, frame gaps sampled with requestAnimationFrame.
   const scrolled = await page.evaluate(async () => {
     // The vertical scroller: the deepest element that overflows by more than a
-    // viewport and scrolls; works for AG Grid, the engine page and the ReUI block.
+    // viewport and scrolls; works for AG Grid, the engine page and the NeUI block.
     const target = [...document.querySelectorAll<HTMLElement>("*")]
       .filter((el) => el.scrollHeight > el.clientHeight + 100 && /auto|scroll/.test(getComputedStyle(el).overflowY))
       .sort((a, b) => b.scrollHeight - a.scrollHeight)[0] ?? (document.scrollingElement as HTMLElement)
@@ -111,8 +111,8 @@ async function measure(url: string, live: boolean): Promise<Sample> {
 async function main() {
   const targets: Array<{ name: string; url: string; live: boolean }> = [
     { name: "ag-grid", url: `${base}/ag-grid.html?rows=${rows}`, live: false },
-    { name: "tanstack (ReUI Data Grid engine)", url: `${base}/tanstack.html?rows=${rows}`, live: false },
-    ...(reuiUrl ? [{ name: "reui (live block)", url: reuiUrl, live: true }] : []),
+    { name: "tanstack (NeUI Data Grid engine)", url: `${base}/tanstack.html?rows=${rows}`, live: false },
+    ...(neuiUrl ? [{ name: "neui (live block)", url: neuiUrl, live: true }] : []),
   ]
   const results: Record<string, Sample & { runs: number; url: string }> = {}
   for (const target of targets) {

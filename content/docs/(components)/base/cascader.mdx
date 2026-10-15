@@ -19,7 +19,7 @@ What it adds over a flat combobox is level navigation: pressing a branch opens i
 ## Installation
 
 ```bash
-npx shadcn@latest add @reui/cascader
+npx shadcn@latest add @neui/cascader
 ```
 
 ## Usage
@@ -33,15 +33,15 @@ import {
   CascaderPanel,
   CascaderStatus,
   CascaderTrigger,
-} from "@/components/reui/cascader/cascader"
-import { CascaderItems } from "@/components/reui/cascader/cascader-item"
+} from "@/components/neui/cascader/cascader"
+import { CascaderItems } from "@/components/neui/cascader/cascader-item"
 import {
   CascaderBreadcrumb,
   CascaderInput,
   CascaderNav,
   CascaderValue,
-} from "@/components/reui/cascader/cascader-nav"
-import type { CascaderNode } from "@/components/reui/cascader/cascader-types"
+} from "@/components/neui/cascader/cascader-nav"
+import type { CascaderNode } from "@/components/neui/cascader/cascader-types"
 ```
 
 ```tsx
@@ -506,7 +506,7 @@ import {
   CascaderSubmenu,
   CascaderSubmenuContent,
   CascaderSubmenuTrigger,
-} from "@/components/reui/cascader/cascader-footer"
+} from "@/components/neui/cascader/cascader-footer"
 
 ;<CascaderPanel>
   <CascaderNav>
@@ -596,7 +596,7 @@ The multi-select trigger surface. A multi-select trigger otherwise collapses to 
 import {
   CascaderChips,
   useCascaderAnchor,
-} from "@/components/reui/cascader/cascader"
+} from "@/components/neui/cascader/cascader"
 
 const anchor = useCascaderAnchor()
 
@@ -609,7 +609,7 @@ const anchor = useCascaderAnchor()
 </Cascader>
 ```
 
-Three things it does that a hand-rolled chip list routinely does not: it carries an ancestor path on a chip only where its label alone would be ambiguous (per selection, so nothing is padded for consistency's sake), it names every remove button through `labels.removeChip`, and it names the container through `labels.chipsLabel` - Base UI gives it `role="toolbar"` WHILE the selection is non-empty, so NVDA keeps focus mode while arrowing between chips, and an unnamed toolbar is announced as just "toolbar". With nothing selected there are no chips to arrow between, so the role is dropped and the container is an `aria-label`led plain `<div>` showing the placeholder. Removal goes through Base UI's `ChipRemove`, which reports the SHORTENED selection to the root, so it lands in the same `setSelection` every other deselection does and `cascade` applies to a chip press exactly as it does to a row press. Chips carry the same field, pill and remove-button treatment the shadcn combobox uses, spelled out per style in the primitive itself, so they match every style without depending on ReUI's theme CSS.
+Three things it does that a hand-rolled chip list routinely does not: it carries an ancestor path on a chip only where its label alone would be ambiguous (per selection, so nothing is padded for consistency's sake), it names every remove button through `labels.removeChip`, and it names the container through `labels.chipsLabel` - Base UI gives it `role="toolbar"` WHILE the selection is non-empty, so NVDA keeps focus mode while arrowing between chips, and an unnamed toolbar is announced as just "toolbar". With nothing selected there are no chips to arrow between, so the role is dropped and the container is an `aria-label`led plain `<div>` showing the placeholder. Removal goes through Base UI's `ChipRemove`, which reports the SHORTENED selection to the root, so it lands in the same `setSelection` every other deselection does and `cascade` applies to a chip press exactly as it does to a row press. Chips carry the same field, pill and remove-button treatment the shadcn combobox uses, spelled out per style in the primitive itself, so they match every style without depending on NeUI's theme CSS.
 
 | Prop          | Type                                | Default                 | Description                                                                                                                                                                                                                                                                                                                                                           |
 | :------------ | :---------------------------------- | :---------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -677,10 +677,10 @@ Renders the trail in `mode="columns"`. Replaces `CascaderList`. Only the deepest
 
 #### CascaderVirtualItems
 
-Windowed replacement for `CascaderItems` in drill and tree modes: under `virtualizeThreshold` rows it renders exactly what `CascaderItems` renders, and above it, it windows. Nothing else about the cascader changes - the same keyboard model, the same search, the same row component. It lives in its own file, which `@reui/cascader` installs along with `@tanstack/react-virtual`.
+Windowed replacement for `CascaderItems` in drill and tree modes: under `virtualizeThreshold` rows it renders exactly what `CascaderItems` renders, and above it, it windows. Nothing else about the cascader changes - the same keyboard model, the same search, the same row component. It lives in its own file, which `@neui/cascader` installs along with `@tanstack/react-virtual`.
 
 ```tsx
-import { CascaderVirtualItems } from "@/components/reui/cascader/cascader-virtual"
+import { CascaderVirtualItems } from "@/components/neui/cascader/cascader-virtual"
 
 ;<CascaderList maxHeight={288}>
   <CascaderVirtualItems />
@@ -1144,7 +1144,7 @@ import {
   collapseCascaderPath,
   findAmbiguousCascaderLabels,
   getCascaderPath,
-} from "@/components/reui/cascader/cascader-lib"
+} from "@/components/neui/cascader/cascader-lib"
 ```
 
 | Function                                                        | Purpose                                                                                                                                                                                                                                     |
@@ -1176,7 +1176,7 @@ import {
 | `CASCADER_ROOT_KEY`               | The NUL-prefixed sentinel keying root children in `index.childrenOf`, so no real node value can collide with it. Worth knowing only if you read `childrenOf` by hand; `getCascaderChildren(index)` with no parent answers the same question without it.                                                       |
 
 ```tsx
-import { getCascaderMoreProps } from "@/components/reui/cascader/cascader-item"
+import { getCascaderMoreProps } from "@/components/neui/cascader/cascader-item"
 
 const { loadStates } = useCascaderState()
 

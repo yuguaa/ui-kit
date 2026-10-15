@@ -1,19 +1,19 @@
 export const siteConfig = {
-  name: "ReUI",
-  url: "https://reui.io",
+  name: "NeUI",
+  url: "https://neui.io",
   description:
     "Free, open-source shadcn/ui components and in-house primitives for building production-ready React apps faster.",
   metadata: {
     locale: "en_US",
     titleTemplate: "%s",
     titleSuffixes: {
-      site: "ReUI",
+      site: "NeUI",
       componentCategory: "UI Components",
     },
   },
   links: {
-    twitter: "https://x.com/reui_io",
-    github: "https://github.com/keenthemes/reui",
+    twitter: "https://x.com/neui_io",
+    github: "https://github.com/keenthemes/neui",
   },
   /**
    * GitHub star count shown in the header + footer. Maintained by hand (no

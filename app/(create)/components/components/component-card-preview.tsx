@@ -17,7 +17,7 @@ import { ComponentPreviewFrame } from "@/components/component-preview-frame"
 
 /**
  * Isolates a single component preview so a failed lazy import (e.g. a missing
- * or stale locally-built `@reui/components-*-<category>` dist, or a cold
+ * or stale locally-built `@neui/components-*-<category>` dist, or a cold
  * Turbopack compile failure) degrades to a Retry card instead of crashing the
  * whole /components/<category> route with the Next error overlay. Mirrors
  * BlockErrorBoundary in the blocks grid (block-card-container.tsx).
@@ -81,7 +81,7 @@ function loadLivePreviewModule() {
  *
  * Upstream never reaches that state: its card swaps in a generated still below
  * the same breakpoint. This repo carries no thumbnails (see the NOT SYNCED note
- * in reui.io's scripts/sync-oss.mts), so it drops the minimum instead and lets
+ * in neui.io's scripts/sync-oss.mts), so it drops the minimum instead and lets
  * the example take its own mobile branch inside the frame, which every sidebar
  * example is built to survive - each mounts a SidebarInset header carrying a
  * SidebarTrigger.

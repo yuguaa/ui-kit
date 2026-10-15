@@ -20,12 +20,12 @@ import type { IconLibraryName } from "@/registry/config"
  *
  * Reactivity:
  *   - Cross-tab updates fire the standard `storage` event
- *   - Same-tab updates fire a custom `reui:icon-library-changed` event;
+ *   - Same-tab updates fire a custom `neui:icon-library-changed` event;
  *     `setIconLibrary()` (and any code that mutates the config) should
  *     dispatch it after writing to keep IconPlaceholder consumers in
  *     sync without round-tripping through React state owned elsewhere.
  */
-export const ICON_LIBRARY_CHANGED_EVENT = "reui:icon-library-changed"
+export const ICON_LIBRARY_CHANGED_EVENT = "neui:icon-library-changed"
 
 function isIconLibraryName(value: unknown): value is IconLibraryName {
   return (

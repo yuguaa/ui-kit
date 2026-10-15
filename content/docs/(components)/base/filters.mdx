@@ -18,24 +18,24 @@ The state it edits is a TREE, not a list of chips. `FilterQuery` is a group of r
 ## Installation
 
 ```bash
-npx shadcn@latest add @reui/filters
+npx shadcn@latest add @neui/filters
 ```
 
-**The install target moved.** The old primitive was a single `components/reui/filters.tsx`. The rewrite ships fourteen files under `components/reui/filters/`, so an existing consumer must delete the old single file after installing, or end up with two different `Filters` exports one directory apart.
+**The install target moved.** The old primitive was a single `components/neui/filters.tsx`. The rewrite ships fourteen files under `components/neui/filters/`, so an existing consumer must delete the old single file after installing, or end up with two different `Filters` exports one directory apart.
 
-The registry item pulls six shadcn parts - `button`, `button-group`, `dropdown-menu`, `input`, `popover` and `tooltip` - plus one ReUI item, `cascader`. `@reui/cascader` is the heavy one and brings `@base-ui/react` and `@tanstack/react-virtual` with it, since every list in this primitive is the [cascader](/docs/components/base/cascader), configured: the attribute picker drills through nested fields, the operator menu and each option editor are the same control run flat, and the keyboard, `aria-activedescendant`, typeahead, RTL keys, windowing and the live region all come from there rather than from a listbox this primitive re-implements. Two npm packages come in directly: `class-variance-authority`, for the bar's size variants, and `date-fns`, used only by `filters-date.tsx`. Nothing in the core imports the date helpers, so that file and its dependency can both be deleted if you do not want a date editor.
+The registry item pulls six shadcn parts - `button`, `button-group`, `dropdown-menu`, `input`, `popover` and `tooltip` - plus one NeUI item, `cascader`. `@neui/cascader` is the heavy one and brings `@base-ui/react` and `@tanstack/react-virtual` with it, since every list in this primitive is the [cascader](/docs/components/base/cascader), configured: the attribute picker drills through nested fields, the operator menu and each option editor are the same control run flat, and the keyboard, `aria-activedescendant`, typeahead, RTL keys, windowing and the live region all come from there rather than from a listbox this primitive re-implements. Two npm packages come in directly: `class-variance-authority`, for the bar's size variants, and `date-fns`, used only by `filters-date.tsx`. Nothing in the core imports the date helpers, so that file and its dependency can both be deleted if you do not want a date editor.
 
 Nine of the fourteen files import no UI library at all. `filters-types`, `filters-query`, `filters-lib`, `filters-operators`, `filters-draft`, `filters-i18n`, `filters-context`, `filters-date` and `filters-dnd` pull nothing from Base UI, from `radix-ui` or from the shadcn parts. Eight of those nine touch no DOM either, which is what lets the query, the operator catalog and the step machine be tested in a node environment with no browser at all. `filters-dnd` is the exception: it is a pointer engine, so it is library free but not DOM free.
 
 ## Usage
 
 ```tsx
-import { Filters } from "@/components/reui/filters/filters"
-import { createFilterQuery } from "@/components/reui/filters/filters-query"
+import { Filters } from "@/components/neui/filters/filters"
+import { createFilterQuery } from "@/components/neui/filters/filters-query"
 import type {
   FilterField,
   FilterQuery,
-} from "@/components/reui/filters/filters-types"
+} from "@/components/neui/filters/filters-types"
 ```
 
 ```tsx
@@ -140,21 +140,21 @@ Operator arity, custom value editors, date tokens, validation helpers and the fu
 ## Prompt for the query tree migration
 
 If you already have Filters installed, paste the prompt below into your coding agent.
-It covers both cases: a session with the [ReUI MCP](/docs/mcp) connected, and a plain
+It covers both cases: a session with the [NeUI MCP](/docs/mcp) connected, and a plain
 project where the primitive is reinstalled from the registry.
 
 ```text
-Migrate ReUI Filters from the flat filter array to the query tree.
+Migrate NeUI Filters from the flat filter array to the query tree.
 
 STEP 1 - Replace the Filters primitive from the registry.
 
-  Case A, the ReUI MCP is available in this session:
+  Case A, the NeUI MCP is available in this session:
     - Call search("filters"), then get_component("filters") to read the current API.
     - Call get_examples("filters") to see real composition.
     - Run the command returned by get_install_command("filters") and overwrite when prompted.
 
-  Case B, no ReUI MCP:
-    - Run: npx shadcn@latest add @reui/filters
+  Case B, no NeUI MCP:
+    - Run: npx shadcn@latest add @neui/filters
     - Answer yes when asked to overwrite the existing files.
 
   Every filters file must come from the registry. Do not hand-patch them, do not merge
@@ -162,9 +162,9 @@ STEP 1 - Replace the Filters primitive from the registry.
 
 STEP 2 - Delete the old single file.
 
-  - The install target moved from components/reui/filters.tsx to the components/reui/filters/
+  - The install target moved from components/neui/filters.tsx to the components/neui/filters/
     directory. The installer does not remove the file it replaces.
-  - Delete components/reui/filters.tsx once the install has finished.
+  - Delete components/neui/filters.tsx once the install has finished.
   - Do not continue until it is gone. If both survive, the project has two different
     Filters exports one directory apart, and which one an import resolves to depends on
     module resolution order, so the app can typecheck and build and still render the old
@@ -217,7 +217,7 @@ STEP 4 - Update the component props.
 STEP 5 - Prove the migration is complete.
 
   Search the whole project. Every one of these must return zero results:
-    components/reui/filters.tsx
+    components/neui/filters.tsx
     variant="solid"
     showSearchInput
     allowMultiple
