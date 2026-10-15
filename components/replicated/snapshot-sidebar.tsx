@@ -25,7 +25,7 @@ export function SnapshotSidebar({
   current: string
 }) {
   return (
-    <aside className="border-site-border/80 hidden w-60 shrink-0 border-r px-3 py-8 min-[992px]:block">
+    <aside className="border-site-border/80 sticky top-0 hidden max-h-[calc(100svh-var(--header-height))] w-60 shrink-0 self-start overflow-y-auto border-r px-3 py-8 min-[992px]:block">
       <nav aria-label="复刻资源导航">
         {groups.map((group) => (
           <div key={group.label} className="mb-5 last:mb-0">

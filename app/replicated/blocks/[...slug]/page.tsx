@@ -110,7 +110,7 @@ async function CategoryPage({ group, category }: { group: string; category: stri
   }
 
   return (
-    <div className="flex min-h-0 flex-1">
+    <div className="flex items-start">
       <SnapshotSidebar groups={groups} current={`/replicated/blocks/${group}/${category}`} />
 
       <div className="mx-auto min-w-0 w-full max-w-6xl">

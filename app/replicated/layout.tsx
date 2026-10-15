@@ -4,15 +4,17 @@ import { SiteFooter } from "@/components/site-footer"
 
 /**
  * 资源库布局
- * 与 components 页面使用相同的站点外壳（顶部导航 + 网格背景 + 页脚）
+ * 头部固定，中间区域独立滚动（侧栏在该滚动容器内保持可见）
  */
 export default function ReplicatedLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="site-theme-container bg-site-background font-site-sans relative flex min-h-svh flex-col">
+    <div className="site-theme-container bg-site-background font-site-sans flex h-svh flex-col overflow-hidden">
       <PageGridBackdrop />
       <SiteChrome />
-      <main className="relative flex min-h-0 flex-1 flex-col">{children}</main>
-      <SiteFooter />
+      <div className="min-h-0 flex-1 overflow-y-auto">
+        <main className="relative flex min-h-full flex-col">{children}</main>
+        <SiteFooter />
+      </div>
     </div>
   )
 }
