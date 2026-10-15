@@ -1,0 +1,682 @@
+import {
+  Frame,
+  FramePanel,
+} from "@/registry-neui/bases/base/neui/frame"
+import { ButtonGroup } from "@/registry/bases/base/ui/button-group"
+import {
+  ToggleGroup,
+  ToggleGroupItem,
+} from "@/registry/bases/base/ui/toggle-group"
+import {
+  Tooltip,
+  TooltipTrigger,
+} from "@/registry/bases/base/ui/tooltip"
+
+export function Pattern() {
+  return (
+    <div className="flex items-center justify-center min-h-svh p-6 w-full">
+      <Frame className="max-w-4xl min-w-0 w-full" spacing="default" chart="chart-r0">
+        <style>{`
+ [data-chart=chart-r0] {
+  --color-solar: var(--color-amber-500);
+  --color-wind: var(--color-sky-500);
+  --color-nuclear: var(--color-violet-500);
+  --color-gas: var(--color-rose-500);
+  --color-hydro: var(--color-blue-600);
+  --color-battery: var(--color-emerald-500);
+}
+
+
+.dark [data-chart=chart-r0] {
+  --color-solar: var(--color-amber-400);
+  --color-wind: var(--color-sky-400);
+  --color-nuclear: var(--color-violet-400);
+  --color-gas: var(--color-rose-400);
+  --color-hydro: var(--color-blue-500);
+  --color-battery: var(--color-emerald-400);
+}
+`}</style>
+        <header className="flex flex-row flex-wrap gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
+          <div className="flex flex-col gap-0.5 min-w-0">
+            <div className="font-semibold text-sm">
+              Generation Mix
+            </div>
+            <div className="text-muted-foreground text-sm truncate">
+              Hourly output by source on Oct 10
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-2 items-center">
+            <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Chart view" style={{"--gap": "0"}}>
+              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:bg-card data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0" extracted="1">
+                3D
+              </ToggleGroupItem>
+              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:bg-card data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
+                2D
+              </ToggleGroupItem>
+            </ToggleGroup>
+            <ButtonGroup role="group" aria-label="Chart settings">
+              <Tooltip>
+              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Display options" aria-haspopup="menu" id="base-ui-_r_7_" baseUiTooltipTrigger="" aria-expanded="false">
+                <svg className="lucide lucide-settings-2 lucide-settings2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
+                  <path d="M14 17H5"></path>
+                  <path d="M19 7h-9"></path>
+                  <circle cx="17" cy="17" r="3"></circle>
+                  <circle cx="7" cy="7" r="3"></circle>
+                </svg>
+              </TooltipTrigger>
+              </Tooltip>
+              <Tooltip>
+              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Compare against" aria-haspopup="menu" id="base-ui-_r_e_" baseUiTooltipTrigger="" aria-expanded="false">
+                <svg className="lucide lucide-scale" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ScaleIcon" tabler="IconScale" hugeicons="JusticeScale01Icon" phosphor="ScalesIcon" remixicon="RiScales3Line" aria-hidden="true">
+                  <path d="M12 3v18"></path>
+                  <path d="m19 8 3 8a5 5 0 0 1-6 0zV7"></path>
+                  <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"></path>
+                  <path d="m5 8 3 8a5 5 0 0 1-6 0zV7"></path>
+                  <path d="M7 21h10"></path>
+                </svg>
+              </TooltipTrigger>
+              </Tooltip>
+            </ButtonGroup>
+            <ButtonGroup role="group" aria-label="Chart actions">
+              <Tooltip>
+              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Refresh data" aria-busy="false" id="base-ui-_r_i_" baseUiTooltipTrigger="">
+                <svg className="lucide lucide-refresh-cw" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RefreshCwIcon" tabler="IconRefresh" hugeicons="RefreshIcon" phosphor="ArrowsClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
+                  <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                  <path d="M21 3v5h-5"></path>
+                  <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
+                  <path d="M8 16H3v5"></path>
+                </svg>
+              </TooltipTrigger>
+              </Tooltip>
+              <Tooltip>
+              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Expand chart" id="base-ui-_r_k_" baseUiTooltipTrigger="">
+                <svg className="lucide lucide-maximize-2 lucide-maximize2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Maximize2Icon" tabler="IconMaximize" hugeicons="Maximize01Icon" phosphor="CornersOutIcon" remixicon="RiFullscreenLine" aria-hidden="true">
+                  <path d="M15 3h6v6"></path>
+                  <path d="m21 3-7 7"></path>
+                  <path d="m3 21 7-7"></path>
+                  <path d="M9 21H3v-6"></path>
+                </svg>
+              </TooltipTrigger>
+              </Tooltip>
+              <Tooltip>
+              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="More actions" aria-haspopup="menu" id="base-ui-_r_p_" baseUiTooltipTrigger="" aria-expanded="false">
+                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                  <circle cx="12" cy="12" r="1"></circle>
+                  <circle cx="19" cy="12" r="1"></circle>
+                  <circle cx="5" cy="12" r="1"></circle>
+                </svg>
+              </TooltipTrigger>
+              </Tooltip>
+            </ButtonGroup>
+          </div>
+        </header>
+        <FramePanel className="flex flex-col gap-4">
+          <div className="flex flex-wrap gap-x-6 gap-y-3 items-end justify-between">
+            <div className="flex flex-col gap-1">
+              <div className="flex gap-1.5 items-baseline">
+                <span className="font-semibold tabular-nums text-3xl tracking-tight">
+                  698.3
+                </span>
+                <span className="text-muted-foreground text-sm">
+                  GWh generated
+                </span>
+              </div>
+              <div className="flex flex-wrap gap-x-2 gap-y-1 items-center text-muted-foreground text-xs">
+                <span className="[&_svg]:size-3.5 font-medium gap-1 inline-flex items-center tabular-nums text-foreground">
+                  <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
+                    <path d="M16 7h6v6"></path>
+                    <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+                  </svg>
+                  +1.6%
+                </span>
+                <span>
+                  vs last Saturday
+                </span>
+                <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
+                <span className="tabular-nums">
+                  59% renewable
+                </span>
+              </div>
+            </div>
+            <div className="flex flex-col gap-1 min-w-0 sm:items-end sm:text-right" aria-live="polite">
+              <span className="flex gap-1.5 items-center text-muted-foreground text-xs">
+                Peak load
+              </span>
+              <span className="font-medium tabular-nums text-sm">
+                37.7 GW at 18:00
+              </span>
+            </div>
+          </div>
+          <div className="focus-visible:ring-3 focus-visible:ring-ring/50 h-64 outline-none relative sm:h-80 w-full" data-c52-stage="true" data-view="3d" role="group" aria-label="Hourly output by source in GW. Arrow keys read each hour." tabIndex="0" style={{"--c52-span": "3.1"}}>
+            <style>{`
+[data-c52-stage]{container-type:size;--c52-depth:4.4cqw}
+[data-c52-stage][data-view="3d"] [data-c52-camera]{--c52-gap:var(--c52-depth);--c52-rx:-14deg;--c52-ry:22deg;--c52-scale:0.74;--c52-x:0%;--c52-y:-3%;--c52-floor:1;--c52-lift:2cqw;--c52-fill:1;--c52-ink:0.2px}
+[data-c52-stage][data-view="flat"] [data-c52-camera]{--c52-gap:0.02px;--c52-rx:0deg;--c52-ry:0deg;--c52-scale:1;--c52-x:0%;--c52-y:0%;--c52-floor:0;--c52-lift:0px;--c52-fill:0.22;--c52-ink:1px}
+@container (max-width:560px){[data-c52-stage][data-view="3d"] [data-c52-camera]{--c52-depth:4.6cqw;--c52-rx:-12deg;--c52-ry:12deg;--c52-scale:0.88;--c52-x:1%;--c52-y:-2%}}
+[data-c52-stage] [data-c52-camera]{perspective:220cqw;perspective-origin:50% 40%}
+[data-c52-stage] :is([data-c52-rig],[data-c52-scene]){transform-style:preserve-3d}
+[data-c52-stage] [data-c52-scene]{transform:translate3d(var(--c52-x),var(--c52-y),0) rotateX(var(--c52-rx)) rotateY(var(--c52-ry)) scale3d(var(--c52-scale),var(--c52-scale),var(--c52-scale))}
+[data-c52-stage] [data-c52-plane]{transform:translateZ(calc(var(--c52-z) * var(--c52-gap)))}
+[data-c52-stage] [data-c52-plane][data-ink]{transform:translateZ(calc(var(--c52-z) * var(--c52-gap) + var(--c52-ink)))}
+[data-c52-stage] [data-c52-floor]{height:calc(2 * var(--c52-span) * var(--c52-depth));transform-origin:50% 0;transform:translateZ(calc(var(--c52-span) * var(--c52-gap) * -1)) rotateX(90deg) scaleY(var(--c52-floor))}
+[data-c52-stage] :is([data-c52-lift],[data-c52-reveal]){transform-origin:50% 100%}
+[data-c52-stage] [data-c52-fill]{opacity:var(--c52-fill)}
+[data-c52-stage][data-view="flat"] [data-lifted] [data-c52-fill]{opacity:0.7}
+[data-c52-stage][data-revealing] [data-c52-reveal]{opacity:0}
+@media (prefers-reduced-motion:reduce){[data-c52-stage][data-revealing] [data-c52-reveal]{opacity:1}}
+html[data-demo="frozen"] [data-c52-stage][data-revealing] [data-c52-reveal]{opacity:1}
+@media (prefers-reduced-motion:no-preference){html:not([data-demo="frozen"]) [data-c52-stage][data-revealing][data-view="3d"] [data-c52-rig]{transform:rotateX(5deg) rotateY(-8deg)}}
+[data-c52-stage] :is([data-c52-scene],[data-c52-plane],[data-c52-floor]){transition:transform 720ms cubic-bezier(0.65, 0, 0.35, 1)}
+[data-c52-stage] [data-c52-floor]{transition:transform 720ms cubic-bezier(0.65, 0, 0.35, 1),opacity 200ms ease-out}
+[data-c52-stage] [data-c52-floor][data-hidden]{opacity:0}
+[data-c52-stage] [data-c52-fill]{transition:opacity 320ms ease-out}
+[data-c52-stage] [data-c52-lift]{transition:transform 280ms cubic-bezier(0.22, 1, 0.36, 1),opacity 200ms ease-out}
+@media (prefers-reduced-motion:reduce){[data-c52-stage] :is([data-c52-scene],[data-c52-plane],[data-c52-floor],[data-c52-fill],[data-c52-lift]){transition:none}}
+`}</style>
+            <div className="absolute inset-0 pointer-events-none" data-c52-camera="true">
+              <div className="absolute inset-0" data-c52-rig="true">
+                <div className="absolute bottom-7 left-11 right-0 top-3" data-c52-scene="true">
+                  <div className="absolute inset-0 pointer-events-none" data-c52-plane="true" aria-hidden="true" style={{"--c52-z": "-3.1"}}>
+                    <div className="absolute border-border border-dashed border-t inset-x-0" style={{top: "0%"}}>
+                      <span className="-translate-y-1/2 absolute pr-2 right-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap">
+                        16 GW
+                      </span>
+                    </div>
+                    <div className="absolute border-border border-dashed border-t inset-x-0" style={{top: "25%"}}>
+                      <span className="-translate-y-1/2 absolute pr-2 right-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap">
+                        12
+                      </span>
+                    </div>
+                    <div className="absolute border-border border-dashed border-t inset-x-0" style={{top: "50%"}}>
+                      <span className="-translate-y-1/2 absolute pr-2 right-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap">
+                        8
+                      </span>
+                    </div>
+                    <div className="absolute border-border border-dashed border-t inset-x-0" style={{top: "75%"}}>
+                      <span className="-translate-y-1/2 absolute pr-2 right-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap">
+                        4
+                      </span>
+                    </div>
+                    <div className="absolute border-border border-t inset-x-0" style={{top: "100%"}}>
+                      <span className="-translate-y-1/2 absolute pr-2 right-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap">
+                        0
+                      </span>
+                    </div>
+                  </div>
+                  <div className="absolute bg-muted/60 inset-x-0 pointer-events-none top-full" data-c52-floor="true" aria-hidden="true">
+                    <span className="absolute border-border border-l inset-y-0" style={{left: "0%"}}></span>
+                    <span className="absolute border-border border-l inset-y-0" style={{left: "25%"}}></span>
+                    <span className="absolute border-border border-l inset-y-0" style={{left: "50%"}}></span>
+                    <span className="absolute border-border border-l inset-y-0" style={{left: "75%"}}></span>
+                    <span className="absolute border-border border-l inset-y-0" style={{left: "100%"}}></span>
+                  </div>
+                  <div className="absolute inset-0 pointer-events-none" data-c52-plane="true" style={{"--c52-z": "-2.5"}}>
+                    <div className="absolute inset-0" data-c52-lift="true" style={{transform: "translateY(0px) scaleY(1)", opacity: "1"}}>
+                      <div className="absolute inset-0" data-c52-reveal="true" data-source="solar" data-shown="true">
+                        <svg className="absolute inset-0 overflow-visible size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                          <defs>
+                            <lineargradient id="rs-solar-fill" x1="0" y1="0" x2="0" y2="1">
+                              <stop offset="0%" stopColor="var(--color-solar)" stopOpacity="0.9"></stop>
+                              <stop offset="100%" stopColor="var(--color-solar)" stopOpacity="0.2"></stop>
+                            </lineargradient>
+                          </defs>
+                          <g data-c52-fill="true">
+                            <path className="recharts-curve" fill="url(#rs-solar-fill)" stroke="none" d="M0,400C13.889,400,27.778,400,41.667,400C55.556,400,69.444,400,83.333,400C97.222,400,111.111,400,125,400C138.889,400,152.778,400,166.667,400C180.556,400,194.444,400,208.333,400C222.222,400,236.111,397.5,250,392.5C263.889,387.5,277.778,376.25,291.667,360C305.556,343.75,319.444,320,333.333,295C347.222,270,361.111,237.5,375,210C388.889,182.5,402.778,154.167,416.667,130C430.556,105.833,444.444,82.917,458.333,65C472.222,47.083,486.111,32.5,500,22.5C513.889,12.5,527.778,5,541.667,5C555.556,5,569.444,10.833,583.333,20C597.222,29.167,611.111,42.5,625,60C638.889,77.5,652.778,99.167,666.667,125C680.556,150.833,694.444,184.167,708.333,215C722.222,245.833,736.111,282.917,750,310C763.889,337.083,777.778,364.167,791.667,377.5C805.556,390.833,819.444,395.833,833.333,397.5C847.222,399.167,861.111,400,875,400C888.889,400,902.778,400,916.667,400C930.556,400,944.444,400,958.333,400C972.222,400,986.111,400,1000,400L1000,400C986.111,400,972.222,400,958.333,400C944.444,400,930.556,400,916.667,400C902.778,400,888.889,400,875,400C861.111,400,847.222,400,833.333,400C819.444,400,805.556,400,791.667,400C777.778,400,763.889,400,750,400C736.111,400,722.222,400,708.333,400C694.444,400,680.556,400,666.667,400C652.778,400,638.889,400,625,400C611.111,400,597.222,400,583.333,400C569.444,400,555.556,400,541.667,400C527.778,400,513.889,400,500,400C486.111,400,472.222,400,458.333,400C444.444,400,430.556,400,416.667,400C402.778,400,388.889,400,375,400C361.111,400,347.222,400,333.333,400C319.444,400,305.556,400,291.667,400C277.778,400,263.889,400,250,400C236.111,400,222.222,400,208.333,400C194.444,400,180.556,400,166.667,400C152.778,400,138.889,400,125,400C111.111,400,97.222,400,83.333,400C69.444,400,55.556,400,41.667,400C27.778,400,13.889,400,0,400Z"></path>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <svg className="absolute inset-0 pointer-events-none size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                      <defs>
+                        <clippath id="rs-solar-clip">
+                          <path className="recharts-curve" d="M0,400C13.889,400,27.778,400,41.667,400C55.556,400,69.444,400,83.333,400C97.222,400,111.111,400,125,400C138.889,400,152.778,400,166.667,400C180.556,400,194.444,400,208.333,400C222.222,400,236.111,397.5,250,392.5C263.889,387.5,277.778,376.25,291.667,360C305.556,343.75,319.444,320,333.333,295C347.222,270,361.111,237.5,375,210C388.889,182.5,402.778,154.167,416.667,130C430.556,105.833,444.444,82.917,458.333,65C472.222,47.083,486.111,32.5,500,22.5C513.889,12.5,527.778,5,541.667,5C555.556,5,569.444,10.833,583.333,20C597.222,29.167,611.111,42.5,625,60C638.889,77.5,652.778,99.167,666.667,125C680.556,150.833,694.444,184.167,708.333,215C722.222,245.833,736.111,282.917,750,310C763.889,337.083,777.778,364.167,791.667,377.5C805.556,390.833,819.444,395.833,833.333,397.5C847.222,399.167,861.111,400,875,400C888.889,400,902.778,400,916.667,400C930.556,400,944.444,400,958.333,400C972.222,400,986.111,400,1000,400L1000,400C986.111,400,972.222,400,958.333,400C944.444,400,930.556,400,916.667,400C902.778,400,888.889,400,875,400C861.111,400,847.222,400,833.333,400C819.444,400,805.556,400,791.667,400C777.778,400,763.889,400,750,400C736.111,400,722.222,400,708.333,400C694.444,400,680.556,400,666.667,400C652.778,400,638.889,400,625,400C611.111,400,597.222,400,583.333,400C569.444,400,555.556,400,541.667,400C527.778,400,513.889,400,500,400C486.111,400,472.222,400,458.333,400C444.444,400,430.556,400,416.667,400C402.778,400,388.889,400,375,400C361.111,400,347.222,400,333.333,400C319.444,400,305.556,400,291.667,400C277.778,400,263.889,400,250,400C236.111,400,222.222,400,208.333,400C194.444,400,180.556,400,166.667,400C152.778,400,138.889,400,125,400C111.111,400,97.222,400,83.333,400C69.444,400,55.556,400,41.667,400C27.778,400,13.889,400,0,400Z"></path>
+                        </clippath>
+                      </defs>
+                      <g clipPath="url(#rs-solar-clip)">
+                        <rect data-hour="0" x="0" y="0" width="20.833333333333332" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="1" x="20.833333333333332" y="0" width="41.66666666666667" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="2" x="62.5" y="0" width="41.66666666666666" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="3" x="104.16666666666667" y="0" width="41.66666666666667" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="4" x="145.83333333333331" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="5" x="187.5" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="6" x="229.16666666666666" y="0" width="41.66666666666666" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="7" x="270.83333333333337" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="8" x="312.5" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="9" x="354.1666666666667" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="10" x="395.83333333333337" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="11" x="437.5" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="12" x="479.1666666666667" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="13" x="520.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="14" x="562.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="15" x="604.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="16" x="645.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="17" x="687.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="18" x="729.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="19" x="770.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="20" x="812.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="21" x="854.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="22" x="895.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="23" x="937.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="24" x="979.1666666666666" y="0" width="20.83333333333337" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                      </g>
+                    </svg>
+                  </div>
+                  <div className="absolute inset-0 pointer-events-none" data-c52-plane="true" style={{"--c52-z": "-1.5"}}>
+                    <div className="absolute inset-0" data-c52-lift="true" style={{transform: "translateY(0px) scaleY(1)", opacity: "1"}}>
+                      <div className="absolute inset-0" data-c52-reveal="true" data-source="wind" data-shown="true">
+                        <svg className="absolute inset-0 overflow-visible size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                          <defs>
+                            <lineargradient id="rs-wind-fill" x1="0" y1="0" x2="0" y2="1">
+                              <stop offset="0%" stopColor="var(--color-wind)" stopOpacity="0.9"></stop>
+                              <stop offset="100%" stopColor="var(--color-wind)" stopOpacity="0.2"></stop>
+                            </lineargradient>
+                          </defs>
+                          <g data-c52-fill="true">
+                            <path className="recharts-curve" fill="url(#rs-wind-fill)" stroke="none" d="M0,135C13.889,128.542,27.778,122.083,41.667,115C55.556,107.917,69.444,92.5,83.333,92.5C97.222,92.5,111.111,99.167,125,105C138.889,110.833,152.778,121.667,166.667,127.5C180.556,133.333,194.444,135.417,208.333,140C222.222,144.583,236.111,147.5,250,155C263.889,162.5,277.778,174.167,291.667,185C305.556,195.833,319.444,210.417,333.333,220C347.222,229.583,361.111,235.833,375,242.5C388.889,249.167,402.778,254.167,416.667,260C430.556,265.833,444.444,272.5,458.333,277.5C472.222,282.5,486.111,290,500,290C513.889,290,527.778,285.417,541.667,280C555.556,274.583,569.444,262.917,583.333,257.5C597.222,252.083,611.111,252.5,625,247.5C638.889,242.5,652.778,237.083,666.667,227.5C680.556,217.917,694.444,201.25,708.333,190C722.222,178.75,736.111,160,750,160C763.889,160,777.778,166.25,791.667,170C805.556,173.75,819.444,182.5,833.333,182.5C847.222,182.5,861.111,162.5,875,152.5C888.889,142.5,902.778,130.417,916.667,122.5C930.556,114.583,944.444,108.333,958.333,105C972.222,101.667,986.111,100.833,1000,100L1000,400C986.111,400,972.222,400,958.333,400C944.444,400,930.556,400,916.667,400C902.778,400,888.889,400,875,400C861.111,400,847.222,400,833.333,400C819.444,400,805.556,400,791.667,400C777.778,400,763.889,400,750,400C736.111,400,722.222,400,708.333,400C694.444,400,680.556,400,666.667,400C652.778,400,638.889,400,625,400C611.111,400,597.222,400,583.333,400C569.444,400,555.556,400,541.667,400C527.778,400,513.889,400,500,400C486.111,400,472.222,400,458.333,400C444.444,400,430.556,400,416.667,400C402.778,400,388.889,400,375,400C361.111,400,347.222,400,333.333,400C319.444,400,305.556,400,291.667,400C277.778,400,263.889,400,250,400C236.111,400,222.222,400,208.333,400C194.444,400,180.556,400,166.667,400C152.778,400,138.889,400,125,400C111.111,400,97.222,400,83.333,400C69.444,400,55.556,400,41.667,400C27.778,400,13.889,400,0,400Z"></path>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <svg className="absolute inset-0 pointer-events-none size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                      <defs>
+                        <clippath id="rs-wind-clip">
+                          <path className="recharts-curve" d="M0,135C13.889,128.542,27.778,122.083,41.667,115C55.556,107.917,69.444,92.5,83.333,92.5C97.222,92.5,111.111,99.167,125,105C138.889,110.833,152.778,121.667,166.667,127.5C180.556,133.333,194.444,135.417,208.333,140C222.222,144.583,236.111,147.5,250,155C263.889,162.5,277.778,174.167,291.667,185C305.556,195.833,319.444,210.417,333.333,220C347.222,229.583,361.111,235.833,375,242.5C388.889,249.167,402.778,254.167,416.667,260C430.556,265.833,444.444,272.5,458.333,277.5C472.222,282.5,486.111,290,500,290C513.889,290,527.778,285.417,541.667,280C555.556,274.583,569.444,262.917,583.333,257.5C597.222,252.083,611.111,252.5,625,247.5C638.889,242.5,652.778,237.083,666.667,227.5C680.556,217.917,694.444,201.25,708.333,190C722.222,178.75,736.111,160,750,160C763.889,160,777.778,166.25,791.667,170C805.556,173.75,819.444,182.5,833.333,182.5C847.222,182.5,861.111,162.5,875,152.5C888.889,142.5,902.778,130.417,916.667,122.5C930.556,114.583,944.444,108.333,958.333,105C972.222,101.667,986.111,100.833,1000,100L1000,400C986.111,400,972.222,400,958.333,400C944.444,400,930.556,400,916.667,400C902.778,400,888.889,400,875,400C861.111,400,847.222,400,833.333,400C819.444,400,805.556,400,791.667,400C777.778,400,763.889,400,750,400C736.111,400,722.222,400,708.333,400C694.444,400,680.556,400,666.667,400C652.778,400,638.889,400,625,400C611.111,400,597.222,400,583.333,400C569.444,400,555.556,400,541.667,400C527.778,400,513.889,400,500,400C486.111,400,472.222,400,458.333,400C444.444,400,430.556,400,416.667,400C402.778,400,388.889,400,375,400C361.111,400,347.222,400,333.333,400C319.444,400,305.556,400,291.667,400C277.778,400,263.889,400,250,400C236.111,400,222.222,400,208.333,400C194.444,400,180.556,400,166.667,400C152.778,400,138.889,400,125,400C111.111,400,97.222,400,83.333,400C69.444,400,55.556,400,41.667,400C27.778,400,13.889,400,0,400Z"></path>
+                        </clippath>
+                      </defs>
+                      <g clipPath="url(#rs-wind-clip)">
+                        <rect data-hour="0" x="0" y="0" width="20.833333333333332" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="1" x="20.833333333333332" y="0" width="41.66666666666667" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="2" x="62.5" y="0" width="41.66666666666666" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="3" x="104.16666666666667" y="0" width="41.66666666666667" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="4" x="145.83333333333331" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="5" x="187.5" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="6" x="229.16666666666666" y="0" width="41.66666666666666" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="7" x="270.83333333333337" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="8" x="312.5" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="9" x="354.1666666666667" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="10" x="395.83333333333337" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="11" x="437.5" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="12" x="479.1666666666667" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="13" x="520.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="14" x="562.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="15" x="604.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="16" x="645.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="17" x="687.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="18" x="729.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="19" x="770.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="20" x="812.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="21" x="854.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="22" x="895.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="23" x="937.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="24" x="979.1666666666666" y="0" width="20.83333333333337" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                      </g>
+                    </svg>
+                  </div>
+                  <div className="absolute inset-0 pointer-events-none" data-c52-plane="true" style={{"--c52-z": "-0.5"}}>
+                    <div className="absolute inset-0" data-c52-lift="true" style={{transform: "translateY(0px) scaleY(1)", opacity: "1"}}>
+                      <div className="absolute inset-0" data-c52-reveal="true" data-source="nuclear" data-shown="true">
+                        <svg className="absolute inset-0 overflow-visible size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                          <defs>
+                            <lineargradient id="rs-nuclear-fill" x1="0" y1="0" x2="0" y2="1">
+                              <stop offset="0%" stopColor="var(--color-nuclear)" stopOpacity="0.9"></stop>
+                              <stop offset="100%" stopColor="var(--color-nuclear)" stopOpacity="0.2"></stop>
+                            </lineargradient>
+                          </defs>
+                          <g data-c52-fill="true">
+                            <path className="recharts-curve" fill="url(#rs-nuclear-fill)" stroke="none" d="M0,240C13.889,240,27.778,240,41.667,240C55.556,240,69.444,240,83.333,240C97.222,240,111.111,240,125,240C138.889,240,152.778,240,166.667,240C180.556,240,194.444,240,208.333,240C222.222,240,236.111,240,250,240C263.889,240,277.778,241.25,291.667,242.5C305.556,243.75,319.444,245,333.333,247.5C347.222,250,361.111,253.75,375,257.5C388.889,261.25,402.778,266.25,416.667,270C430.556,273.75,444.444,277.5,458.333,280C472.222,282.5,486.111,283.75,500,285C513.889,286.25,527.778,287.5,541.667,287.5C555.556,287.5,569.444,285,583.333,282.5C597.222,280,611.111,276.25,625,272.5C638.889,268.75,652.778,264.167,666.667,260C680.556,255.833,694.444,250.833,708.333,247.5C722.222,244.167,736.111,240,750,240C763.889,240,777.778,240,791.667,240C805.556,240,819.444,240,833.333,240C847.222,240,861.111,240,875,240C888.889,240,902.778,240,916.667,240C930.556,240,944.444,240,958.333,240C972.222,240,986.111,240,1000,240L1000,400C986.111,400,972.222,400,958.333,400C944.444,400,930.556,400,916.667,400C902.778,400,888.889,400,875,400C861.111,400,847.222,400,833.333,400C819.444,400,805.556,400,791.667,400C777.778,400,763.889,400,750,400C736.111,400,722.222,400,708.333,400C694.444,400,680.556,400,666.667,400C652.778,400,638.889,400,625,400C611.111,400,597.222,400,583.333,400C569.444,400,555.556,400,541.667,400C527.778,400,513.889,400,500,400C486.111,400,472.222,400,458.333,400C444.444,400,430.556,400,416.667,400C402.778,400,388.889,400,375,400C361.111,400,347.222,400,333.333,400C319.444,400,305.556,400,291.667,400C277.778,400,263.889,400,250,400C236.111,400,222.222,400,208.333,400C194.444,400,180.556,400,166.667,400C152.778,400,138.889,400,125,400C111.111,400,97.222,400,83.333,400C69.444,400,55.556,400,41.667,400C27.778,400,13.889,400,0,400Z"></path>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <svg className="absolute inset-0 pointer-events-none size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                      <defs>
+                        <clippath id="rs-nuclear-clip">
+                          <path className="recharts-curve" d="M0,240C13.889,240,27.778,240,41.667,240C55.556,240,69.444,240,83.333,240C97.222,240,111.111,240,125,240C138.889,240,152.778,240,166.667,240C180.556,240,194.444,240,208.333,240C222.222,240,236.111,240,250,240C263.889,240,277.778,241.25,291.667,242.5C305.556,243.75,319.444,245,333.333,247.5C347.222,250,361.111,253.75,375,257.5C388.889,261.25,402.778,266.25,416.667,270C430.556,273.75,444.444,277.5,458.333,280C472.222,282.5,486.111,283.75,500,285C513.889,286.25,527.778,287.5,541.667,287.5C555.556,287.5,569.444,285,583.333,282.5C597.222,280,611.111,276.25,625,272.5C638.889,268.75,652.778,264.167,666.667,260C680.556,255.833,694.444,250.833,708.333,247.5C722.222,244.167,736.111,240,750,240C763.889,240,777.778,240,791.667,240C805.556,240,819.444,240,833.333,240C847.222,240,861.111,240,875,240C888.889,240,902.778,240,916.667,240C930.556,240,944.444,240,958.333,240C972.222,240,986.111,240,1000,240L1000,400C986.111,400,972.222,400,958.333,400C944.444,400,930.556,400,916.667,400C902.778,400,888.889,400,875,400C861.111,400,847.222,400,833.333,400C819.444,400,805.556,400,791.667,400C777.778,400,763.889,400,750,400C736.111,400,722.222,400,708.333,400C694.444,400,680.556,400,666.667,400C652.778,400,638.889,400,625,400C611.111,400,597.222,400,583.333,400C569.444,400,555.556,400,541.667,400C527.778,400,513.889,400,500,400C486.111,400,472.222,400,458.333,400C444.444,400,430.556,400,416.667,400C402.778,400,388.889,400,375,400C361.111,400,347.222,400,333.333,400C319.444,400,305.556,400,291.667,400C277.778,400,263.889,400,250,400C236.111,400,222.222,400,208.333,400C194.444,400,180.556,400,166.667,400C152.778,400,138.889,400,125,400C111.111,400,97.222,400,83.333,400C69.444,400,55.556,400,41.667,400C27.778,400,13.889,400,0,400Z"></path>
+                        </clippath>
+                      </defs>
+                      <g clipPath="url(#rs-nuclear-clip)">
+                        <rect data-hour="0" x="0" y="0" width="20.833333333333332" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="1" x="20.833333333333332" y="0" width="41.66666666666667" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="2" x="62.5" y="0" width="41.66666666666666" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="3" x="104.16666666666667" y="0" width="41.66666666666667" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="4" x="145.83333333333331" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="5" x="187.5" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="6" x="229.16666666666666" y="0" width="41.66666666666666" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="7" x="270.83333333333337" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="8" x="312.5" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="9" x="354.1666666666667" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="10" x="395.83333333333337" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="11" x="437.5" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="12" x="479.1666666666667" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="13" x="520.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="14" x="562.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="15" x="604.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="16" x="645.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="17" x="687.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="18" x="729.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="19" x="770.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="20" x="812.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="21" x="854.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="22" x="895.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="23" x="937.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="24" x="979.1666666666666" y="0" width="20.83333333333337" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                      </g>
+                    </svg>
+                  </div>
+                  <div className="absolute inset-0 pointer-events-none" data-c52-plane="true" style={{"--c52-z": "0.5"}}>
+                    <div className="absolute inset-0" data-c52-lift="true" style={{transform: "translateY(0px) scaleY(1)", opacity: "1"}}>
+                      <div className="absolute inset-0" data-c52-reveal="true" data-source="gas" data-shown="true">
+                        <svg className="absolute inset-0 overflow-visible size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                          <defs>
+                            <lineargradient id="rs-gas-fill" x1="0" y1="0" x2="0" y2="1">
+                              <stop offset="0%" stopColor="var(--color-gas)" stopOpacity="0.9"></stop>
+                              <stop offset="100%" stopColor="var(--color-gas)" stopOpacity="0.2"></stop>
+                            </lineargradient>
+                          </defs>
+                          <g data-c52-fill="true">
+                            <path className="recharts-curve" fill="url(#rs-gas-fill)" stroke="none" d="M0,280C13.889,285.417,27.778,290.833,41.667,295C55.556,299.167,69.444,302.5,83.333,305C97.222,307.5,111.111,310,125,310C138.889,310,152.778,309.167,166.667,307.5C180.556,305.833,194.444,300.417,208.333,292.5C222.222,284.583,236.111,270.417,250,260C263.889,249.583,277.778,230,291.667,230C305.556,230,319.444,237.083,333.333,245C347.222,252.917,361.111,266.667,375,277.5C388.889,288.333,402.778,300.833,416.667,310C430.556,319.167,444.444,326.667,458.333,332.5C472.222,338.333,486.111,342.083,500,345C513.889,347.917,527.778,350,541.667,350C555.556,350,569.444,347.083,583.333,342.5C597.222,337.917,611.111,332.083,625,322.5C638.889,312.917,652.778,302.083,666.667,285C680.556,267.917,694.444,240.833,708.333,220C722.222,199.167,736.111,175,750,160C763.889,145,777.778,130,791.667,130C805.556,130,819.444,137.083,833.333,145C847.222,152.917,861.111,165.833,875,177.5C888.889,189.167,902.778,203.333,916.667,215C930.556,226.667,944.444,238.333,958.333,247.5C972.222,256.667,986.111,263.333,1000,270L1000,400C986.111,400,972.222,400,958.333,400C944.444,400,930.556,400,916.667,400C902.778,400,888.889,400,875,400C861.111,400,847.222,400,833.333,400C819.444,400,805.556,400,791.667,400C777.778,400,763.889,400,750,400C736.111,400,722.222,400,708.333,400C694.444,400,680.556,400,666.667,400C652.778,400,638.889,400,625,400C611.111,400,597.222,400,583.333,400C569.444,400,555.556,400,541.667,400C527.778,400,513.889,400,500,400C486.111,400,472.222,400,458.333,400C444.444,400,430.556,400,416.667,400C402.778,400,388.889,400,375,400C361.111,400,347.222,400,333.333,400C319.444,400,305.556,400,291.667,400C277.778,400,263.889,400,250,400C236.111,400,222.222,400,208.333,400C194.444,400,180.556,400,166.667,400C152.778,400,138.889,400,125,400C111.111,400,97.222,400,83.333,400C69.444,400,55.556,400,41.667,400C27.778,400,13.889,400,0,400Z"></path>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <svg className="absolute inset-0 pointer-events-none size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                      <defs>
+                        <clippath id="rs-gas-clip">
+                          <path className="recharts-curve" d="M0,280C13.889,285.417,27.778,290.833,41.667,295C55.556,299.167,69.444,302.5,83.333,305C97.222,307.5,111.111,310,125,310C138.889,310,152.778,309.167,166.667,307.5C180.556,305.833,194.444,300.417,208.333,292.5C222.222,284.583,236.111,270.417,250,260C263.889,249.583,277.778,230,291.667,230C305.556,230,319.444,237.083,333.333,245C347.222,252.917,361.111,266.667,375,277.5C388.889,288.333,402.778,300.833,416.667,310C430.556,319.167,444.444,326.667,458.333,332.5C472.222,338.333,486.111,342.083,500,345C513.889,347.917,527.778,350,541.667,350C555.556,350,569.444,347.083,583.333,342.5C597.222,337.917,611.111,332.083,625,322.5C638.889,312.917,652.778,302.083,666.667,285C680.556,267.917,694.444,240.833,708.333,220C722.222,199.167,736.111,175,750,160C763.889,145,777.778,130,791.667,130C805.556,130,819.444,137.083,833.333,145C847.222,152.917,861.111,165.833,875,177.5C888.889,189.167,902.778,203.333,916.667,215C930.556,226.667,944.444,238.333,958.333,247.5C972.222,256.667,986.111,263.333,1000,270L1000,400C986.111,400,972.222,400,958.333,400C944.444,400,930.556,400,916.667,400C902.778,400,888.889,400,875,400C861.111,400,847.222,400,833.333,400C819.444,400,805.556,400,791.667,400C777.778,400,763.889,400,750,400C736.111,400,722.222,400,708.333,400C694.444,400,680.556,400,666.667,400C652.778,400,638.889,400,625,400C611.111,400,597.222,400,583.333,400C569.444,400,555.556,400,541.667,400C527.778,400,513.889,400,500,400C486.111,400,472.222,400,458.333,400C444.444,400,430.556,400,416.667,400C402.778,400,388.889,400,375,400C361.111,400,347.222,400,333.333,400C319.444,400,305.556,400,291.667,400C277.778,400,263.889,400,250,400C236.111,400,222.222,400,208.333,400C194.444,400,180.556,400,166.667,400C152.778,400,138.889,400,125,400C111.111,400,97.222,400,83.333,400C69.444,400,55.556,400,41.667,400C27.778,400,13.889,400,0,400Z"></path>
+                        </clippath>
+                      </defs>
+                      <g clipPath="url(#rs-gas-clip)">
+                        <rect data-hour="0" x="0" y="0" width="20.833333333333332" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="1" x="20.833333333333332" y="0" width="41.66666666666667" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="2" x="62.5" y="0" width="41.66666666666666" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="3" x="104.16666666666667" y="0" width="41.66666666666667" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="4" x="145.83333333333331" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="5" x="187.5" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="6" x="229.16666666666666" y="0" width="41.66666666666666" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="7" x="270.83333333333337" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="8" x="312.5" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="9" x="354.1666666666667" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="10" x="395.83333333333337" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="11" x="437.5" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="12" x="479.1666666666667" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="13" x="520.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="14" x="562.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="15" x="604.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="16" x="645.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="17" x="687.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="18" x="729.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="19" x="770.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="20" x="812.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="21" x="854.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="22" x="895.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="23" x="937.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="24" x="979.1666666666666" y="0" width="20.83333333333337" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                      </g>
+                    </svg>
+                  </div>
+                  <div className="absolute inset-0 pointer-events-none" data-c52-plane="true" style={{"--c52-z": "1.5"}}>
+                    <div className="absolute inset-0" data-c52-lift="true" style={{transform: "translateY(0px) scaleY(1)", opacity: "1"}}>
+                      <div className="absolute inset-0" data-c52-reveal="true" data-source="hydro" data-shown="true">
+                        <svg className="absolute inset-0 overflow-visible size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                          <defs>
+                            <lineargradient id="rs-hydro-fill" x1="0" y1="0" x2="0" y2="1">
+                              <stop offset="0%" stopColor="var(--color-hydro)" stopOpacity="0.9"></stop>
+                              <stop offset="100%" stopColor="var(--color-hydro)" stopOpacity="0.2"></stop>
+                            </lineargradient>
+                          </defs>
+                          <g data-c52-fill="true">
+                            <path className="recharts-curve" fill="url(#rs-hydro-fill)" stroke="none" d="M0,340C13.889,342.708,27.778,345.417,41.667,347.5C55.556,349.583,69.444,351.25,83.333,352.5C97.222,353.75,111.111,355,125,355C138.889,355,152.778,354.167,166.667,352.5C180.556,350.833,194.444,342.917,208.333,335C222.222,327.083,236.111,314.583,250,305C263.889,295.417,277.778,280.833,291.667,277.5C305.556,274.167,319.444,272.5,333.333,272.5C347.222,272.5,361.111,286.667,375,295C388.889,303.333,402.778,315,416.667,322.5C430.556,330,444.444,335.417,458.333,340C472.222,344.583,486.111,348.333,500,350C513.889,351.667,527.778,352.5,541.667,352.5C555.556,352.5,569.444,351.667,583.333,350C597.222,348.333,611.111,345.417,625,340C638.889,334.583,652.778,326.667,666.667,317.5C680.556,308.333,694.444,294.583,708.333,285C722.222,275.417,736.111,265,750,260C763.889,255,777.778,252.5,791.667,252.5C805.556,252.5,819.444,258.75,833.333,265C847.222,271.25,861.111,281.667,875,290C888.889,298.333,902.778,308.333,916.667,315C930.556,321.667,944.444,326.25,958.333,330C972.222,333.75,986.111,335.625,1000,337.5L1000,400C986.111,400,972.222,400,958.333,400C944.444,400,930.556,400,916.667,400C902.778,400,888.889,400,875,400C861.111,400,847.222,400,833.333,400C819.444,400,805.556,400,791.667,400C777.778,400,763.889,400,750,400C736.111,400,722.222,400,708.333,400C694.444,400,680.556,400,666.667,400C652.778,400,638.889,400,625,400C611.111,400,597.222,400,583.333,400C569.444,400,555.556,400,541.667,400C527.778,400,513.889,400,500,400C486.111,400,472.222,400,458.333,400C444.444,400,430.556,400,416.667,400C402.778,400,388.889,400,375,400C361.111,400,347.222,400,333.333,400C319.444,400,305.556,400,291.667,400C277.778,400,263.889,400,250,400C236.111,400,222.222,400,208.333,400C194.444,400,180.556,400,166.667,400C152.778,400,138.889,400,125,400C111.111,400,97.222,400,83.333,400C69.444,400,55.556,400,41.667,400C27.778,400,13.889,400,0,400Z"></path>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <svg className="absolute inset-0 pointer-events-none size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                      <defs>
+                        <clippath id="rs-hydro-clip">
+                          <path className="recharts-curve" d="M0,340C13.889,342.708,27.778,345.417,41.667,347.5C55.556,349.583,69.444,351.25,83.333,352.5C97.222,353.75,111.111,355,125,355C138.889,355,152.778,354.167,166.667,352.5C180.556,350.833,194.444,342.917,208.333,335C222.222,327.083,236.111,314.583,250,305C263.889,295.417,277.778,280.833,291.667,277.5C305.556,274.167,319.444,272.5,333.333,272.5C347.222,272.5,361.111,286.667,375,295C388.889,303.333,402.778,315,416.667,322.5C430.556,330,444.444,335.417,458.333,340C472.222,344.583,486.111,348.333,500,350C513.889,351.667,527.778,352.5,541.667,352.5C555.556,352.5,569.444,351.667,583.333,350C597.222,348.333,611.111,345.417,625,340C638.889,334.583,652.778,326.667,666.667,317.5C680.556,308.333,694.444,294.583,708.333,285C722.222,275.417,736.111,265,750,260C763.889,255,777.778,252.5,791.667,252.5C805.556,252.5,819.444,258.75,833.333,265C847.222,271.25,861.111,281.667,875,290C888.889,298.333,902.778,308.333,916.667,315C930.556,321.667,944.444,326.25,958.333,330C972.222,333.75,986.111,335.625,1000,337.5L1000,400C986.111,400,972.222,400,958.333,400C944.444,400,930.556,400,916.667,400C902.778,400,888.889,400,875,400C861.111,400,847.222,400,833.333,400C819.444,400,805.556,400,791.667,400C777.778,400,763.889,400,750,400C736.111,400,722.222,400,708.333,400C694.444,400,680.556,400,666.667,400C652.778,400,638.889,400,625,400C611.111,400,597.222,400,583.333,400C569.444,400,555.556,400,541.667,400C527.778,400,513.889,400,500,400C486.111,400,472.222,400,458.333,400C444.444,400,430.556,400,416.667,400C402.778,400,388.889,400,375,400C361.111,400,347.222,400,333.333,400C319.444,400,305.556,400,291.667,400C277.778,400,263.889,400,250,400C236.111,400,222.222,400,208.333,400C194.444,400,180.556,400,166.667,400C152.778,400,138.889,400,125,400C111.111,400,97.222,400,83.333,400C69.444,400,55.556,400,41.667,400C27.778,400,13.889,400,0,400Z"></path>
+                        </clippath>
+                      </defs>
+                      <g clipPath="url(#rs-hydro-clip)">
+                        <rect data-hour="0" x="0" y="0" width="20.833333333333332" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="1" x="20.833333333333332" y="0" width="41.66666666666667" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="2" x="62.5" y="0" width="41.66666666666666" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="3" x="104.16666666666667" y="0" width="41.66666666666667" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="4" x="145.83333333333331" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="5" x="187.5" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="6" x="229.16666666666666" y="0" width="41.66666666666666" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="7" x="270.83333333333337" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="8" x="312.5" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="9" x="354.1666666666667" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="10" x="395.83333333333337" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="11" x="437.5" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="12" x="479.1666666666667" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="13" x="520.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="14" x="562.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="15" x="604.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="16" x="645.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="17" x="687.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="18" x="729.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="19" x="770.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="20" x="812.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="21" x="854.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="22" x="895.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="23" x="937.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="24" x="979.1666666666666" y="0" width="20.83333333333337" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                      </g>
+                    </svg>
+                  </div>
+                  <div className="absolute inset-0 pointer-events-none" data-c52-plane="true" style={{"--c52-z": "2.5"}}>
+                    <div className="absolute inset-0" data-c52-lift="true" style={{transform: "translateY(0px) scaleY(1)", opacity: "1"}}>
+                      <div className="absolute inset-0" data-c52-reveal="true" data-source="battery" data-shown="true">
+                        <svg className="absolute inset-0 overflow-visible size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                          <defs>
+                            <lineargradient id="rs-battery-fill" x1="0" y1="0" x2="0" y2="1">
+                              <stop offset="0%" stopColor="var(--color-battery)" stopOpacity="0.9"></stop>
+                              <stop offset="100%" stopColor="var(--color-battery)" stopOpacity="0.2"></stop>
+                            </lineargradient>
+                          </defs>
+                          <g data-c52-fill="true">
+                            <path className="recharts-curve" fill="url(#rs-battery-fill)" stroke="none" d="M0,390C13.889,391.667,27.778,393.333,41.667,395C55.556,396.667,69.444,400,83.333,400C97.222,400,111.111,400,125,400C138.889,400,152.778,400,166.667,400C180.556,400,194.444,397.083,208.333,392.5C222.222,387.917,236.111,377.917,250,372.5C263.889,367.083,277.778,360,291.667,360C305.556,360,319.444,371.667,333.333,377.5C347.222,383.333,361.111,391.667,375,395C388.889,398.333,402.778,400,416.667,400C430.556,400,444.444,400,458.333,400C472.222,400,486.111,400,500,400C513.889,400,527.778,400,541.667,400C555.556,400,569.444,400,583.333,400C597.222,400,611.111,400,625,400C638.889,400,652.778,396.667,666.667,390C680.556,383.333,694.444,370.417,708.333,360C722.222,349.583,736.111,335.833,750,327.5C763.889,319.167,777.778,310,791.667,310C805.556,310,819.444,313.75,833.333,320C847.222,326.25,861.111,338.333,875,347.5C888.889,356.667,902.778,368.333,916.667,375C930.556,381.667,944.444,384.583,958.333,387.5C972.222,390.417,986.111,391.458,1000,392.5L1000,400C986.111,400,972.222,400,958.333,400C944.444,400,930.556,400,916.667,400C902.778,400,888.889,400,875,400C861.111,400,847.222,400,833.333,400C819.444,400,805.556,400,791.667,400C777.778,400,763.889,400,750,400C736.111,400,722.222,400,708.333,400C694.444,400,680.556,400,666.667,400C652.778,400,638.889,400,625,400C611.111,400,597.222,400,583.333,400C569.444,400,555.556,400,541.667,400C527.778,400,513.889,400,500,400C486.111,400,472.222,400,458.333,400C444.444,400,430.556,400,416.667,400C402.778,400,388.889,400,375,400C361.111,400,347.222,400,333.333,400C319.444,400,305.556,400,291.667,400C277.778,400,263.889,400,250,400C236.111,400,222.222,400,208.333,400C194.444,400,180.556,400,166.667,400C152.778,400,138.889,400,125,400C111.111,400,97.222,400,83.333,400C69.444,400,55.556,400,41.667,400C27.778,400,13.889,400,0,400Z"></path>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <svg className="absolute inset-0 pointer-events-none size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                      <defs>
+                        <clippath id="rs-battery-clip">
+                          <path className="recharts-curve" d="M0,390C13.889,391.667,27.778,393.333,41.667,395C55.556,396.667,69.444,400,83.333,400C97.222,400,111.111,400,125,400C138.889,400,152.778,400,166.667,400C180.556,400,194.444,397.083,208.333,392.5C222.222,387.917,236.111,377.917,250,372.5C263.889,367.083,277.778,360,291.667,360C305.556,360,319.444,371.667,333.333,377.5C347.222,383.333,361.111,391.667,375,395C388.889,398.333,402.778,400,416.667,400C430.556,400,444.444,400,458.333,400C472.222,400,486.111,400,500,400C513.889,400,527.778,400,541.667,400C555.556,400,569.444,400,583.333,400C597.222,400,611.111,400,625,400C638.889,400,652.778,396.667,666.667,390C680.556,383.333,694.444,370.417,708.333,360C722.222,349.583,736.111,335.833,750,327.5C763.889,319.167,777.778,310,791.667,310C805.556,310,819.444,313.75,833.333,320C847.222,326.25,861.111,338.333,875,347.5C888.889,356.667,902.778,368.333,916.667,375C930.556,381.667,944.444,384.583,958.333,387.5C972.222,390.417,986.111,391.458,1000,392.5L1000,400C986.111,400,972.222,400,958.333,400C944.444,400,930.556,400,916.667,400C902.778,400,888.889,400,875,400C861.111,400,847.222,400,833.333,400C819.444,400,805.556,400,791.667,400C777.778,400,763.889,400,750,400C736.111,400,722.222,400,708.333,400C694.444,400,680.556,400,666.667,400C652.778,400,638.889,400,625,400C611.111,400,597.222,400,583.333,400C569.444,400,555.556,400,541.667,400C527.778,400,513.889,400,500,400C486.111,400,472.222,400,458.333,400C444.444,400,430.556,400,416.667,400C402.778,400,388.889,400,375,400C361.111,400,347.222,400,333.333,400C319.444,400,305.556,400,291.667,400C277.778,400,263.889,400,250,400C236.111,400,222.222,400,208.333,400C194.444,400,180.556,400,166.667,400C152.778,400,138.889,400,125,400C111.111,400,97.222,400,83.333,400C69.444,400,55.556,400,41.667,400C27.778,400,13.889,400,0,400Z"></path>
+                        </clippath>
+                      </defs>
+                      <g clipPath="url(#rs-battery-clip)">
+                        <rect data-hour="0" x="0" y="0" width="20.833333333333332" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="1" x="20.833333333333332" y="0" width="41.66666666666667" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="2" x="62.5" y="0" width="41.66666666666666" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="3" x="104.16666666666667" y="0" width="41.66666666666667" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="4" x="145.83333333333331" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="5" x="187.5" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="6" x="229.16666666666666" y="0" width="41.66666666666666" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="7" x="270.83333333333337" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="8" x="312.5" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="9" x="354.1666666666667" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="10" x="395.83333333333337" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="11" x="437.5" y="0" width="41.66666666666663" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="12" x="479.1666666666667" y="0" width="41.666666666666686" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="13" x="520.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="14" x="562.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="15" x="604.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="16" x="645.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="17" x="687.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="18" x="729.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="19" x="770.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="20" x="812.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="21" x="854.1666666666666" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="22" x="895.8333333333333" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="23" x="937.5" y="0" width="41.66666666666674" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                        <rect data-hour="24" x="979.1666666666666" y="0" width="20.83333333333337" height="400" fill="transparent" pointer-events="visiblePainted"></rect>
+                      </g>
+                    </svg>
+                  </div>
+                  <div className="absolute inset-0 pointer-events-none" data-c52-plane="true" data-ink="true" style={{"--c52-z": "-2.5"}}>
+                    <div className="absolute inset-0" data-c52-lift="true" style={{transform: "translateY(0px) scaleY(1)", opacity: "1"}}>
+                      <div className="absolute inset-0" data-c52-reveal="true" data-source="solar" data-shown="true">
+                        <svg className="absolute inset-0 overflow-visible size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                          <path className="recharts-curve" fill="none" stroke="var(--color-solar)" strokeWidth="1.5" vector-effect="non-scaling-stroke" d="M208.333,400C222.222,398.75,236.111,397.5,250,392.5C263.889,387.5,277.778,376.25,291.667,360C305.556,343.75,319.444,320,333.333,295C347.222,270,361.111,237.5,375,210C388.889,182.5,402.778,154.167,416.667,130C430.556,105.833,444.444,82.917,458.333,65C472.222,47.083,486.111,32.5,500,22.5C513.889,12.5,527.778,5,541.667,5C555.556,5,569.444,10.833,583.333,20C597.222,29.167,611.111,42.5,625,60C638.889,77.5,652.778,99.167,666.667,125C680.556,150.833,694.444,184.167,708.333,215C722.222,245.833,736.111,282.917,750,310C763.889,337.083,777.778,364.167,791.667,377.5C805.556,390.833,819.444,395.833,833.333,397.5C847.222,399.167,861.111,399.583,875,400"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute inset-0 pointer-events-none" data-c52-plane="true" data-ink="true" style={{"--c52-z": "-1.5"}}>
+                    <div className="absolute inset-0" data-c52-lift="true" style={{transform: "translateY(0px) scaleY(1)", opacity: "1"}}>
+                      <div className="absolute inset-0" data-c52-reveal="true" data-source="wind" data-shown="true">
+                        <svg className="absolute inset-0 overflow-visible size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                          <path className="recharts-curve" fill="none" stroke="var(--color-wind)" strokeWidth="1.5" vector-effect="non-scaling-stroke" d="M0,135C13.889,128.542,27.778,122.083,41.667,115C55.556,107.917,69.444,92.5,83.333,92.5C97.222,92.5,111.111,99.167,125,105C138.889,110.833,152.778,121.667,166.667,127.5C180.556,133.333,194.444,135.417,208.333,140C222.222,144.583,236.111,147.5,250,155C263.889,162.5,277.778,174.167,291.667,185C305.556,195.833,319.444,210.417,333.333,220C347.222,229.583,361.111,235.833,375,242.5C388.889,249.167,402.778,254.167,416.667,260C430.556,265.833,444.444,272.5,458.333,277.5C472.222,282.5,486.111,290,500,290C513.889,290,527.778,285.417,541.667,280C555.556,274.583,569.444,262.917,583.333,257.5C597.222,252.083,611.111,252.5,625,247.5C638.889,242.5,652.778,237.083,666.667,227.5C680.556,217.917,694.444,201.25,708.333,190C722.222,178.75,736.111,160,750,160C763.889,160,777.778,166.25,791.667,170C805.556,173.75,819.444,182.5,833.333,182.5C847.222,182.5,861.111,162.5,875,152.5C888.889,142.5,902.778,130.417,916.667,122.5C930.556,114.583,944.444,108.333,958.333,105C972.222,101.667,986.111,100.833,1000,100"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute inset-0 pointer-events-none" data-c52-plane="true" data-ink="true" style={{"--c52-z": "-0.5"}}>
+                    <div className="absolute inset-0" data-c52-lift="true" style={{transform: "translateY(0px) scaleY(1)", opacity: "1"}}>
+                      <div className="absolute inset-0" data-c52-reveal="true" data-source="nuclear" data-shown="true">
+                        <svg className="absolute inset-0 overflow-visible size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                          <path className="recharts-curve" fill="none" stroke="var(--color-nuclear)" strokeWidth="1.5" vector-effect="non-scaling-stroke" d="M0,240C13.889,240,27.778,240,41.667,240C55.556,240,69.444,240,83.333,240C97.222,240,111.111,240,125,240C138.889,240,152.778,240,166.667,240C180.556,240,194.444,240,208.333,240C222.222,240,236.111,240,250,240C263.889,240,277.778,241.25,291.667,242.5C305.556,243.75,319.444,245,333.333,247.5C347.222,250,361.111,253.75,375,257.5C388.889,261.25,402.778,266.25,416.667,270C430.556,273.75,444.444,277.5,458.333,280C472.222,282.5,486.111,283.75,500,285C513.889,286.25,527.778,287.5,541.667,287.5C555.556,287.5,569.444,285,583.333,282.5C597.222,280,611.111,276.25,625,272.5C638.889,268.75,652.778,264.167,666.667,260C680.556,255.833,694.444,250.833,708.333,247.5C722.222,244.167,736.111,240,750,240C763.889,240,777.778,240,791.667,240C805.556,240,819.444,240,833.333,240C847.222,240,861.111,240,875,240C888.889,240,902.778,240,916.667,240C930.556,240,944.444,240,958.333,240C972.222,240,986.111,240,1000,240"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute inset-0 pointer-events-none" data-c52-plane="true" data-ink="true" style={{"--c52-z": "0.5"}}>
+                    <div className="absolute inset-0" data-c52-lift="true" style={{transform: "translateY(0px) scaleY(1)", opacity: "1"}}>
+                      <div className="absolute inset-0" data-c52-reveal="true" data-source="gas" data-shown="true">
+                        <svg className="absolute inset-0 overflow-visible size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                          <path className="recharts-curve" fill="none" stroke="var(--color-gas)" strokeWidth="1.5" vector-effect="non-scaling-stroke" d="M0,280C13.889,285.417,27.778,290.833,41.667,295C55.556,299.167,69.444,302.5,83.333,305C97.222,307.5,111.111,310,125,310C138.889,310,152.778,309.167,166.667,307.5C180.556,305.833,194.444,300.417,208.333,292.5C222.222,284.583,236.111,270.417,250,260C263.889,249.583,277.778,230,291.667,230C305.556,230,319.444,237.083,333.333,245C347.222,252.917,361.111,266.667,375,277.5C388.889,288.333,402.778,300.833,416.667,310C430.556,319.167,444.444,326.667,458.333,332.5C472.222,338.333,486.111,342.083,500,345C513.889,347.917,527.778,350,541.667,350C555.556,350,569.444,347.083,583.333,342.5C597.222,337.917,611.111,332.083,625,322.5C638.889,312.917,652.778,302.083,666.667,285C680.556,267.917,694.444,240.833,708.333,220C722.222,199.167,736.111,175,750,160C763.889,145,777.778,130,791.667,130C805.556,130,819.444,137.083,833.333,145C847.222,152.917,861.111,165.833,875,177.5C888.889,189.167,902.778,203.333,916.667,215C930.556,226.667,944.444,238.333,958.333,247.5C972.222,256.667,986.111,263.333,1000,270"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute inset-0 pointer-events-none" data-c52-plane="true" data-ink="true" style={{"--c52-z": "1.5"}}>
+                    <div className="absolute inset-0" data-c52-lift="true" style={{transform: "translateY(0px) scaleY(1)", opacity: "1"}}>
+                      <div className="absolute inset-0" data-c52-reveal="true" data-source="hydro" data-shown="true">
+                        <svg className="absolute inset-0 overflow-visible size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                          <path className="recharts-curve" fill="none" stroke="var(--color-hydro)" strokeWidth="1.5" vector-effect="non-scaling-stroke" d="M0,340C13.889,342.708,27.778,345.417,41.667,347.5C55.556,349.583,69.444,351.25,83.333,352.5C97.222,353.75,111.111,355,125,355C138.889,355,152.778,354.167,166.667,352.5C180.556,350.833,194.444,342.917,208.333,335C222.222,327.083,236.111,314.583,250,305C263.889,295.417,277.778,280.833,291.667,277.5C305.556,274.167,319.444,272.5,333.333,272.5C347.222,272.5,361.111,286.667,375,295C388.889,303.333,402.778,315,416.667,322.5C430.556,330,444.444,335.417,458.333,340C472.222,344.583,486.111,348.333,500,350C513.889,351.667,527.778,352.5,541.667,352.5C555.556,352.5,569.444,351.667,583.333,350C597.222,348.333,611.111,345.417,625,340C638.889,334.583,652.778,326.667,666.667,317.5C680.556,308.333,694.444,294.583,708.333,285C722.222,275.417,736.111,265,750,260C763.889,255,777.778,252.5,791.667,252.5C805.556,252.5,819.444,258.75,833.333,265C847.222,271.25,861.111,281.667,875,290C888.889,298.333,902.778,308.333,916.667,315C930.556,321.667,944.444,326.25,958.333,330C972.222,333.75,986.111,335.625,1000,337.5"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute inset-0 pointer-events-none" data-c52-plane="true" data-ink="true" style={{"--c52-z": "2.5"}}>
+                    <div className="absolute inset-0" data-c52-lift="true" style={{transform: "translateY(0px) scaleY(1)", opacity: "1"}}>
+                      <div className="absolute inset-0" data-c52-reveal="true" data-source="battery" data-shown="true">
+                        <svg className="absolute inset-0 overflow-visible size-full" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                          <path className="recharts-curve" fill="none" stroke="var(--color-battery)" strokeWidth="1.5" vector-effect="non-scaling-stroke" d="M0,390C13.889,391.667,27.778,393.333,41.667,395C55.556,396.667,69.444,400,83.333,400C97.222,400,111.111,400,125,400C138.889,400,152.778,400,166.667,400C180.556,400,194.444,397.083,208.333,392.5C222.222,387.917,236.111,377.917,250,372.5C263.889,367.083,277.778,360,291.667,360C305.556,360,319.444,371.667,333.333,377.5C347.222,383.333,361.111,391.667,375,395C388.889,398.333,402.778,400,416.667,400C430.556,400,444.444,400,458.333,400C472.222,400,486.111,400,500,400C513.889,400,527.778,400,541.667,400C555.556,400,569.444,400,583.333,400C597.222,400,611.111,400,625,400C638.889,400,652.778,396.667,666.667,390C680.556,383.333,694.444,370.417,708.333,360C722.222,349.583,736.111,335.833,750,327.5C763.889,319.167,777.778,310,791.667,310C805.556,310,819.444,313.75,833.333,320C847.222,326.25,861.111,338.333,875,347.5C888.889,356.667,902.778,368.333,916.667,375C930.556,381.667,944.444,384.583,958.333,387.5C972.222,390.417,986.111,391.458,1000,392.5"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute inset-0 pointer-events-none" data-c52-plane="true" aria-hidden="true" style={{"--c52-z": "3.1"}}>
+                    <span className="absolute mt-2 tabular-nums text-muted-foreground text-xs top-full" style={{left: "0%"}}>
+                      00:00
+                    </span>
+                    <span className="-translate-x-1/2 @max-sm:hidden absolute mt-2 tabular-nums text-muted-foreground text-xs top-full" style={{left: "25%"}}>
+                      06:00
+                    </span>
+                    <span className="-translate-x-1/2 absolute mt-2 tabular-nums text-muted-foreground text-xs top-full" style={{left: "50%"}}>
+                      12:00
+                    </span>
+                    <span className="-translate-x-1/2 @max-sm:hidden absolute mt-2 tabular-nums text-muted-foreground text-xs top-full" style={{left: "75%"}}>
+                      18:00
+                    </span>
+                    <span className="-translate-x-full absolute mt-2 tabular-nums text-muted-foreground text-xs top-full" style={{left: "100%"}}>
+                      24:00
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul className="sr-only">
+            <li>
+              Solar: 120.6 GWh, peak 15.8 GW at 13:00
+            </li>
+            <li>
+              Wind: 207.1 GWh, peak 12.3 GW at 02:00
+            </li>
+            <li>
+              Nuclear: 141.9 GWh, peak 6.4 GW at 00:00
+            </li>
+            <li>
+              Gas: 128.8 GWh, peak 10.8 GW at 19:00
+            </li>
+            <li>
+              Hydro: 80.0 GWh, peak 5.9 GW at 19:00
+            </li>
+            <li>
+              Battery: 19.9 GWh, peak 3.6 GW at 19:00
+            </li>
+          </ul>
+        </FramePanel>
+        <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
+          <ToggleGroup className="flex-wrap" multiple="" data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="2" aria-label="Sources in the chart" style={{"--gap": "2"}}>
+            <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="2">
+              <span className="bg-(--color-solar) rounded-full shrink-0 size-2" aria-hidden="true"></span>
+              Solar
+              <span className="tabular-nums text-muted-foreground">
+                17%
+              </span>
+              <span className="sr-only">
+                of output
+              </span>
+            </ToggleGroupItem>
+            <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="2">
+              <span className="bg-(--color-wind) rounded-full shrink-0 size-2" aria-hidden="true"></span>
+              Wind
+              <span className="tabular-nums text-muted-foreground">
+                30%
+              </span>
+              <span className="sr-only">
+                of output
+              </span>
+            </ToggleGroupItem>
+            <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="2">
+              <span className="bg-(--color-nuclear) rounded-full shrink-0 size-2" aria-hidden="true"></span>
+              Nuclear
+              <span className="tabular-nums text-muted-foreground">
+                20%
+              </span>
+              <span className="sr-only">
+                of output
+              </span>
+            </ToggleGroupItem>
+            <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="2">
+              <span className="bg-(--color-gas) rounded-full shrink-0 size-2" aria-hidden="true"></span>
+              Gas
+              <span className="tabular-nums text-muted-foreground">
+                18%
+              </span>
+              <span className="sr-only">
+                of output
+              </span>
+            </ToggleGroupItem>
+            <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="2">
+              <span className="bg-(--color-hydro) rounded-full shrink-0 size-2" aria-hidden="true"></span>
+              Hydro
+              <span className="tabular-nums text-muted-foreground">
+                12%
+              </span>
+              <span className="sr-only">
+                of output
+              </span>
+            </ToggleGroupItem>
+            <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="2">
+              <span className="bg-(--color-battery) rounded-full shrink-0 size-2" aria-hidden="true"></span>
+              Battery
+              <span className="tabular-nums text-muted-foreground">
+                3%
+              </span>
+              <span className="sr-only">
+                of output
+              </span>
+            </ToggleGroupItem>
+          </ToggleGroup>
+        </footer>
+      </Frame>
+    </div>
+  )
+}

@@ -1,0 +1,133 @@
+import {
+  Frame,
+  FramePanel,
+} from "@/registry-neui/bases/base/neui/frame"
+import { ItemMedia } from "@/registry/bases/base/ui/item"
+import { Item } from "@/registry/bases/radix/ui/item"
+
+export function Pattern() {
+  return (
+    <div className="flex items-center justify-center max-w-4xl min-h-svh p-8 w-full">
+      <Frame className="@container w-full">
+        <div className="@lg:grid-cols-2 gap-1 grid">
+          <FramePanel className="space-y-5">
+            <div className="flex flex-col gap-3">
+              <a className="font-medium hover:text-primary leading-tight text-foreground text-sm" href="">
+                Sponsors
+              </a>
+              <p className="leading-relaxed text-muted-foreground text-sm">
+                Checkout built for speed and consistent transaction high performance.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2.5">
+              <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
+                <ItemMedia className="size-auto" variant="icon">
+                  <svg className="size-6" aria-hidden="true" viewBox="0 0 19 19" fill="none">
+                    <path d="M18.367 7.28888V1.59755C18.367 0.986819 17.8715 0.5 17.2699 0.5H11.5812C10.6877 0.5 9.80295 0.677018 8.98017 1.01336C8.15738 1.35856 7.40539 1.85424 6.77724 2.49152L6.733 2.53578C5.90137 3.37664 5.30862 4.42108 5.00781 5.57174C5.54749 5.43012 6.10483 5.35931 6.6622 5.35046C8.14852 5.33276 9.60831 5.81073 10.7938 6.7047C11.8643 7.50131 12.6783 8.59885 13.1206 9.86458C13.5807 11.148 13.6337 12.5465 13.2887 13.8653C14.43 13.5644 15.4828 12.9714 16.3233 12.1393L16.3675 12.0951C16.9957 11.4667 17.4999 10.7143 17.845 9.89114C18.19 9.06797 18.3581 8.18285 18.3581 7.28888H18.367Z" fill="#18E299"></path>
+                    <path d="M4.83793 7.193C4.84674 5.44706 5.54303 3.77167 6.76814 2.51953L2.03511 7.25472C2.01749 7.27236 1.99985 7.28117 1.98222 7.29881C0.827615 8.44513 0.131342 9.97945 0.0167623 11.6019C-0.0890033 13.1186 0.307609 14.6176 1.15373 15.8698C1.23444 15.9892 1.45343 16.0285 1.57682 15.9139L4.47656 13.0216C5.38438 12.1134 5.66643 10.7642 5.23455 9.55618C4.96132 8.80666 4.82912 8.00424 4.83793 7.193Z" fill="#0C8C5E"></path>
+                    <path d="M16.341 12.0938C15.4332 12.9844 14.2962 13.6016 13.0623 13.875C11.8195 14.1483 10.5327 14.0689 9.33405 13.6457C9.33405 13.6457 9.32522 13.6457 9.31641 13.6457C8.10892 13.2136 6.76042 13.4958 5.8526 14.3952L2.95282 17.2875C2.82943 17.4109 2.84706 17.6137 2.99689 17.7107C4.24845 18.5484 5.74683 18.954 7.26281 18.8482C8.88455 18.7336 10.4093 18.037 11.5639 16.8818L11.608 16.8378L16.341 12.1026V12.0938Z" fill="#0C8C5E"></path>
+                  </svg>
+                </ItemMedia>
+              </Item>
+              <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
+                <ItemMedia className="size-auto" variant="icon">
+                  <svg className="size-6" aria-hidden="true" preserveAspectRatio="xMidYMid" viewBox="0 0 256 330">
+                    <path d="M134.129.029c.876-.113 1.65.108 2.319.662a1256.253 1256.253 0 0 1 69.573 93.427c16.094 24.231 29.788 49.851 41.082 76.862 18.037 48.108 8.65 89.963-28.16 125.564-32.209 27.22-69.314 37.822-111.318 31.805-50.208-10.237-84.332-39.28-102.373-87.133C.553 225.638-.993 209.736.614 193.51c2.676-27.93 9.302-54.877 19.878-80.838 4.407-10.592 10.15-20.31 17.228-29.154a381.88 381.88 0 0 1 16.565 21.203c2.44 2.55 4.98 4.98 7.62 7.289C82.06 72.01 106.135 34.685 134.13.029Z" fill="#FF5B11" opacity=".993"></path>
+                    <path d="M129.49 53.7c24.314 28.2 46.29 58.238 65.93 90.114a187.318 187.318 0 0 1 15.24 33.13c8.338 32.804-.607 59.86-26.836 81.169-25.367 17.85-53.196 23.15-83.488 15.902-32.666-10.136-51.55-32.113-56.653-65.929-1.238-10.662-.133-21.043 3.314-31.142a225.41 225.41 0 0 1 17.89-35.78l19.878-29.155a5509.508 5509.508 0 0 0 44.726-58.31Z" fill="#FF9758"></path>
+                  </svg>
+                </ItemMedia>
+              </Item>
+              <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
+                <ItemMedia className="size-auto" variant="icon">
+                  <svg className="size-6" aria-hidden="true" viewBox="0 0 256 199" preserveAspectRatio="xMidYMid">
+                    <path d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z" fill="#5865F2"></path>
+                  </svg>
+                </ItemMedia>
+              </Item>
+              <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
+                <ItemMedia className="size-auto" variant="icon">
+                  <svg className="size-6" aria-hidden="true" viewBox="0 0 256 299" preserveAspectRatio="xMidYMid">
+                    <defs>
+                      <lineargradient id="surrealdb-a" x1="31.047%" x2="68.957%" y1="11.705%" y2="88.303%">
+                        <stop offset="0%" stopColor="#FF00A0"></stop>
+                        <stop offset="100%" stopColor="#9600FF"></stop>
+                      </lineargradient>
+                    </defs>
+                    <path fill="url(#surrealdb-a)" d="m128 78.568 71.101 39.375v-15.787L128 62.872c-10.575 5.852-61.684 34.103-71.101 39.284 8.747 4.846 100.602 55.589 156.434 86.43v15.726C205.745 208.518 128 251.46 128 251.46a76502.912 76502.912 0 0 1-85.333-47.147v-47.146L128 204.312l14.232-7.862-113.798-62.842v78.598L128 267.185c9.813-5.425 92.282-50.987 99.535-55.01v-31.42L85.333 102.155 128 78.568ZM28.434 86.43v31.452l142.202 78.598-42.666 23.589-71.101-39.376v15.787l71.1 39.284c10.576-5.852 61.684-34.103 71.101-39.284-8.746-4.846-100.571-55.589-156.403-86.461V94.293C50.255 90.088 128 47.147 128 47.147a76501.239 76501.239 0 0 0 85.333 47.146v47.147L128 94.293l-14.232 7.863 113.767 62.873V86.43L128 31.421c-9.844 5.455-92.282 51.017-99.566 55.01ZM128 0 0 70.735v157.166l128 70.735 128-70.705V70.735L128 0Zm113.737 220.038L128 282.91 14.232 220.038V78.598L128 15.726l113.768 62.872-.03 141.44Z"></path>
+                  </svg>
+                </ItemMedia>
+              </Item>
+            </div>
+          </FramePanel>
+          <FramePanel className="space-y-5">
+            <div className="flex flex-col gap-3">
+              <a className="font-medium hover:text-primary leading-tight text-foreground text-sm" href="">
+                Affiliates
+              </a>
+              <p className="leading-relaxed text-muted-foreground text-sm">
+                Authorized partners promoting our services in multiple regions.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2.5">
+              <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
+                <ItemMedia className="size-auto" variant="icon">
+                  <svg className="size-6" aria-hidden="true" preserveAspectRatio="xMidYMid" viewBox="0 0 256 220">
+                    <path d="M246 169c-13.7 7-84.5 36.2-99.5 44-15.1 7.9-23.5 7.8-35.4 2.1C99.2 209.4 24 179 10.3 172.5 3.6 169.3 0 166.5 0 164v-26s98-21.3 113.9-27c15.8-5.6 21.3-5.8 34.8-.9 13.4 5 94 19.5 107.3 24.3V160c0 2.5-3 5.3-10 9" fill="#912626"></path>
+                    <path d="M246 143.2c-13.7 7.1-84.5 36.2-99.5 44-15.1 8-23.5 7.9-35.4 2.2-11.9-5.7-87.2-36.1-100.8-42.6-13.5-6.5-13.8-11-.5-16.2 13.4-5.2 88.2-34.6 104-40.3 16-5.6 21.4-5.8 34.9-1 13.4 5 83.8 33 97.1 37.9 13.3 4.9 13.8 8.9.2 16" fill="#C6302B"></path>
+                    <path d="M246 127c-13.7 7.2-84.5 36.3-99.5 44.2-15.1 7.8-23.5 7.7-35.4 2-11.9-5.6-87.2-36-100.8-42.6-6.7-3.2-10.3-6-10.3-8.5V96.2s98-21.3 113.9-27c15.8-5.7 21.3-5.9 34.8-1 13.4 5 94 19.5 107.3 24.4V118c0 2.5-3 5.4-10 9" fill="#912626"></path>
+                    <path d="M246 101.4c-13.7 7-84.5 36.2-99.5 44-15.1 7.9-23.5 7.8-35.4 2.1C99.2 141.8 24 111.4 10.3 105c-13.5-6.5-13.8-11-.5-16.1C23.2 83.5 98 54 113.8 48.5c16-5.7 21.4-6 34.9-1 13.4 5 83.8 33 97.1 37.8 13.3 5 13.8 9 .2 16" fill="#C6302B"></path>
+                    <path d="M246 83.7c-13.7 7-84.5 36.2-99.5 44-15.1 7.9-23.5 7.8-35.4 2.1C99.2 124.1 24 93.7 10.3 87.2 3.6 84 0 81.2 0 78.7v-26s98-21.3 113.9-27c15.8-5.6 21.3-5.8 34.8-.9 13.4 5 94 19.5 107.3 24.4v25.5c0 2.5-3 5.3-10 9" fill="#912626"></path>
+                    <path d="M246 58c-13.7 7-84.5 36.1-99.5 44-15.1 7.9-23.5 7.8-35.4 2C99.2 98.5 24 68 10.3 61.6c-13.5-6.5-13.8-11-.5-16.2C23.2 40.1 98 10.7 113.8 5c16-5.6 21.4-5.8 34.9-.9 13.4 5 83.8 33 97.1 37.8 13.3 4.9 13.8 9 .2 16" fill="#C6302B"></path>
+                    <path d="m159.3 32.8-22 2.2-5 11.9-8-13.2L99 31.4l19-6.9-5.8-10.5 17.8 7 16.7-5.5-4.5 10.9 17 6.4M131 90.3l-41-17 58.8-9.1-17.8 26M74 39.3c17.5 0 31.5 5.5 31.5 12.2 0 6.8-14 12.2-31.4 12.2s-31.5-5.4-31.5-12.2c0-6.7 14.1-12.2 31.5-12.2" fill="#FFF"></path>
+                    <path d="M185.3 36 220 49.8l-34.8 13.7V36" fill="#621B1C"></path>
+                    <path d="M146.8 51.2 185.3 36v27.5l-3.8 1.5-34.7-13.8" fill="#9A2928"></path>
+                  </svg>
+                </ItemMedia>
+              </Item>
+              <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
+                <ItemMedia className="size-auto" variant="icon">
+                  <svg className="size-6" aria-hidden="true" viewBox="0 0 109 113" fill="none">
+                    <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint0_linear)"></path>
+                    <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity="0.2"></path>
+                    <path d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z" fill="#3ECF8E"></path>
+                    <defs>
+                      <lineargradient id="supabase-paint0_linear" x1="53.9738" y1="54.974" x2="94.1635" y2="71.8295" gradientUnits="userSpaceOnUse">
+                        <stop stopColor="#249361"></stop>
+                        <stop offset="1" stopColor="#3ECF8E"></stop>
+                      </lineargradient>
+                      <lineargradient id="supabase-paint1_linear" x1="36.1558" y1="30.578" x2="54.4844" y2="65.0806" gradientUnits="userSpaceOnUse">
+                        <stop></stop>
+                        <stop offset="1" stopOpacity="0"></stop>
+                      </lineargradient>
+                    </defs>
+                  </svg>
+                </ItemMedia>
+              </Item>
+              <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
+                <ItemMedia className="size-auto" variant="icon">
+                  <svg className="size-6" aria-hidden="true" viewBox="28 28 128 132" fill="none">
+                    <path fill="#F3B01C" d="M108.092 130.021c18.166-2.018 35.293-11.698 44.723-27.854-4.466 39.961-48.162 65.218-83.83 49.711-3.286-1.425-6.115-3.796-8.056-6.844-8.016-12.586-10.65-28.601-6.865-43.135 10.817 18.668 32.81 30.111 54.028 28.122Z"></path>
+                    <path fill="#8D2676" d="M53.401 90.174c-7.364 17.017-7.682 36.94 1.345 53.336-31.77-23.902-31.423-75.052-.388-98.715 2.87-2.187 6.282-3.485 9.86-3.683 14.713-.776 29.662 4.91 40.146 15.507-21.3.212-42.046 13.857-50.963 33.555Z"></path>
+                    <path fill="#EE342F" d="M114.637 61.855C103.89 46.87 87.069 36.668 68.639 36.358c35.625-16.17 79.446 10.047 84.217 48.807.444 3.598-.139 7.267-1.734 10.512-6.656 13.518-18.998 24.002-33.42 27.882 10.567-19.599 9.263-43.544-3.065-61.704Z"></path>
+                  </svg>
+                </ItemMedia>
+              </Item>
+              <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
+                <ItemMedia className="size-auto" variant="icon">
+                  <svg className="size-6" aria-hidden="true" xmlSpace="preserve" viewBox="0 0 800 800">
+                    <lineargradient id="appstore-a" x1="400.05" x2="400.05" y1="798.772" y2="-1.228" gradientTransform="matrix(1 0 0 -1 0 798.772)" gradientUnits="userSpaceOnUse">
+                      <stop offset="0" style={{stopColor: "rgb(24, 191, 251)"}}></stop>
+                      <stop offset="1" style={{stopColor: "rgb(32, 114, 243)"}}></stop>
+                    </lineargradient>
+                    <path fill="url(#appstore-a)" d="M638.4 0H161.6C72.3 0 0 72.3 0 161.6v476.9C0 727.7 72.3 800 161.6 800h476.9c89.2 0 161.6-72.3 161.6-161.6V161.6C800 72.3 727.7 0 638.4 0z"></path>
+                    <path fill="#FFF" d="m396.6 183.8 16.2-28c10-17.5 32.3-23.4 49.8-13.4s23.4 32.3 13.4 49.8L319.9 462.4h112.9c36.6 0 57.1 43 41.2 72.8H143c-20.2 0-36.4-16.2-36.4-36.4s16.2-36.4 36.4-36.4h92.8l118.8-205.9-37.1-64.4c-10-17.5-4.1-39.6 13.4-49.8 17.5-10 39.6-4.1 49.8 13.4l15.9 28.1zM256.2 572.7l-35 60.7c-10 17.5-32.3 23.4-49.8 13.4S148 614.5 158 597l26-45c29.4-9.1 53.3-2.1 72.2 20.7zm301.4-110.1h94.7c20.2 0 36.4 16.2 36.4 36.4s-16.2 36.4-36.4 36.4h-52.6l35.5 61.6c10 17.5 4.1 39.6-13.4 49.8-17.5 10-39.6-4.1-49.8-13.4-59.8-103.7-104.7-181.3-134.5-233-30.5-52.6-8.7-105.4 12.8-123.3 23.9 41 59.6 102.9 107.3 185.5z"></path>
+                  </svg>
+                </ItemMedia>
+              </Item>
+            </div>
+          </FramePanel>
+        </div>
+      </Frame>
+    </div>
+  )
+}

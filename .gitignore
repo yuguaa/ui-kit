@@ -54,3 +54,6 @@ dev-server.log
 .replicated-raw/
 .scratch/
 .replicated-raw-templates/
+
+# 源码还原的中间索引
+.component-index.json
