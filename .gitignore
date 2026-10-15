@@ -53,3 +53,4 @@ dev-server.log
 # 复刻中间产物
 .replicated-raw/
 .scratch/
+.replicated-raw-templates/

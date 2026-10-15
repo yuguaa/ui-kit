@@ -7,7 +7,8 @@
 
 **ReUI 的全部开源组件源码（base + radix 双版本，含全部示例）已完整复制到本项目并可运行。**
 **reui.io 网站上全部 645 个 blocks 已通过渲染快照方式复刻到本地（`replicated/blocks/`），可通过本地路由预览。**
-templates（17 个）由 ReUI 付费 registry 分发（Ultimate 许可证），源码不在开源仓库中，本项目已收录其完整清单。
+**全部 17 个 templates 已从各自的官方在线预览站点复刻到本地（`replicated/templates/`，共 123 个页面），可通过本地路由预览。**
+blocks 与 templates 的原始源码由 ReUI 付费 registry 分发（Pro / Ultimate 许可证），不在开源仓库中。
 
 ## Blocks 复刻说明
 
@@ -17,6 +18,40 @@ templates（17 个）由 ReUI 付费 registry 分发（Ultimate 许可证），�
 - 快照保留了完整的 Tailwind 类名、CSS 变量、动画 keyframes 与 SVG，使用本地同款设计 token 渲染，视觉与上游一致
 - 快照中的交互行为（状态切换、拖拽）为静态还原，不包含运行时逻辑
 - 提取脚本：`scripts/fetch-block-index.sh`、`scripts/convert-raw-to-html.py`（原始提取结果在 `.replicated-raw/`，中间产物已 gitignore）
+
+## Templates 复刻说明
+
+- 全部 17 个模板共 123 个页面快照位于 `replicated/templates/{模板}/{页面}.html`（22 MB）
+- 复刻方式：每个模板都有独立在线预览站点（`{slug}.reui.io`），浏览器逐页导航后提取完整渲染 DOM
+  - Laravel Inertia 模板（cohort-hr、filebox-drive、manifest-commerce）提供演示登录，凭据预填，登录后提取
+  - Vite SPA 模板（miro-clinic、pulse-helpdesk、roster-hr、surge-commerce）通过导航按钮遍历路由
+- 每个模板的编译样式与字体已下载到 `public/template-assets/{模板}/app.css` 与 `media/`（共 17 套，约 3.7 MB）
+- 本地预览路由：`/replicated/templates/{模板}/{页面}`，例如 `/replicated/templates/flowly-app/dashboard`
+- 渲染方式：快照经 `/api/replicated-template/{模板}/{页面}` 包装为独立 HTML 文档，由预览页面用 iframe 加载，
+  与宿主 React 应用完全隔离（快照来自其它框架的整页 DOM，直接内联会与宿主 hydration 冲突）
+- 提取脚本：`scripts/convert-template-raw.py`、`scripts/fetch-template-assets.py`、`scripts/fetch-all-template-assets.sh`
+
+### 各模板页面数
+
+| 模板 | 页面数 | 技术方案 |
+| --- | --- | --- |
+| atlas-admin | 9 | Next.js |
+| flowly-app | 6 | Next.js |
+| flux-agentops | 11 | Next.js |
+| lucent-devops | 5 | TanStack Start |
+| tempo-tasks | 6 | TanStack Start |
+| limelight-landing | 1 | Next.js |
+| overture-waitlist | 1 | Next.js |
+| cohort-hr | 4 | Laravel Inertia |
+| echo-chat | 3 | Next.js |
+| filebox-drive | 8 | Laravel Inertia |
+| filespace-drive | 8 | Next.js |
+| miro-clinic | 7 | Vite SPA |
+| pulse-helpdesk | 7 | Vite SPA |
+| roster-hr | 4 | Vite SPA |
+| verve-crm | 9 | Next.js |
+| manifest-commerce | 13 | Laravel Inertia |
+| surge-commerce | 21 | Vite SPA |
 
 ## 组件资产清单
 
@@ -86,11 +121,12 @@ templates（17 个）由 ReUI 付费 registry 分发（Ultimate 许可证），�
 均存在于本地 `registry-reui/` 中。验证脚本：`scripts/verify-block-dependencies.py`。
 即：一旦获得 blocks 源码，其全部依赖已在本项目内就绪。
 
-## Templates（付费资产清单）
+## Templates（复刻清单）
 
 - 完整清单：`templates/TEMPLATES-MANIFEST.md`（**17 个模板**，Dashboard 5 / Landing 2 / SaaS 8 / E-commerce 2）
 - 结构化目录：`templates/templates-catalog.json`（slug、名称、metaTitle、分类、accessTier）
-- 获取方式：模板数据 `accessTier` 均为 `ultimate`，需登录 reui.io 账号后从模板详情页下载
+- 渲染快照复刻：`replicated/templates/` 下 123 个页面快照，本地路由可预览
+- 上游源码分发：`accessTier` 均为 `ultimate`，需登录 reui.io 账号后从模板详情页下载
 
 ## 运行方式
 
@@ -109,15 +145,23 @@ reui-clone/
 ├── components/          # 网站应用组件（ui/custom/blocks/reui）
 ├── registry/            # 基础 registry（base + radix 组件、图标、风格）
 ├── registry-reui/       # reui 组件 registry（全部组件示例与实现）
-├── replicated/          # blocks 渲染快照复刻（645 个，本地路由可预览）
-├── blocks/              # blocks 完整清单（付费资产）
-├── templates/           # templates 完整清单（付费资产）
+├── replicated/          # 渲染快照复刻
+│   ├── blocks/          # 645 个 block 快照
+│   └── templates/       # 123 个模板页面快照
+├── public/
+│   └── template-assets/ # 各模板的编译样式与字体
+├── blocks/              # blocks 完整清单
+├── templates/           # templates 完整清单
 ├── hooks/               # 网站 hooks
 ├── lib/                 # 网站工具库
 ├── content/             # 文档内容（MDX）
 ├── packages/            # monorepo 包（registry）
 └── scripts/             # 构建与复刻脚本
 ```
+
+## 复刻资产索引
+
+本地访问 `http://localhost:3000/replicated` 可浏览全部复刻资产（645 个 blocks + 123 个模板页面）。
 
 ## 后续 MCP 服务器开发提示
 

@@ -31,17 +31,29 @@ async function scanBlocks() {
   return groups
 }
 
-/** 扫描模板复刻目录 */
+/** 扫描模板复刻目录，返回 模板 → 页面列表 */
 async function scanTemplates() {
   const root = path.join(process.cwd(), "replicated/templates")
+  const result = new Map<string, string[]>()
   let entries: string[] = []
   try {
-    entries = await readdir(root, { withFileTypes: true })
-      .then((list) => list.filter((e) => e.isDirectory()).map((e) => e.name))
+    entries = (await readdir(root, { withFileTypes: true }))
+      .filter((e) => e.isDirectory())
+      .map((e) => e.name)
   } catch {
-    return []
+    return result
   }
-  return entries.sort()
+  for (const slug of entries.sort()) {
+    const files = await readdir(path.join(root, slug))
+    result.set(
+      slug,
+      files
+        .filter((f) => f.endsWith(".html"))
+        .map((f) => f.replace(/\.html$/, ""))
+        .sort(),
+    )
+  }
+  return result
 }
 
 export default async function ReplicatedIndexPage() {
@@ -51,29 +63,38 @@ export default async function ReplicatedIndexPage() {
     (sum, cats) => sum + [...cats.values()].reduce((n, list) => n + list.length, 0),
     0,
   )
+  const templatePageTotal = [...templates.values()].reduce((sum, pages) => sum + pages.length, 0)
 
   return (
     <div className="bg-background text-foreground mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
       <h1 className="text-3xl font-semibold tracking-tight">复刻资产索引</h1>
       <p className="text-muted-foreground mt-2 text-sm">
-        共 <strong>{blockTotal}</strong> 个 blocks 渲染快照 · <strong>{templates.length}</strong> 个模板
+        共 <strong>{blockTotal}</strong> 个 blocks 快照 · <strong>{templates.size}</strong> 个模板（共{" "}
+        <strong>{templatePageTotal}</strong> 个页面）
       </p>
 
-      {templates.length > 0 && (
+      {templates.size > 0 && (
         <section className="mt-10">
           <h2 className="text-xl font-semibold">Templates</h2>
-          <ul className="mt-3 flex flex-wrap gap-2">
-            {templates.map((slug) => (
-              <li key={slug}>
-                <Link
-                  href={`/replicated/templates/${slug}`}
-                  className="border-border hover:bg-accent rounded-md border px-3 py-1.5 text-sm"
-                >
-                  {slug}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          {[...templates.entries()].map(([slug, pages]) => (
+            <div key={slug} className="mt-4">
+              <h3 className="text-muted-foreground text-sm font-medium">
+                {slug} <span className="opacity-60">({pages.length})</span>
+              </h3>
+              <ul className="mt-2 flex flex-wrap gap-1.5">
+                {pages.map((page) => (
+                  <li key={page}>
+                    <Link
+                      href={`/replicated/templates/${slug}/${page}`}
+                      className="border-border hover:bg-accent block rounded border px-2 py-0.5 font-mono text-xs"
+                    >
+                      {page}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </section>
       )}
 
