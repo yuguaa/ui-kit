@@ -4,8 +4,9 @@ import * as React from "react"
 import Link from "next/link"
 
 import { cn } from "cn"
+import { CopyRegistry } from "@/components/copy-registry"
 import { Spinner } from "@/components/ui/spinner"
-import { SnapshotViewCode, SnapshotCopyCode } from "@/components/replicated/snapshot-code-sheet"
+import { SnapshotViewCode } from "@/components/replicated/snapshot-code-sheet"
 
 export interface SnapshotCardProps {
   href: string
@@ -13,6 +14,8 @@ export interface SnapshotCardProps {
   src: string
   /** 源码端地址，供查看代码面板使用 */
   codeSrc: string
+  /** registry 名称，供复制安装命令使用 */
+  registryName: string
   title: string
   description?: string
   /** 快照的设计宽度，缩放基准 */
@@ -30,6 +33,7 @@ export function SnapshotCard({
   href,
   src,
   codeSrc,
+  registryName,
   title,
   description,
   baseWidth = 1280,
@@ -98,8 +102,8 @@ export function SnapshotCard({
           ) : null}
         </div>
         <div className="flex shrink-0 items-center gap-1.5">
-          <SnapshotCopyCode src={codeSrc} />
-          <SnapshotViewCode src={codeSrc} title={`${title}.html`} />
+          <CopyRegistry value={registryName} />
+          <SnapshotViewCode src={codeSrc} title={`${title}.html`} registryName={registryName} />
         </div>
       </div>
     </div>

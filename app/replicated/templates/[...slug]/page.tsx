@@ -145,6 +145,7 @@ async function TemplatePage({ slug, root }: { slug: string; root: string }) {
               href: `/replicated/templates/${slug}/${page}`,
               src: `/api/replicated-template/${slug}/${page}`,
               codeSrc: `/api/replicated-source/template/${slug}/${page}`,
+              registryName: `@neui/${slug}`,
               title: page,
               description: slug,
             }))}

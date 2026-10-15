@@ -167,6 +167,7 @@ async function CategoryPage({ group, category }: { group: string; category: stri
               href: `/replicated/blocks/${group}/${category}/${slug}`,
               src: `/replicated/blocks/${group}/${category}/${slug}?embed=1`,
               codeSrc: `/api/replicated-source/block/${group}/${category}/${slug}`,
+              registryName: `@neui/${slug}`,
               title: slug,
               description: `${group} / ${category}`,
             }))}

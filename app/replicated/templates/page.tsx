@@ -48,6 +48,7 @@ export default async function ReplicatedTemplatesPage() {
       href: `/replicated/templates/${template.slug}`,
       src: `/api/replicated-template/${template.slug}/${cover}`,
       codeSrc: `/api/replicated-source/template/${template.slug}/${cover}`,
+      registryName: `@neui/${template.slug}`,
       title: template.name,
       description: `${template.slug} · ${pages.length} 个页面`,
       group: template.category,

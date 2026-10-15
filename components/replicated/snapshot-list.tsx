@@ -12,6 +12,8 @@ export interface SnapshotListItem {
   href: string
   src: string
   codeSrc: string
+  /** registry 名称，供复制安装命令使用 */
+  registryName: string
   title: string
   description?: string
   /** 可选分组标签；提供时按分组渲染 */
@@ -107,6 +109,7 @@ export function SnapshotList({
                   href={item.href}
                   src={item.src}
                   codeSrc={item.codeSrc}
+                  registryName={item.registryName}
                   title={item.title}
                   description={item.description}
                   height={height}
