@@ -4,13 +4,15 @@ import * as React from "react"
 import Link from "next/link"
 
 import { cn } from "cn"
-
 import { Spinner } from "@/components/ui/spinner"
+import { SnapshotViewCode } from "@/components/replicated/snapshot-code-sheet"
 
 export interface SnapshotCardProps {
   href: string
   /** iframe 加载地址，指向同一应用内的快照预览路由 */
   src: string
+  /** 源码端地址，供查看代码面板使用 */
+  codeSrc: string
   title: string
   description?: string
   /** 快照的设计宽度，缩放基准 */
@@ -20,13 +22,14 @@ export interface SnapshotCardProps {
 }
 
 /**
- * 快照预览卡片
- * 展示形式与 /components 的组件卡片一致：卡片内实时预览 + 底部说明
+ * 快照卡片
+ * 展示形式与 components 的组件卡片一致：卡片内实时预览 + 底部信息与操作
  * 预览用 iframe 隔离加载（浏览器原生懒加载），并按容器宽度等比缩放
  */
 export function SnapshotCard({
   href,
   src,
+  codeSrc,
   title,
   description,
   baseWidth = 1280,
@@ -48,46 +51,56 @@ export function SnapshotCard({
   }, [baseWidth])
 
   return (
-    <Link
-      href={href}
-      prefetch={false}
+    <div
       className={cn(
-        "group/card bg-site-background border-site-border/80 hover:ring-site-foreground/10 relative flex flex-col overflow-hidden rounded-[16px] border p-0.5 shadow-sm shadow-black/5 transition-all hover:shadow-lg",
+        "border-site-border/80 bg-site-background relative flex flex-col overflow-hidden rounded-[16px] border p-0.5 shadow-sm shadow-black/5 transition-shadow hover:shadow-lg",
         className,
       )}
     >
-      <div
-        ref={frameRef}
-        className="border-site-border site-rounded-xl relative overflow-hidden border"
+      <Link
+        href={href}
+        prefetch={false}
+        aria-label={title}
+        className="border-site-border site-rounded-xl relative block overflow-hidden border"
         style={{ height }}
       >
-        {scale > 0 ? (
-          <iframe
-            src={src}
-            title={title}
-            loading="lazy"
-            tabIndex={-1}
-            aria-hidden="true"
-            className="pointer-events-none absolute top-0 left-0 border-0"
-            style={{
-              width: baseWidth,
-              height: height / scale,
-              transform: `scale(${scale})`,
-              transformOrigin: "top left",
-            }}
-          />
-        ) : (
-          <div className="flex h-full w-full items-center justify-center">
-            <Spinner className="text-site-muted-foreground/30 size-4" />
-          </div>
-        )}
+        <div ref={frameRef} className="absolute inset-0">
+          {scale > 0 ? (
+            <iframe
+              src={src}
+              title={title}
+              loading="lazy"
+              tabIndex={-1}
+              aria-hidden="true"
+              className="pointer-events-none absolute top-0 left-0 border-0"
+              style={{
+                width: baseWidth,
+                height: height / scale,
+                transform: `scale(${scale})`,
+                transformOrigin: "top left",
+              }}
+            />
+          ) : (
+            <div className="flex h-full w-full items-center justify-center">
+              <Spinner className="text-site-muted-foreground/30 size-4" />
+            </div>
+          )}
+        </div>
+      </Link>
+
+      <div className="flex items-center gap-3 px-3 py-2">
+        <div className="min-w-0 flex-1">
+          <h3 className="text-site-foreground truncate text-sm font-medium tracking-tight">
+            {title}
+          </h3>
+          {description ? (
+            <p className="text-site-muted-foreground truncate text-xs">{description}</p>
+          ) : null}
+        </div>
+        <div className="flex shrink-0 items-center gap-1.5">
+          <SnapshotViewCode src={codeSrc} title={`${title}.html`} />
+        </div>
       </div>
-      <div className="flex-row items-center gap-3 px-3 py-2">
-        <h3 className="text-site-foreground truncate text-sm font-medium tracking-tight">{title}</h3>
-        {description ? (
-          <p className="text-site-muted-foreground mt-0.5 truncate text-xs">{description}</p>
-        ) : null}
-      </div>
-    </Link>
+    </div>
   )
 }

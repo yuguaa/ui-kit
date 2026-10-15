@@ -166,6 +166,7 @@ async function CategoryPage({ group, category }: { group: string; category: stri
                 key={slug}
                 href={`/replicated/blocks/${group}/${category}/${slug}`}
                 src={`/replicated/blocks/${group}/${category}/${slug}?embed=1`}
+                codeSrc={`/api/replicated-source/block/${group}/${category}/${slug}`}
                 title={slug}
                 description={`${group} / ${category}`}
                 height={280}

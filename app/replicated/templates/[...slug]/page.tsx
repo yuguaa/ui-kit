@@ -144,6 +144,7 @@ async function TemplatePage({ slug, root }: { slug: string; root: string }) {
                 key={page}
                 href={`/replicated/templates/${slug}/${page}`}
                 src={`/api/replicated-template/${slug}/${page}`}
+                codeSrc={`/api/replicated-source/template/${slug}/${page}`}
                 title={page}
                 description={slug}
                 height={420}
